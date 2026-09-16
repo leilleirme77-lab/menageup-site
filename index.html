@@ -775,6 +775,8 @@ html.anim .rv.in{opacity:1;transform:none}
       window.addEventListener('scroll',revealCheck,{passive:true});
       window.addEventListener('resize',revealCheck,{passive:true});
       setTimeout(revealCheck,300);
+      var rvRuns=0,rvIv=setInterval(function(){revealCheck();rvRuns++;
+        if(rvRuns>90||!document.querySelector('.rv:not(.in)'))clearInterval(rvIv);},700);
     }
   }catch(err){}
   var t=document.getElementById('revtrack');if(t)t.innerHTML+=t.innerHTML;
