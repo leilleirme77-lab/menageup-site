@@ -119,6 +119,13 @@ p{margin:0}a{color:inherit}
 .brand{display:inline-flex;align-items:center;text-decoration:none}
 .brand img{height:38px;width:auto;display:block}
 footer .brand img{height:30px}
+.brand .lg-d{display:none}
+:root[data-theme="dark"] .brand .lg-l{display:none}
+:root[data-theme="dark"] .brand .lg-d{display:block}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .brand .lg-l{display:none}
+  :root:not([data-theme="light"]) .brand .lg-d{display:block}
+}
 :root[data-theme="dark"] .brand{color:#E8EFFA}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand{color:#E8EFFA}}
 .topbar-right{display:flex;align-items:center;gap:22px}
@@ -369,7 +376,7 @@ html.anim .rv.in{opacity:1;transform:none}
 <div class="topstrip"><div class="wrap"><span>Vous cherchez un emploi dans le ménage&nbsp;?</span> <a href="mailto:menageup@outlook.fr">Écrivez-nous, on recrute.</a></div></div>
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="MénageUp"><img src="logo.png" alt="MénageUp"></a>
+    <a class="brand" href="#top" aria-label="MénageUp"><img class="lg-l" src="logo.png" alt="MénageUp"><img class="lg-d" src="logo-dark.png" alt="MénageUp"></a>
     <nav class="mainnav" aria-label="Navigation principale">
       <a href="#services">Nos services</a>
       <a href="#pros">Professionnels</a>
@@ -698,7 +705,7 @@ html.anim .rv.in{opacity:1;transform:none}
   <div class="wrap">
     <div class="cols">
       <div style="max-width:28ch">
-        <a class="brand" href="#top" aria-label="MénageUp"><img src="logo.png" alt="MénageUp"></a>
+        <a class="brand" href="#top" aria-label="MénageUp"><img class="lg-l" src="logo.png" alt="MénageUp"><img class="lg-d" src="logo-dark.png" alt="MénageUp"></a>
         <div class="sig">Vos espaces, notre exigence.</div>
         Entreprise de nettoyage — particuliers, copropriétés &amp; entreprises, 77 &amp; 94.
       </div>
