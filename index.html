@@ -205,6 +205,24 @@ footer .brand img{height:30px}
 
 /* bands */
 section.band{padding:106px 0}
+/* --- rythme vertical adapte : le PC garde 106px, les petits ecrans respirent sans scroll inutile --- */
+@media (max-width:900px){
+  section.band{padding:72px 0}
+  .band-head{margin-bottom:34px}
+  .journey{gap:26px}
+  .svc-rows{gap:52px}
+}
+@media (max-width:600px){
+  section.band{padding:56px 0}
+  .band-head{margin-bottom:26px}
+  .band-head p{font-size:1rem}
+  .journey{gap:20px}
+  .svc-rows{gap:40px}
+  .svc-row{gap:20px}
+  .gar .wrap{gap:14px}
+  .money{padding:44px 0}
+  .final .wrap{padding:0}
+}
 .band-head{max-width:58ch;margin-bottom:48px}
 .band-head h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700}
 .band-head p{color:var(--muted);margin-top:14px;font-size:1.1rem}
