@@ -7,7 +7,7 @@
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="MénageUp | Entreprise de nettoyage en Seine-et-Marne (77)">
 <meta property="og:url" content="https://menageup.fr/">
-<meta property="og:image" content="https://menageup.fr/og.png">
+<meta property="og:image" content="https://menageup.fr/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": [
+        "CleaningService",
+        "LocalBusiness"
+      ],
       "@id": "https://menageup.fr/#business",
       "name": "MénageUp",
       "url": "https://menageup.fr/",
@@ -39,6 +42,70 @@
         {
           "@type": "AdministrativeArea",
           "name": "Île-de-France"
+        },
+        {
+          "@type": "City",
+          "name": "Tournan-en-Brie"
+        },
+        {
+          "@type": "City",
+          "name": "Pontault-Combault"
+        },
+        {
+          "@type": "City",
+          "name": "Ozoir-la-Ferrière"
+        },
+        {
+          "@type": "City",
+          "name": "Roissy-en-Brie"
+        },
+        {
+          "@type": "City",
+          "name": "Torcy"
+        },
+        {
+          "@type": "City",
+          "name": "Brie-Comte-Robert"
+        },
+        {
+          "@type": "City",
+          "name": "Presles-en-Brie"
+        },
+        {
+          "@type": "City",
+          "name": "Gretz-Armainvilliers"
+        },
+        {
+          "@type": "City",
+          "name": "Chevry-Cossigny"
+        },
+        {
+          "@type": "City",
+          "name": "Lésigny"
+        },
+        {
+          "@type": "City",
+          "name": "Fontenay-Trésigny"
+        },
+        {
+          "@type": "City",
+          "name": "Chelles"
+        },
+        {
+          "@type": "City",
+          "name": "Melun"
+        },
+        {
+          "@type": "City",
+          "name": "Coulommiers"
+        },
+        {
+          "@type": "City",
+          "name": "Serris"
+        },
+        {
+          "@type": "City",
+          "name": "Bussy-Saint-Georges"
         }
       ],
       "knowsAbout": [
@@ -56,7 +123,125 @@
         "https://www.tiktok.com/@menage.up",
         "https://fr.trustpilot.com/review/menageup.fr",
         "https://share.google/d4WL0FlPcgTL4Hdfk"
-      ]
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Prestations de nettoyage MénageUp",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ménage à domicile",
+              "description": "Ménage régulier ou ponctuel au domicile des particuliers, avec intervenante attitrée",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Repassage",
+              "description": "Entretien du linge et repassage à domicile",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de vitres",
+              "description": "Vitres, baies vitrées, vérandas et encadrements, deux faces",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de copropriété",
+              "description": "Entretien des parties communes pour syndics : halls, escaliers, ascenseurs, containers",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de bureaux et commerces",
+              "description": "Entretien de locaux professionnels en dehors des horaires d'ouverture",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de fin de chantier",
+              "description": "Remise en état après travaux : dépoussiérage, traces de peinture et plâtre, vitres, sols",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage pour état des lieux",
+              "description": "Remise en état avant un état des lieux de sortie ou une relocation",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ménage Airbnb",
+              "description": "Remise en état entre deux locations courte durée, linge compris",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          }
+        ]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Seine-et-Marne",
+        "addressCountry": "FR"
+      },
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Virement, CESU, carte bancaire",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "20:00"
+        }
+      ],
+      "knowsLanguage": "fr-FR"
     },
     {
       "@type": "WebSite",
@@ -154,7 +339,7 @@
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Caveat:wght@600&family=Baloo+2:wght@700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
 
 <style>
 :root{
@@ -247,8 +432,11 @@ footer .brand img{height:30px}
 .navpanel a:last-child{border-bottom:0}
 .navpanel a>svg{width:15px;height:15px;flex:0 0 15px;color:var(--muted)}
 .navpanel a:active{color:var(--blue-text)}
-.navpanel .mob-call{justify-content:center;margin-top:16px;border:1.5px solid var(--line);border-radius:14px;padding:15px;font-weight:700;letter-spacing:.01em}
-.navpanel .mob-call>svg{width:17px;height:17px;flex:0 0 17px;color:var(--blue-text)}
+.navpanel .mob-call{justify-content:center;gap:11px;margin-top:20px;padding:16px 18px;border-radius:14px;border:1.5px solid rgba(255,255,255,.12);background:linear-gradient(135deg,#1B4A96 0%,#14336E 55%,#0E2450 100%);color:#fff;font-weight:700;font-size:1rem;letter-spacing:.012em;box-shadow:0 1px 2px rgba(10,25,55,.2),0 12px 26px -12px rgba(20,60,130,.62);transition:transform .16s ease,box-shadow .16s ease,background .16s ease}
+.navpanel .mob-call:hover{background:linear-gradient(135deg,#2059AE 0%,#173C81 55%,#122C5E 100%);transform:translateY(-1px);box-shadow:0 2px 4px rgba(10,25,55,.22),0 18px 34px -14px rgba(20,60,130,.7)}
+.navpanel .mob-call:active{transform:translateY(1px);box-shadow:0 1px 3px rgba(10,25,55,.3)}
+.navpanel .mob-call>svg{width:18px;height:18px;flex:0 0 18px;color:#fff;opacity:.95}
+
 /* ---- l'en-tete doit tenir dans la largeur de l'ecran ---- */
 @media(max-width:1080px){.topbar .wrap{gap:10px}.topbar-right{gap:9px}}
 @media(max-width:600px){
@@ -472,14 +660,14 @@ footer .legal .fl{font-weight:600;color:var(--blue-text)}
 .gar .g small{display:block;font-weight:500;color:var(--muted);font-size:.8rem}
 
 /* humain */
-.humain .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:center}
-.humain .photo-h{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
-.humain .photo-h img{display:block;width:100%;height:auto}
-.humain ul{margin:22px 0 0;padding:0;list-style:none}
-.humain li{display:flex;gap:14px;padding:10px 0;align-items:flex-start}
-.humain li svg{width:22px;height:22px;color:var(--blue);flex:0 0 auto;margin-top:3px}
-.humain li b{display:block}
-.humain li span{color:var(--muted);font-size:.95rem}
+
+
+
+
+
+
+
+
 
 /* faq */
 .faq{max-width:780px}
@@ -515,7 +703,7 @@ html.anim .rv.in{opacity:1;transform:none}
   .gal .gcard{grid-area:auto}
   .gpan{height:240px}
   .gar .wrap{grid-template-columns:repeat(2,1fr)}
-  .humain .wrap{grid-template-columns:1fr;gap:26px}
+  
 }
 @media (min-width:901px) and (max-width:1050px){
   .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:260px;
@@ -547,12 +735,22 @@ footer .social a svg{width:23px;height:23px;display:block}
 footer .social a svg.mono{color:var(--ink)}
 @media(max-width:600px){footer .social{margin-top:22px;padding-top:18px;gap:12px}footer .social a{width:44px;height:44px;border-radius:13px}footer .social a svg{width:21px;height:21px}footer .social .lks{gap:10px}}
 </style>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MénageUp">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:description" content="Ménage à domicile, parties communes de copropriété, bureaux et commerces en Seine-et-Marne et en Île-de-France. Intervenante attitrée, sans engagement, devis gratuit sous 48 h.">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="MénageUp — ménage pour particuliers, copropriétés et entreprises">
+<meta name="twitter:title" content="MénageUp | Entreprise de nettoyage en Seine-et-Marne (77)">
+<meta name="twitter:description" content="Ménage à domicile, parties communes de copropriété, bureaux et commerces en Seine-et-Marne et en Île-de-France. Intervenante attitrée, sans engagement, devis gratuit sous 48 h.">
+<meta name="twitter:image" content="https://menageup.fr/og.jpg">
+<link rel="preload" as="image" href="/hero.jpg" fetchpriority="high">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="MénageUp"><img src="logo-v3.png" alt="MénageUp"></a>
+    <a class="brand" href="#top" aria-label="MénageUp"><img src="logo-v3.png" alt="MénageUp" width="549" height="160"></a>
     <nav class="mainnav" aria-label="Navigation principale">
       <a href="#services">Nos services</a>
       <a href="#pros">Professionnels</a>
@@ -706,7 +904,7 @@ footer .social a svg.mono{color:var(--ink)}
       </div>
       <div class="svc-rows">
         <div class="svc-row">
-          <div class="s-img"><img src="g1.jpg" alt="Ménage à domicile — cuisine étincelante" loading="lazy"></div>
+          <div class="s-img"><img src="g1.jpg" alt="Ménage à domicile — cuisine étincelante" loading="lazy" width="1080" height="1350"></div>
           <div class="s-txt">
             <span class="eyebrow">Particuliers</span>
             <h3>Votre maison, prête à vivre.</h3>
@@ -720,7 +918,7 @@ footer .social a svg.mono{color:var(--ink)}
           </div>
         </div>
         <div class="svc-row flip" id="pros">
-          <div class="s-img"><img src="g7.jpg" alt="Nettoyage de cage d'escalier de copropriété" loading="lazy"></div>
+          <div class="s-img"><img src="g7.jpg" alt="Nettoyage de cage d'escalier de copropriété" loading="lazy" width="1376" height="768"></div>
           <div class="s-txt">
             <span class="eyebrow">Copropriétés &amp; syndics</span>
             <h3>Des parties communes qui donnent le ton.</h3>
@@ -735,7 +933,7 @@ footer .social a svg.mono{color:var(--ink)}
           </div>
         </div>
         <div class="svc-row">
-          <div class="s-img"><img src="g4.jpg" alt="Nettoyage de commerce et boutique" loading="lazy"></div>
+          <div class="s-img"><img src="g4.jpg" alt="Nettoyage de commerce et boutique" loading="lazy" width="1080" height="1350"></div>
           <div class="s-txt">
             <span class="eyebrow">Entreprises &amp; commerces</span>
             <h3>Un espace qui rassure vos clients.</h3>
@@ -750,7 +948,7 @@ footer .social a svg.mono{color:var(--ink)}
           </div>
         </div>
         <div class="svc-row flip">
-          <div class="s-img"><img src="g6.jpg" alt="Remise en état fin de bail, état des lieux" loading="lazy"></div>
+          <div class="s-img"><img src="g6.jpg" alt="Remise en état fin de bail, état des lieux" loading="lazy" width="1080" height="1350"></div>
           <div class="s-txt">
             <span class="eyebrow">Immobilier &amp; location</span>
             <h3>Prêt à relouer, prêt à emménager.</h3>
@@ -888,7 +1086,7 @@ footer .social a svg.mono{color:var(--ink)}
   <div class="wrap">
     <div class="cols">
       <div style="max-width:28ch">
-        <a class="brand" href="#top" aria-label="MénageUp"><img src="logo-v3.png" alt="MénageUp"></a>
+        <a class="brand" href="#top" aria-label="MénageUp"><img src="logo-v3.png" alt="MénageUp" width="549" height="160"></a>
         <div class="sig">Vos espaces, notre exigence.</div>
         Entreprise de nettoyage — particuliers, copropriétés &amp; entreprises, 77 &amp; IDF.
       </div>
