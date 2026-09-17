@@ -24,7 +24,6 @@
     {
       "@type": "LocalBusiness",
       "@id": "https://menageup.fr/#business",
-      "sameAs": ["https://share.google/d4WL0FlPcgTL4Hdfk", "https://fr.trustpilot.com/review/menageup.fr"],
       "name": "MénageUp",
       "url": "https://menageup.fr/",
       "telephone": "+33648304965",
@@ -137,10 +136,12 @@ footer .brand img{height:30px}
 }
 :root[data-theme="dark"] .brand{color:#E8EFFA}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand{color:#E8EFFA}}
-.topbar-right{display:flex;align-items:center;gap:22px}
-.phone{font-weight:700;text-decoration:none;white-space:nowrap;color:var(--ink)}
-.phone span{color:var(--muted);font-weight:500}
-@media(max-width:820px){.phone{display:none}.topbar .btn{padding:12px 18px}}
+.topbar-right{display:flex;align-items:center;gap:12px}
+.btn-call{background:var(--surface);color:var(--navy);border:1.5px solid var(--line);padding:14px 22px;font-weight:700;box-shadow:var(--shadow-sm)}
+.btn-call svg{width:17px;height:17px}
+.btn-call:hover{border-color:var(--navy);transform:translateY(-1px)}
+@media(max-width:820px){.topbar .btn{padding:12px 16px;font-size:.94rem}.btn-call span{display:none}}
+@media(max-width:560px){.btn-call{padding:12px 14px}}
 
 /* HERO — photo pleine largeur */
 .hero{position:relative;color:var(--hero-ink);min-height:min(88vh,780px);display:flex;align-items:center}
@@ -384,7 +385,6 @@ html.anim .rv.in{opacity:1;transform:none}
 }
 @media (max-width:520px){.field-row{grid-template-columns:1fr}}
 
-
 footer .social{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center}
 footer .social .lbl{width:100%;text-align:center;font-size:.8rem;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
 footer .social a{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 18px;font-size:.9rem;font-weight:700;color:var(--ink);text-decoration:none;box-shadow:0 1px 2px rgba(20,25,35,.05);transition:border-color .15s,box-shadow .15s,transform .15s}
@@ -407,7 +407,7 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
       <a href="#faq">FAQ</a>
     </nav>
     <div class="topbar-right">
-      <a class="phone" href="tel:0648304965"><span>Devis&nbsp;·&nbsp;</span>06&nbsp;48&nbsp;30&nbsp;49&nbsp;65</a>
+      <a class="btn btn-call" href="tel:0648304965" aria-label="Appeler MénageUp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.26-1.26a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Appeler</a>
       <a class="btn btn-primary" href="#devis">Devis gratuit</a>
     </div>
   </div>
