@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -402,7 +402,7 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="MénageUp"><img src="logo-v2.png" alt="MénageUp"></a>
+    <a class="brand" href="#top" aria-label="MénageUp"><img src="logo.png" alt="MénageUp"></a>
     <nav class="mainnav" aria-label="Navigation principale">
       <a href="#services">Nos services</a>
       <a href="#pros">Professionnels</a>
@@ -740,7 +740,7 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
   <div class="wrap">
     <div class="cols">
       <div style="max-width:28ch">
-        <a class="brand" href="#top" aria-label="MénageUp"><img src="logo-v2.png" alt="MénageUp"></a>
+        <a class="brand" href="#top" aria-label="MénageUp"><img src="logo.png" alt="MénageUp"></a>
         <div class="sig">Vos espaces, notre exigence.</div>
         Entreprise de nettoyage — particuliers, copropriétés &amp; entreprises, 77 &amp; IDF.
       </div>
@@ -843,10 +843,22 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
         form.appendChild(e0);}
       e0.scrollIntoView({behavior:'smooth',block:'center'});
     };
-    fetch('https://formsubmit.co/ajax/menageup@outlook.fr',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+    var fd=new FormData(form);
+    fd.append('access_key','a42898b5-d51c-4992-bbb2-98cd7ca0085f');
+    fd.append('from_name','MenageUp - demande de devis');
+    // canal principal : Web3Forms  /  secours automatique : FormSubmit
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:fd})
       .then(function(r){return r.json();})
-      .then(function(d){ (d&&d.success===true||d&&d.success==='true') ? reussi() : echoue(); })
-      .catch(echoue);
+      .then(function(d){
+        if(d && d.success===true){ reussi(); return; }
+        throw new Error('principal indisponible');
+      })
+      .catch(function(){
+        fetch('https://formsubmit.co/ajax/menageup@outlook.fr',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+          .then(function(r){return r.json();})
+          .then(function(d2){ (d2 && (d2.success===true||d2.success==='true')) ? reussi() : echoue(); })
+          .catch(echoue);
+      });
   });
   document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length>1){var t=document.querySelector(id);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}}});});
 })();
