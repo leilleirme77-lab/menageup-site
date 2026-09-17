@@ -116,7 +116,7 @@ p{margin:0}a{color:inherit}
 .topstrip .wrap{display:flex;justify-content:center;gap:6px;padding:8px 0;text-align:center}
 .topstrip a{color:var(--blue-text);font-weight:600}
 .topbar{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--ground) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.topbar .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:70px;gap:24px;width:auto;max-width:none;margin:0;padding:0 44px}
+.topbar .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:70px;gap:30px;width:auto;max-width:none;margin:0;padding:0 36px}
 .topbar .brand{justify-self:start}
 .topbar .topbar-right{justify-self:end}
 @media(max-width:900px){.topbar .wrap{padding:0 16px;display:flex;justify-content:space-between}}
@@ -387,6 +387,9 @@ html.anim .rv.in{opacity:1;transform:none}
     grid-template-areas:"dom dom" "dom dom" "rep vit" "com edl"}
 }
 @media (max-width:520px){.field-row{grid-template-columns:1fr}}
+.nav-recrut{position:relative}
+.nav-recrut::after{content:"";position:absolute;top:-3px;right:-9px;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+@media(max-width:1180px){.mainnav{gap:20px;font-size:.95rem}.topbar .wrap{padding:0 22px}}
 
 footer .social{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center}
 footer .social .lbl{width:100%;text-align:center;font-size:.8rem;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
@@ -397,7 +400,6 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
 </head>
 <body>
 
-<div class="topstrip"><div class="wrap"><span>Vous cherchez un emploi dans le ménage&nbsp;?</span> <a href="mailto:menageup@outlook.fr">Écrivez-nous, on recrute.</a></div></div>
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="MénageUp"><img class="lg-l" src="logo.png" alt="MénageUp"><img class="lg-d" src="logo-dark.png" alt="MénageUp"></a>
@@ -408,6 +410,7 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
       <a href="/qui-sommes-nous/">Qui sommes-nous</a>
       <a href="#avis">Avis</a>
       <a href="#faq">FAQ</a>
+      <a class="nav-recrut" href="/recrutement/">Recrutement</a>
     </nav>
     <div class="topbar-right">
       <a class="btn btn-call" href="tel:0648304965" aria-label="Appeler MénageUp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.26-1.26a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Appeler</a>
@@ -829,8 +832,21 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
   var form=document.getElementById('lead'),ok=document.getElementById('ok');
   if(form)form.addEventListener('submit',function(e){
     e.preventDefault();
-    var done=function(){form.style.display='none';ok.classList.add('show');ok.scrollIntoView({behavior:'smooth',block:'center'});};
-    try{fetch('https://formsubmit.co/ajax/menageup@outlook.fr',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)}).then(done,done);}catch(err){done();}
+    var btn=form.querySelector('[type=submit]'),lbl=btn?btn.textContent:'';
+    if(btn){btn.disabled=true;btn.textContent='Envoi en cours...';}
+    var reussi=function(){form.style.display='none';ok.classList.add('show');ok.scrollIntoView({behavior:'smooth',block:'center'});};
+    var echoue=function(){
+      if(btn){btn.disabled=false;btn.textContent=lbl;}
+      var e0=document.getElementById('senderr');
+      if(!e0){e0=document.createElement('p');e0.id='senderr';e0.className='senderr';
+        e0.innerHTML='Votre demande n'a pas pu être transmise. Appelez-nous au <a href="tel:0648304965">06 48 30 49 65</a> ou écrivez à <a href="mailto:menageup@outlook.fr">menageup@outlook.fr</a> — nous répondons tout de suite.';
+        form.appendChild(e0);}
+      e0.scrollIntoView({behavior:'smooth',block:'center'});
+    };
+    fetch('https://formsubmit.co/ajax/menageup@outlook.fr',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+      .then(function(r){return r.json();})
+      .then(function(d){ (d&&d.success===true||d&&d.success==='true') ? reussi() : echoue(); })
+      .catch(echoue);
   });
   document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length>1){var t=document.querySelector(id);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}}});});
 })();
