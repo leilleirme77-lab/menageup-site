@@ -76,7 +76,7 @@
           "name": "Sur quelles communes intervenez-vous ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "En Seine-et-Marne principalement : Tournan-en-Brie, Pontault-Combault, Ozoir-la-Ferrière, Roissy-en-Brie, Torcy, Brie-Comte-Robert, Chelles, Melun et leurs alentours. Nous cherchons à couvrir tout ce secteur."
+            "text": "Partout en Seine-et-Marne (77), et plus largement en Île-de-France. Nous attribuons les missions par secteur, au plus près de votre domicile : dites-nous simplement où vous habitez et jusqu'où vous acceptez de vous déplacer."
           }
         }
       ]
@@ -209,7 +209,16 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
 :root[data-theme="dark"] .brand .lg-d{display:block}
 .crumb{font-size:.84rem;color:var(--muted);margin-bottom:10px}
 .crumb a{color:var(--muted);text-decoration:none}
-.hero-r{background:linear-gradient(135deg,var(--tint) 0%,var(--panel) 100%);border:1px solid var(--line);border-radius:22px;padding:34px 32px;margin-top:22px}
+.hero-r{position:relative;border-radius:22px;padding:56px 36px 48px;margin-top:22px;overflow:hidden;background:#0E1116;isolation:isolate}
+.hero-r::before{content:"";position:absolute;inset:0;z-index:-2;background:url("/team.jpg") center 28%/cover no-repeat}
+.hero-r::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,rgba(9,12,18,.93) 0%,rgba(9,12,18,.86) 48%,rgba(9,12,18,.55) 100%)}
+.hero-r .eyebrow{color:#9CC8F5}
+.hero-r h1{color:#F4F8FE;text-shadow:0 2px 26px rgba(2,10,28,.5)}
+.hero-r .lead{color:rgba(238,244,252,.9);max-width:54ch}
+.hero-r .pts{margin-top:22px;display:flex;flex-wrap:wrap;gap:9px}
+.hero-r .pts span{display:inline-flex;align-items:center;gap:7px;background:rgba(8,16,32,.5);border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:8px 14px;font-size:.88rem;font-weight:600;color:#EAF1FB}
+.hero-r .pts svg{width:15px;height:15px;color:#6FB6F2}
+@media(max-width:720px){.hero-r{padding:40px 24px 34px}.hero-r::after{background:linear-gradient(180deg,rgba(9,12,18,.92) 0%,rgba(9,12,18,.84) 60%,rgba(9,12,18,.7) 100%)}}
 .hero-r h1{font-size:clamp(1.8rem,4vw,2.5rem)}
 .hero-r .lead{margin-top:14px;font-size:1.08rem}
 .why{margin-top:26px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
@@ -264,9 +273,14 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
     <nav class="crumb"><a href="https://menageup.fr/">Accueil</a> · Recrutement</nav>
 
     <div class="hero-r">
-      <span class="eyebrow">Nous recrutons · Seine-et-Marne</span>
+      <span class="eyebrow">Nous recrutons en Seine-et-Marne et en Île-de-France</span>
       <h1 style="margin-top:12px">Rejoignez l'équipe MénageUp</h1>
-      <p class="lead">Nous recherchons des intervenant(e)s de ménage sérieux et soigneux pour des missions régulières chez des particuliers, dans des copropriétés et chez des professionnels du secteur. Débutant(e) motivé(e) accepté(e).</p>
+      <p class="lead">Nous recherchons des intervenant(e)s de ménage sérieux et soigneux pour des missions régulières chez des particuliers, dans des copropriétés et chez des professionnels. Débutant(e) motivé(e) accepté(e).</p>
+      <div class="pts">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Paiement déclaré</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Missions près de chez vous</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Planning adapté à vos disponibilités</span>
+      </div>
     </div>
 
     <div class="appform" id="postuler">
@@ -338,7 +352,7 @@ footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
       <details><summary>Combien d'heures par semaine ?</summary><p>Cela dépend de vos disponibilités et des missions du secteur. Certaines intervenantes font quelques heures par semaine en complément, d'autres construisent un planning complet. Vous nous dites ce que vous cherchez.</p></details>
       <details><summary>Faut-il être véhiculée ?</summary><p>Ce n'est pas obligatoire, mais c'est un vrai avantage sur notre secteur : cela ouvre davantage de missions, notamment dans les communes moins bien desservies.</p></details>
       <details><summary>Comment se passe la suite après ma candidature ?</summary><p>Nous vous rappelons pour faire connaissance, comprendre vos disponibilités et le secteur qui vous arrange. Puis nous vous proposons les missions qui correspondent, au fur et à mesure.</p></details>
-      <details><summary>Sur quelles communes intervenez-vous ?</summary><p>En Seine-et-Marne principalement : Tournan-en-Brie, Pontault-Combault, Ozoir-la-Ferrière, Roissy-en-Brie, Torcy, Brie-Comte-Robert, Chelles, Melun et leurs alentours. Nous cherchons à couvrir tout ce secteur.</p></details>
+      <details><summary>Sur quelles communes intervenez-vous ?</summary><p>Partout en Seine-et-Marne (77), et plus largement en Île-de-France. Nous attribuons les missions par secteur, au plus près de votre domicile : dites-nous simplement où vous habitez et jusqu'où vous acceptez de vous déplacer.</p></details>
     </div>
 
     <div class="cta">
