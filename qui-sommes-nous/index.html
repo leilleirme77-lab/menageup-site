@@ -194,12 +194,27 @@ footer .social .lbl{width:100%;text-align:center;font-size:.8rem;color:var(--mut
 footer .social a{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 18px;font-size:.9rem;font-weight:700;color:var(--ink);text-decoration:none;box-shadow:0 1px 2px rgba(20,25,35,.05);transition:border-color .15s,box-shadow .15s,transform .15s}
 footer .social a:hover{border-color:var(--blue);box-shadow:0 4px 14px -6px rgba(20,25,35,.28);transform:translateY(-1px)}
 footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
+
+.brand{display:inline-flex;align-items:center;line-height:0}
+.brand img{height:34px;width:auto;display:block}
+.brand .lg-d{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand .lg-l{display:none}
+:root:not([data-theme="light"]) .brand .lg-d{display:block}}
+:root[data-theme="dark"] .brand .lg-l{display:none}
+:root[data-theme="dark"] .brand .lg-d{display:block}
+@media(max-width:560px){.brand img{height:29px}}
+
+footer .social{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center}
+footer .social .lbl{width:100%;text-align:center;font-size:.8rem;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+footer .social a{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 18px;font-size:.9rem;font-weight:700;color:var(--ink);text-decoration:none;box-shadow:0 1px 2px rgba(20,25,35,.05);transition:border-color .15s,box-shadow .15s,transform .15s}
+footer .social a:hover{border-color:var(--blue);box-shadow:0 4px 14px -6px rgba(20,25,35,.28);transform:translateY(-1px)}
+footer .social a .lg{width:20px;height:20px;flex:0 0 auto}
 </style>
 </head>
 <body>
 
 <header class="topbar"><div class="in">
-  <a class="brand" href="https://menageup.fr/"><span class="b">M</span>énage<span class="b">Up</span></a>
+  <a class="brand" href="https://menageup.fr/" aria-label="MénageUp — accueil"><img class="lg-l" src="/logo.png" alt="MénageUp" width="470" height="140"><img class="lg-d" src="/logo-dark.png" alt="MénageUp" width="470" height="140"></a>
   <a class="btn" href="https://menageup.fr/#devis">Devis gratuit</a>
 </div></header>
 
