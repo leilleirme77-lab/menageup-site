@@ -22,9 +22,17 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": [
+        "CleaningService",
+        "LocalBusiness"
+      ],
       "@id": "https://menageup.fr/#business",
-      "sameAs": ["https://share.google/d4WL0FlPcgTL4Hdfk", "https://fr.trustpilot.com/review/menageup.fr", "https://www.instagram.com/menage.up/", "https://www.tiktok.com/@menage.up"],
+      "sameAs": [
+        "https://share.google/d4WL0FlPcgTL4Hdfk",
+        "https://fr.trustpilot.com/review/menageup.fr",
+        "https://www.instagram.com/menage.up/",
+        "https://www.tiktok.com/@menage.up"
+      ],
       "name": "MénageUp",
       "url": "https://menageup.fr/",
       "telephone": "+33648304965",
@@ -33,10 +41,207 @@
       "slogan": "Vos espaces, notre exigence.",
       "priceRange": "€€",
       "areaServed": [
-        { "@type": "AdministrativeArea", "name": "Seine-et-Marne (77)" },
-        { "@type": "AdministrativeArea", "name": "Île-de-France" }
+        {
+          "@type": "AdministrativeArea",
+          "name": "Seine-et-Marne (77)"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Île-de-France"
+        },
+        {
+          "@type": "City",
+          "name": "Tournan-en-Brie"
+        },
+        {
+          "@type": "City",
+          "name": "Pontault-Combault"
+        },
+        {
+          "@type": "City",
+          "name": "Ozoir-la-Ferrière"
+        },
+        {
+          "@type": "City",
+          "name": "Roissy-en-Brie"
+        },
+        {
+          "@type": "City",
+          "name": "Torcy"
+        },
+        {
+          "@type": "City",
+          "name": "Brie-Comte-Robert"
+        },
+        {
+          "@type": "City",
+          "name": "Presles-en-Brie"
+        },
+        {
+          "@type": "City",
+          "name": "Gretz-Armainvilliers"
+        },
+        {
+          "@type": "City",
+          "name": "Chevry-Cossigny"
+        },
+        {
+          "@type": "City",
+          "name": "Lésigny"
+        },
+        {
+          "@type": "City",
+          "name": "Fontenay-Trésigny"
+        },
+        {
+          "@type": "City",
+          "name": "Chelles"
+        },
+        {
+          "@type": "City",
+          "name": "Melun"
+        },
+        {
+          "@type": "City",
+          "name": "Coulommiers"
+        },
+        {
+          "@type": "City",
+          "name": "Serris"
+        },
+        {
+          "@type": "City",
+          "name": "Bussy-Saint-Georges"
+        }
       ],
-      "knowsAbout": ["ménage à domicile", "repassage", "nettoyage de vitres", "nettoyage de copropriété", "nettoyage de bureaux et commerces", "nettoyage état des lieux", "nettoyage fin de chantier", "ménage Airbnb"]
+      "knowsAbout": [
+        "ménage à domicile",
+        "repassage",
+        "nettoyage de vitres",
+        "nettoyage de copropriété",
+        "nettoyage de bureaux et commerces",
+        "nettoyage état des lieux",
+        "nettoyage fin de chantier",
+        "ménage Airbnb"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Prestations de nettoyage MénageUp",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ménage à domicile",
+              "description": "Ménage régulier ou ponctuel au domicile des particuliers, avec intervenante attitrée",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Repassage",
+              "description": "Entretien du linge et repassage à domicile",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de vitres",
+              "description": "Vitres, baies vitrées, vérandas et encadrements, deux faces",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de copropriété",
+              "description": "Entretien des parties communes pour syndics : halls, escaliers, ascenseurs, containers",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de bureaux et commerces",
+              "description": "Entretien de locaux professionnels en dehors des horaires d'ouverture",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage de fin de chantier",
+              "description": "Remise en état après travaux : dépoussiérage, traces de peinture et plâtre, vitres, sols",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage pour état des lieux",
+              "description": "Remise en état avant un état des lieux de sortie ou une relocation",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ménage Airbnb",
+              "description": "Remise en état entre deux locations courte durée, linge compris",
+              "provider": {
+                "@id": "https://menageup.fr/#business"
+              }
+            }
+          }
+        ]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Seine-et-Marne",
+        "addressCountry": "FR"
+      },
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Virement, CESU, carte bancaire",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "20:00"
+        }
+      ],
+      "knowsLanguage": "fr-FR"
     },
     {
       "@type": "WebSite",
@@ -44,20 +249,85 @@
       "url": "https://menageup.fr/",
       "name": "MénageUp",
       "inLanguage": "fr-FR",
-      "publisher": { "@id": "https://menageup.fr/#business" }
+      "publisher": {
+        "@id": "https://menageup.fr/#business"
+      }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Le -50 % de crédit d'impôt, c'est vraiment immédiat ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Grâce à l'avance immédiate de crédit d'impôt (service officiel de l'URSSAF), vous ne payez que la moitié de la facture chaque mois, directement. Exemple : une prestation de 300 € vous coûte 150 €. Valable pour les prestations à votre domicile." } },
-        { "@type": "Question", "name": "Combien coûte une heure de ménage ?", "acceptedAnswer": { "@type": "Answer", "text": "Nos formules régulières démarrent à 31,70 € TTC de l'heure, soit 15,85 € réels après le crédit d'impôt de 50 %. Le tarif exact dépend de la surface, de la fréquence et des prestations choisies — le devis, gratuit et répondu sous 48 h, fait toujours foi." } },
-        { "@type": "Question", "name": "Qui vient chez moi ? Comment être sûr de pouvoir lui faire confiance ?", "acceptedAnswer": { "@type": "Answer", "text": "Toujours la même intervenante, sélectionnée, vérifiée, formée et couverte par une assurance responsabilité civile professionnelle. Elle vous est présentée avant le premier passage — vous validez, ou nous vous en présentons une autre." } },
-        { "@type": "Question", "name": "Et si je ne suis pas satisfait du résultat ?", "acceptedAnswer": { "@type": "Answer", "text": "C'est notre engagement « satisfait ou on refait » : un point ne vous convient pas, signalez-le sous 48 h — nous revenons le corriger, sans frais et sans discussion." } },
-        { "@type": "Question", "name": "Dois-je être présent pendant les prestations ?", "acceptedAnswer": { "@type": "Answer", "text": "Non — la plupart de nos clients confient leurs clés. La remise de clés est formalisée, votre intervenante reste la même à chaque passage, et vous êtes informé de chaque intervention." } },
-        { "@type": "Question", "name": "Suis-je engagé sur la durée ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. Aucun engagement : vous ajustez, suspendez ou arrêtez quand vous voulez, sans frais ni justification." } },
-        { "@type": "Question", "name": "Faut-il fournir les produits et le matériel ?", "acceptedAnswer": { "@type": "Answer", "text": "Comme vous préférez : nous pouvons travailler avec vos produits ou apporter les nôtres, option définie au devis." } },
-        { "@type": "Question", "name": "Dans quelles villes intervenez-vous ?", "acceptedAnswer": { "@type": "Answer", "text": "En Seine-et-Marne (77) et en Île-de-France : Pontault-Combault, Ozoir-la-Ferrière, Roissy-en-Brie, Torcy, Chelles, Melun, Créteil, Saint-Maur, Champigny… Autre ville ? Demandez-nous." } },
-        { "@type": "Question", "name": "Sous quel délai peut-on commencer ?", "acceptedAnswer": { "@type": "Answer", "text": "Devis sous 48 h après votre demande, démarrage possible dans la semaine. Intervention express possible pour un état des lieux urgent." } }
+        {
+          "@type": "Question",
+          "name": "Le -50 % de crédit d'impôt, c'est vraiment immédiat ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Grâce à l'avance immédiate de crédit d'impôt (service officiel de l'URSSAF), vous ne payez que la moitié de la facture chaque mois, directement. Exemple : une prestation de 300 € vous coûte 150 €. Valable pour les prestations à votre domicile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien coûte une heure de ménage ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nos formules régulières démarrent à 31,70 € TTC de l'heure, soit 15,85 € réels après le crédit d'impôt de 50 %. Le tarif exact dépend de la surface, de la fréquence et des prestations choisies — le devis, gratuit et répondu sous 48 h, fait toujours foi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qui vient chez moi ? Comment être sûr de pouvoir lui faire confiance ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toujours la même intervenante, sélectionnée, vérifiée, formée et couverte par une assurance responsabilité civile professionnelle. Elle vous est présentée avant le premier passage — vous validez, ou nous vous en présentons une autre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Et si je ne suis pas satisfait du résultat ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est notre engagement « satisfait ou on refait » : un point ne vous convient pas, signalez-le sous 48 h — nous revenons le corriger, sans frais et sans discussion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dois-je être présent pendant les prestations ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non — la plupart de nos clients confient leurs clés. La remise de clés est formalisée, votre intervenante reste la même à chaque passage, et vous êtes informé de chaque intervention."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suis-je engagé sur la durée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Aucun engagement : vous ajustez, suspendez ou arrêtez quand vous voulez, sans frais ni justification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il fournir les produits et le matériel ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comme vous préférez : nous pouvons travailler avec vos produits ou apporter les nôtres, option définie au devis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles villes intervenez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Seine-et-Marne (77) et en Île-de-France : Pontault-Combault, Ozoir-la-Ferrière, Roissy-en-Brie, Torcy, Chelles, Melun, Créteil, Saint-Maur, Champigny… Autre ville ? Demandez-nous."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sous quel délai peut-on commencer ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Devis sous 48 h après votre demande, démarrage possible dans la semaine. Intervention express possible pour un état des lieux urgent."
+          }
+        }
       ]
     }
   ]
