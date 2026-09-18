@@ -568,15 +568,28 @@ section.band{padding:106px 0}
 .gcard .cap p{font-size:.9rem;opacity:.9;margin-top:5px}
 
 /* money band */
-.money{background:#15171C;color:#fff}
+.money{position:relative;overflow:hidden;color:#fff;background:linear-gradient(168deg,#0F2A5E 0%,#14336E 40%,#0A1832 100%)}
+.money::before{content:"";position:absolute;left:50%;top:-40px;transform:translateX(-50%);width:min(760px,130%);height:400px;pointer-events:none;background:radial-gradient(58% 62% at 50% 0%,rgba(79,170,240,.34) 0%,rgba(79,170,240,0) 72%)}
+.money .wrap{position:relative;z-index:1}
 :root[data-theme="dark"] .money{background:#191C22}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .money{background:#191C22}}
 .money .wrap{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding:52px 0}
-.money .big{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(3.6rem,9vw,6rem);line-height:.9;color:#FFFFFF}
+.money .big{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(4rem,10vw,6.4rem);line-height:.88;letter-spacing:-.022em;color:#CDE7FF;text-shadow:0 8px 34px rgba(79,170,240,.42)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .money .big{background:linear-gradient(135deg,#FFFFFF 0%,#BFE0FF 38%,#4FAAF0 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 8px 30px rgba(79,170,240,.45))}
+}
 .money h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:700}
 .money p{margin-top:12px;opacity:.94;max-width:54ch}
-.money .ex{display:inline-flex;align-items:center;gap:12px;margin-top:18px;background:rgba(255,255,255,.14);border-radius:14px;padding:12px 18px;font-weight:600}
-.money .ex s{opacity:.7}.money .ex b{color:#FFFFFF;font-size:1.15rem}
+.money .ex{display:inline-flex;align-items:center;justify-content:center;gap:12px;margin-top:20px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);border-radius:14px;padding:13px 20px;font-weight:600;box-shadow:0 10px 30px -18px rgba(0,0,0,.8)}
+.money .ex-lbl{white-space:nowrap;opacity:.9}
+.money .ex-calc{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+@media(max-width:600px){
+  .money{padding:48px 0}
+  .money .ex{flex-direction:column;gap:7px;padding:15px 18px;width:min(100%,320px)}
+  .money .ex-calc{font-size:.98rem}
+  .money .note{max-width:34ch;margin-inline:auto}
+}
+.money .ex s{opacity:.7}.money .ex b{color:#A8D8FF;font-size:1.15rem}
 .money .note{display:block;margin-top:12px;font-size:.82rem;opacity:.82}
 @media (max-width:720px){.money .wrap{grid-template-columns:1fr;gap:16px;text-align:center}.money .ex{margin-inline:auto}}
 
@@ -747,6 +760,8 @@ footer .social a svg.mono{color:var(--ink)}
 .gar-item svg{width:21px;height:21px;color:var(--blue);flex:0 0 21px}
 @media(max-width:600px){.gar-track{padding:16px 0;animation-duration:30s}.gar-item{font-size:.9rem;gap:9px;padding-right:22px}.gar-item::before{margin-right:22px}.gar-item svg{width:19px;height:19px;flex:0 0 19px}}
 @media(prefers-reduced-motion:reduce){.gar-track{animation:none;width:auto;flex-wrap:wrap;justify-content:center}.gar-track>span[aria-hidden]{display:none}}
+
+@media(max-width:600px){.pills{justify-content:center}.pills-title{text-align:center}.pill{font-size:.88rem;padding:8px 14px}}
 </style>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MénageUp">
@@ -974,8 +989,8 @@ footer .social a svg.mono{color:var(--ink)}
       </div>
 
       <div style="margin-top:76px">
-        <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:14px">MénageUp intervient pour&nbsp;:</h3>
-        <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <h3 class="pills-title" style="font-size:1.05rem;font-weight:700;margin-bottom:14px">MénageUp intervient pour&nbsp;:</h3>
+        <div class="pills" style="display:flex;flex-wrap:wrap;gap:10px">
           <span class="pill">Ménage pour particuliers</span><span class="pill">Repassage</span><span class="pill">Entretien du linge</span><span class="pill">Vitres</span><span class="pill">Copropriétés</span><span class="pill">Commerces &amp; bureaux</span><span class="pill">Nettoyage pour état des lieux</span><span class="pill">Airbnb &amp; location courte durée</span><span class="pill">Événementiel (mariage, baptême, soirée…)</span><span class="pill">Fin de chantier</span><span class="pill">Avant / après déménagement</span>
         </div>
       </div>
@@ -989,7 +1004,7 @@ footer .social a svg.mono{color:var(--ink)}
       <div>
         <h2>Le ménage à domicile vous coûte moitié prix.</h2>
         <p>Avec l'avance immédiate de crédit d'impôt (service URSSAF), vous ne payez que la moitié de votre facture, tout de suite — sans attendre votre déclaration.</p>
-        <div class="ex"><span>Prestation à</span> <s>300&nbsp;€/mois</s> → <b>150&nbsp;€ pour vous</b></div>
+        <div class="ex"><span class="ex-lbl">Prestation à</span><span class="ex-calc"><s>300&nbsp;€/mois</s> → <b>150&nbsp;€ pour vous</b></span></div>
         <span class="note">Réservé aux prestations réalisées au domicile des particuliers. Les prestations pros sont facturées hors dispositif.</span>
       </div>
     </div>
