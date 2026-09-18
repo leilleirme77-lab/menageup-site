@@ -17,7 +17,7 @@
 
 ## Zone d'intervention
 
-Seine-et-Marne (77) : Pontault-Combault, Ozoir-la-Ferrière, Roissy-en-Brie, Torcy, Chelles, Melun.
+Seine-et-Marne (77) : Pontault-Combault, Ozoir-la-Ferrière, Roissy-en-Brie, Tournan-en-Brie, Torcy, Chelles, Melun, Bussy-Saint-Georges, Champs-sur-Marne, Noisiel, Montévrain, Brie-Comte-Robert, Coulommiers.
 Île-de-France : Paris, Créteil, Saint-Maur-des-Fossés, Champigny-sur-Marne, Vincennes.
 
 ## Points clés
@@ -42,6 +42,12 @@ Seine-et-Marne (77) : Pontault-Combault, Ozoir-la-Ferrière, Roissy-en-Brie, Tor
 - [Nettoyage à Roissy-en-Brie (77680)](https://menageup.fr/nettoyage-roissy-en-brie/)
 - [Nettoyage à Tournan-en-Brie (77220)](https://menageup.fr/nettoyage-tournan-en-brie/)
 - [Nettoyage à Torcy (77200)](https://menageup.fr/nettoyage-torcy/)
+- [Nettoyage à Chelles (77500)](https://menageup.fr/nettoyage-chelles/) : la commune la plus peuplée du département, 54 620 habitants : habitat collectif dense, centre-ville commerçant, zones d'activité
+- [Nettoyage à Melun (77000)](https://menageup.fr/nettoyage-melun/) : préfecture de Seine-et-Marne : bâti ancien de centre-ville, administrations, professions libérales et commerces
+- [Nettoyage à Bussy-Saint-Georges (77600)](https://menageup.fr/nettoyage-bussy-saint-georges/) : parc immobilier récent : copropriétés avec halls vitrés et parkings souterrains, rotation locative liée au RER A
+- [Nettoyage à Champs-sur-Marne (77420)](https://menageup.fr/nettoyage-champs-sur-marne/) : pôle d'enseignement et de recherche : bureaux, locaux techniques et remises en état concentrées en été
+- [Nettoyage à Noisiel (77186)](https://menageup.fr/nettoyage-noisiel/) : grands ensembles du Val Maubuée : coursives, caves, locaux à containers, et bureaux en patrimoine industriel réhabilité
+- [Nettoyage à Montévrain (77144)](https://menageup.fr/nettoyage-montevrain/) : commune en construction aux portes du Val d'Europe : livraison de programmes neufs et résidences récentes
 - [Qui sommes-nous](https://menageup.fr/qui-sommes-nous/) : entreprise indépendante du 77, sélection des intervenantes, engagements, zone
 - [Recrutement](https://menageup.fr/recrutement/) : MénageUp recrute des intervenant(e)s de ménage en Seine-et-Marne — candidature en ligne
 
