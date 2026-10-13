@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from html import escape
 import json
+import os
 import re
 import xml.etree.ElementTree as ET
 from datetime import date
@@ -12,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = 'https://menageup.fr'
 HUB_PATH = '/realisations/'
 DATA = ROOT / 'content/realisations.json'
+CONTENT_DATE = date.fromisoformat(os.environ.get('MENAGEUP_CONTENT_DATE', date.today().isoformat())).isoformat()
 PROJECT_DETAILS_CSS = '''
 .project-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;border-top:1px solid var(--line);padding-top:20px;margin:24px 0 0}
 .project-stats>div{display:flex;flex-direction:column;gap:7px}
@@ -74,7 +76,7 @@ def quote_link(path, service='', audience='', city=''):
 
 
 def header(quote):
-    links = '<a href="/#services">Nos prestations</a><a href="/realisations/" aria-current="location">Réalisations</a><a href="/qui-sommes-nous/">Qui sommes-nous</a>'
+    links = '<a href="/#services">Nos prestations</a><a href="/realisations/" aria-current="location">Réalisations</a><a href="/conseils/">Conseils</a><a href="/qui-sommes-nous/">Qui sommes-nous</a>'
     return f'''<a class="skip" href="#contenu">Aller au contenu</a>
 <header class="topbar"><div class="wrap topbar-inner">
 <a class="brand" href="/" aria-label="MénageUp — accueil"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160"></a>
@@ -85,7 +87,7 @@ def header(quote):
 
 
 def footer():
-    return '''<footer class="footer"><div class="wrap footer-grid"><div><a class="brand" href="/" aria-label="MénageUp — accueil"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160" loading="lazy"></a><p>Vos espaces, notre exigence.<br>Seine-et-Marne (77) et Île-de-France.</p></div><nav class="footer-links" aria-label="Liens utiles"><a href="/realisations/">Réalisations</a><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="/mentions-legales/">Mentions légales</a><a href="tel:+33648304965">06 48 30 49 65</a></nav></div></footer>'''
+    return '''<footer class="footer"><div class="wrap footer-grid"><div><a class="brand" href="/" aria-label="MénageUp — accueil"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160" loading="lazy"></a><p>Vos espaces, notre exigence.<br>Seine-et-Marne (77) et Île-de-France.</p></div><nav class="footer-links" aria-label="Liens utiles"><a href="/realisations/">Réalisations</a><a href="/conseils/">Conseils</a><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="/mentions-legales/">Mentions légales</a><a href="tel:+33648304965">06 48 30 49 65</a></nav></div></footer>'''
 
 
 def document(title, description, path, og_image, primary_image, crumbs, body, quote):
@@ -119,6 +121,7 @@ def document(title, description, path, og_image, primary_image, crumbs, body, qu
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(description)}"><meta name="twitter:image" content="{DOMAIN}/{esc(og_image)}">
 <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="512x512" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts.css"><link rel="stylesheet" href="/assets/realisations.css">
+<script defer src="/assets/navigation-menu.js"></script>
 {details_style}
 <script type="application/ld+json">{ldjson}</script>
 </head>
@@ -181,6 +184,12 @@ def case_page(case):
         photos = ''.join(photo(item, section['layout']) for item in section['photos'])
         sections.append(f'''<section class="section" id="{esc(section['id'])}"><div class="wrap"><div class="section-head"><div><p class="eyebrow">{esc(section['eyebrow'])}</p><h2>{esc(section['title'])}</h2></div><p>{esc(section['intro'])}</p></div><div class="photo-grid {esc(section['layout'])}">{photos}</div></div></section>''')
     related = ''.join(f'<a href="{esc(item["href"])}">{esc(item["label"])} ↗</a>' for item in case['related'])
+    guide = {
+        'grandnettoyage': ('nettoyer-logement-inhabite-depuis-longtemps', 'Guide : préparer un logement longtemps inhabité'),
+        'debarras': ('debarras-puis-nettoyage-logement', 'Pour un projet en intérieur : débarras puis nettoyage'),
+    }.get(case['service_code'])
+    if guide:
+        related += f'<a href="/conseils/{guide[0]}/">{esc(guide[1])} ↗</a>'
     hero_img = image_tag(case['hero'], case['hero_alt'], '(max-width:700px) calc(100vw - 36px), (max-width:1224px) calc((100vw - 120px) / 2), 552px', eager=True)
     body = breadcrumbs(crumbs) + f'''<main id="contenu"><section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">{esc(case['category'])}</p><h1>{esc(case['h1'])}</h1><p class="intro">{esc(case['intro'])}</p>{project_stats(case)}<div class="case-meta"><span>{esc(case['city'])} · {esc(case['postal_code'])}</span><span>Photos de l'intervention</span></div><div class="hero-actions"><a class="btn" href="#photos">Voir les photos ↓</a><a class="btn ghost" href="{esc(quote)}">Parlons de votre besoin ↗</a></div></div><figure class="hero-figure"><div class="hero-image">{hero_img}<span class="photo-stage">{esc(case['hero_stage'])}</span></div><figcaption><span>{esc(case['city'])} — {esc(case['hero_stage'].lower())}.</span><a href="/{esc(case['hero'])}">Voir la photo complète ↗</a></figcaption></figure></div></section>{proof_note()}{project_context(case)}<div id="photos">{''.join(sections)}</div>{project_follow_up(case)}<section class="project-cta"><div class="wrap project-cta-grid"><div><h2>{esc(case['quote_title'])}</h2><p>{esc(case['quote_text'])}</p></div><a class="btn" href="{esc(quote)}">Demander un devis gratuit ↗</a></div></section><section class="related"><div class="wrap"><h2>Pour préparer la suite.</h2><div class="related-links">{related}<a href="/realisations/">Toutes nos réalisations ↗</a></div></div></section></main>'''
     return document(case['title'], case['description'], path, case['og_image'], case['primary_image'], crumbs, body, quote)
@@ -219,12 +228,12 @@ def sitemap_tree(data, changed):
         if node is None:
             node = ET.SubElement(root, '{' + ns + '}url')
             ET.SubElement(node, '{' + ns + '}loc').text = url
-            ET.SubElement(node, '{' + ns + '}lastmod').text = date.today().isoformat()
+            ET.SubElement(node, '{' + ns + '}lastmod').text = CONTENT_DATE
         elif url in changed:
             lastmod = node.find('{' + ns + '}lastmod')
             if lastmod is None:
                 lastmod = ET.SubElement(node, '{' + ns + '}lastmod')
-            lastmod.text = date.today().isoformat()
+            lastmod.text = CONTENT_DATE
         for old in list(node.findall('{' + image_ns + '}image')):
             node.remove(old)
         for file in dict.fromkeys(images):

@@ -42,3 +42,39 @@ Vérifier déclaration SAP et activation de l'avance immédiate avant d'en prome
 le bénéfice chez MénageUp. Sans preuve, expliquer les conditions d'éligibilité.
 Les prestations de débarras, chantier et nettoyage professionnel ne reçoivent
 pas la promesse fiscale du ménage au domicile d'un particulier.
+
+CONSEILS ET MAILLAGE
+Les guides de /conseils/ expliquent comment préparer une intervention. Chaque
+guide garde un besoin distinct de la page de prestation vers laquelle il renvoie.
+Les réalisations restent des preuves séparées : ne pas fusionner les faits ou
+les photographies de deux interventions pour illustrer une prestation combinée.
+Exécuter les générateurs en série, jamais simultanément :
+  python scripts/build_services.py
+  python scripts/build_realisations.py
+  python scripts/build_guides.py
+Puis lancer l'audit du site et les contrôles visuels sur l'ensemble produit.
+Les trois générateurs partagent le sitemap : vérifier les liens et leurs cibles
+après la dernière génération, y compris accueil, guides et réalisations.
+Pour dater un lot de contenu relu, définir MENAGEUP_CONTENT_DATE au format ISO
+avant la génération, par exemple dans PowerShell :
+  $env:MENAGEUP_CONTENT_DATE = '2026-10-14'
+Les builders services et réalisations valident cette date ; à défaut, ils utilisent
+la date du système. Ils ne changent le lastmod que d'une page ajoutée ou dont le
+HTML a changé. Le dernier générateur conserve les dates des autres familles.
+L'accueil et l'ancienne page /nettoyage-fin-de-chantier-77/ sont édités à la main :
+leur lastmod doit être actualisé séparément quand leur contenu est modifié.
+Vérifier aussi les liens Conseils dans les menus desktop et mobile, les liens
+contextuels en bas des services et dossiers, et l'accès aux avis Google.
+
+GUIDES : CONTENU ET DATE
+Éditer content/guides-logement.json ou content/guides-chantier.json ; tableaux,
+sommaires, métadonnées et liens de devis sont produits par build_guides.py.
+updated_at indique la date réelle de la dernière revue au format AAAA-MM-JJ.
+published_at est facultatif : le renseigner seulement à la publication réelle,
+puis reconstruire les guides. Tant qu'il est absent, aucune datePublished n'est
+inventée. Les légendes distinguent toujours illustration et réalisation réelle.
+quote_fields permet une trame de demande différente d'une checklist de contrôle.
+Sans JavaScript, textes, sommaires, tableaux et trames restent accessibles.
+Après publication, relever indexation, requêtes/pages et demandes qualifiées
+avec leur page source. Le compteur de pages ou le score local de l'audit ne
+mesurent ni les positions Google ni les ventes ; comparer à période égale.

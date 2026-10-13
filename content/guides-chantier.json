@@ -1,0 +1,251 @@
+[
+  {
+    "slug": "nettoyage-apres-travaux-ou-evacuation-gravats",
+    "title": "Après travaux : nettoyage ou évacuation des gravats ?",
+    "description": "Distinguez nettoyage après travaux, débarras et évacuation des gravats. Préparez le périmètre, l’accès et l’ordre des interventions avant le devis.",
+    "h1": "Nettoyage après travaux ou évacuation des gravats : que prévoir ?",
+    "intro": [
+      "Après une rénovation, il peut rester des morceaux de carrelage, des emballages, des traces de colle et une poussière qui revient sur chaque surface. Ces éléments demandent des opérations différentes. Un devis de nettoyage ne décrit pas nécessairement l’enlèvement des matériaux laissés par les artisans.",
+      "Commencez par distinguer ce qui doit être conservé, ce qui doit quitter le site et ce qui doit être nettoyé. Cette séparation permet de coordonner les intervenants et de chiffrer le bon périmètre, que votre chantier soit un logement, un commerce ou des locaux professionnels en Seine-et-Marne."
+    ],
+    "image": "assets/images/debarras-chantier-menageup-tenue.webp",
+    "image_alt": "Illustration d’une intervention de débarras dans un espace en travaux",
+    "image_caption": "Visuel d’illustration de la prestation ; il ne montre pas un chantier client.",
+    "service_code": "chantier",
+    "audience": "ent",
+    "updated_at": "2026-10-14",
+    "sections": [
+      {
+        "id": "identifier-le-besoin",
+        "title": "Quel besoin correspond à ce qui reste sur place ?",
+        "paragraphs": [
+          "Le nettoyage de fin de chantier porte sur les surfaces : dépoussiérage, entretien des sols, essuyage des équipements et traitement des traces compatibles avec les matériaux. Le débarras porte sur les objets et matériaux à enlever. L’évacuation ajoute leur manutention, leur transport et leur orientation vers une destination adaptée.",
+          "Les petites salissures et les matériaux volumineux ne se mesurent donc pas de la même façon. La surface du local aide à décrire le nettoyage ; la nature, le volume, le poids et l’emplacement des éléments à sortir renseignent le débarras."
+        ],
+        "table": {
+          "headers": ["Ce que vous constatez", "Besoin à décrire", "Point à préciser"],
+          "rows": [
+            ["Poussière sur sols, plinthes et mobilier", "Nettoyage après travaux", "Matériaux, surfaces accessibles et travaux encore prévus"],
+            ["Traces de peinture, colle ou joint", "Traitement de résidus à étudier", "Nature de la trace et du support ; méthode à confirmer"],
+            ["Cartons, palettes, équipements déposés", "Débarras des éléments désignés", "Liste des éléments à enlever ou conserver"],
+            ["Briques, béton, carrelage cassé", "Évacuation de gravats à qualifier", "Nature, quantité, conditionnement et destination"],
+            ["Matériaux de nature inconnue", "Identification préalable", "Ne pas les intégrer à un enlèvement courant sans qualification"]
+          ]
+        }
+      },
+      {
+        "id": "ordonner-les-interventions",
+        "title": "Sortir les déchets avant le nettoyage de finition",
+        "paragraphs": [
+          "Transporter des sacs de matériaux après le lavage final risque de salir de nouveau les passages. Prévoyez le dégagement des volumes et les derniers travaux poussiéreux avant les finitions de propreté. L’INRS recommande de prévoir la collecte, le tri et l’évacuation des déchets dans l’organisation contractuelle du chantier.",
+          "Si les travaux restent actifs, distinguez un passage intermédiaire du nettoyage avant réception. Une reprise de ponçage ou une nouvelle dépose peut nécessiter un autre passage. Convenez d’un point avec le responsable du chantier pour savoir quelles zones sont terminées, accessibles et réellement libérées."
+        ],
+        "bullets": [
+          "Identifier les objets conservés et les matériaux destinés à l’enlèvement.",
+          "Organiser le tri, les cheminements et la sortie des volumes convenus.",
+          "Vérifier la fin des travaux salissants dans les zones à traiter.",
+          "Réaliser le nettoyage puis contrôler les surfaces et les accès concernés."
+        ]
+      },
+      {
+        "id": "surfaces-et-residus",
+        "title": "Décrire les traces et les supports avant de choisir la méthode",
+        "paragraphs": [
+          "Le mot « remise en état » ne suffit pas à préciser une intervention. Signalez les traces de peinture, le voile de joint, les résidus d’adhésif et leur emplacement. Indiquez si le support est un parquet, une pierre, un carrelage, un revêtement souple ou un vitrage avec traitement particulier.",
+          "Une trace collée ne doit pas conduire automatiquement à utiliser un abrasif, un grattoir ou un produit décapant. La compatibilité du support et les indications du fabricant doivent guider la méthode. Les vitrages, joints et finitions fragiles méritent une attention distincte. Les opérations retenues, les limites et les éventuels essais sont à confirmer lors de l’étude du devis."
+        ]
+      },
+      {
+        "id": "tri-et-destination",
+        "title": "Préciser le tri et la destination des matériaux",
+        "paragraphs": [
+          "Des cartons, du bois, des métaux, du plâtre et des déchets minéraux ne constituent pas nécessairement un même chargement. Décrivez les matières présentes et les mélanges éventuels. Le ministère de la Transition écologique distingue plusieurs flux de tri pour les professionnels, dont des flux spécifiques à la construction et à la démolition.",
+          "Le producteur ou détenteur professionnel doit organiser la gestion de ses déchets. Faites préciser qui prépare le tri, qui manutentionne, qui transporte et quelle installation accepte les matières concernées. Un enlèvement annoncé ne signifie pas que tous les déchets peuvent être déposés dans n’importe quelle déchèterie, ni que leur admission sera gratuite.",
+          "Les gravats ne relèvent pas de la collecte ordinaire des encombrants. Si un matériau est suspect, souillé ou inconnu, faites qualifier sa nature avant la demande. Son traitement et sa prise en charge ne doivent pas être présumés dans une prestation courante."
+        ]
+      },
+      {
+        "id": "preparer-le-devis",
+        "title": "Les informations qui permettent d’étudier votre demande",
+        "paragraphs": [
+          "Une description précise évite de confondre la surface du bâtiment avec la quantité de matériaux à sortir. Des photos d’ensemble et de détail aident à comprendre le besoin ; elles ne suffisent pas toujours à apprécier un poids, un accès ou un support fragile. Une visite peut compléter l’échange.",
+          "Le chiffrage dépend aussi du chemin de manutention, de l’étage, des escaliers, du stationnement et des contraintes horaires. Une distance de portage ou un accès indisponible peut modifier l’organisation. Faites confirmer ce qui est compris dans le prix : nettoyage, manutention, transport et éventuels frais de destination."
+        ],
+        "checklist": [
+          "Commune, adresse d’intervention et personne qui donne accès au site.",
+          "Surface à nettoyer, pièces concernées et état d’avancement des travaux.",
+          "Liste des éléments à enlever, estimation des quantités et photos utiles.",
+          "Étage, ascenseur utilisable, largeur des passages et possibilité de stationnement.",
+          "Disponibilité de l’eau et de l’électricité, clés et consignes du chantier.",
+          "Date souhaitée, interventions d’autres entreprises et destination à confirmer."
+        ]
+      },
+      {
+        "id": "controle-et-coordination",
+        "title": "Contrôler le résultat selon le périmètre convenu",
+        "paragraphs": [
+          "Avant l’intervention, identifiez les zones à traiter et les objets à laisser en place. Au bilan, reprenez cette même liste : volumes désignés, circulations, sols, plinthes, vitrages et traces particulières. Un espace dégagé ne signifie pas que chaque objet a été évacué ; la comparaison doit correspondre à ce qui a été demandé.",
+          "Si vous prévoyez des photos avant et après, choisissez des vues utiles et limitez les personnes, documents ou données privées visibles. Convenez du destinataire du bilan et signalez les zones inaccessibles ou les travaux restant à réaliser. Chez MénageUp, chaque demande est étudiée pour préciser les opérations qui peuvent être retenues au devis."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Le nettoyage de fin de chantier inclut-il les gravats ?",
+        "answer": "Pas automatiquement. Le nettoyage des surfaces et l’enlèvement des matériaux sont des opérations distinctes. Le devis doit préciser les éléments concernés, la manutention, le transport et la destination éventuellement compris."
+      },
+      {
+        "question": "Faut-il terminer tous les travaux avant le nettoyage ?",
+        "answer": "Pour une finition avant réception, il est préférable que les travaux salissants et l’évacuation des volumes convenus soient terminés dans les zones concernées. Un passage intermédiaire peut être étudié si le chantier continue, avec un périmètre et un planning distincts."
+      },
+      {
+        "question": "Des photos suffisent-elles pour obtenir un devis ?",
+        "answer": "Elles permettent un premier échange, avec la surface, les matériaux et les conditions d’accès. Une visite peut rester nécessaire pour apprécier les quantités, la manutention, les supports ou une situation particulière."
+      }
+    ],
+    "related": [
+      {"href": "/nettoyage-fin-de-chantier-77/", "label": "Étudier un nettoyage de fin de chantier en Seine-et-Marne"},
+      {"href": "/debarras-chantier-77/", "label": "Décrire un besoin de débarras de chantier"},
+      {"href": "/nettoyage-base-vie-chantier-77/", "label": "Organiser l’entretien des locaux de base vie"},
+      {"href": "/nettoyage-vitres-77/", "label": "Préciser le nettoyage des vitrages professionnels"},
+      {"href": "/conseils/", "label": "Retrouver les conseils de préparation d’une intervention"}
+    ],
+    "sources": [
+      {"url": "https://www.inrs.fr/metiers/btp/preparation-organisation-chantier.html", "label": "INRS — Préparation et organisation d’un chantier", "context": "Organisation des circulations et anticipation de la collecte, du tri et de l’évacuation des déchets."},
+      {"url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37825", "label": "Service Public Entreprendre — Gestion des déchets de l’entreprise", "context": "Responsabilité du producteur ou détenteur, identification, tri et suivi des déchets professionnels."},
+      {"url": "https://www.ecologie.gouv.fr/sites/default/files/documents/TRI-DECHETS-4p-A4-Imprimable.pdf", "label": "Ministère de la Transition écologique — Tri des déchets professionnels", "context": "Flux de matières à distinguer selon l’activité et la nature des déchets."},
+      {"url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31954", "label": "Service Public — Déchets encombrants", "context": "Les gravats sont distincts des déchets admis à la collecte ordinaire des encombrants."}
+    ]
+  },
+  {
+    "slug": "entretien-base-vie-chantier-cahier-des-charges",
+    "title": "Entretien d’une base vie : préparer le cahier des charges",
+    "description": "Préparez l’entretien de votre base vie de chantier : espaces, tâches, hygiène quotidienne, responsables, consommables et points de contrôle.",
+    "h1": "Entretien d’une base vie de chantier : quel cahier des charges ?",
+    "intro": [
+      "Une base vie rassemble des espaces qui n’ont pas les mêmes usages : sanitaires, vestiaires, réfectoire, bureaux et passages. Leur entretien dépend des personnes présentes, des horaires et des salissures apportées depuis le chantier. Demander seulement « le ménage des bungalows » laisse trop de points à préciser.",
+      "Un cahier des charges utile décrit les tâches, la fréquence nécessaire et la personne chargée de chaque action. Il permet aussi de distinguer les passages d’un prestataire des tâches à assurer entre ces passages. Ce guide propose une trame de préparation pour une base vie en Seine-et-Marne."
+    ],
+    "image": "assets/images/base-vie-chantier-menageup.webp",
+    "image_alt": "Illustration d’un réfectoire de base vie de chantier propre et rangé",
+    "image_caption": "Visuel d’illustration d’une base vie ; il ne montre pas un chantier client.",
+    "service_code": "basevie",
+    "audience": "ent",
+    "updated_at": "2026-10-14",
+    "quote_fields": [
+      "Commune du chantier et contact responsable de la base vie.",
+      "Liste des modules, usages et surfaces approximatives.",
+      "Effectif, rotations d’équipes et horaires des repas.",
+      "Tâches recherchées et organisation quotidienne entre les passages.",
+      "Produits, matériel et consommables fournis ou à prévoir.",
+      "Accès, clés, eau, électricité et plages d’intervention possibles.",
+      "Date de démarrage souhaitée, durée du chantier et photos disponibles."
+    ],
+    "sections": [
+      {
+        "id": "decrire-la-base-vie",
+        "title": "Décrire les modules et leur occupation réelle",
+        "paragraphs": [
+          "Dressez la liste des modules, leur usage, leur surface approximative et les équipements présents. Précisez le nombre de personnes accueillies, les horaires, les rotations d’équipes et les repas pris sur place. Deux installations de même surface peuvent demander une organisation différente si leur fréquentation n’est pas comparable.",
+          "Indiquez les circulations entre le chantier et les locaux, les apports de boue ou de poussière et les changements prévus d’effectif. L’INRS souligne que les installations doivent être adaptées aux effectifs et que leur organisation dépend aussi de la durée du chantier. Ces informations aident à préparer les passages et les contrôles."
+        ]
+      },
+      {
+        "id": "hygiene-quotidienne",
+        "title": "Prévoir l’hygiène quotidienne, y compris entre les passages",
+        "paragraphs": [
+          "Le programme doit couvrir les besoins quotidiens. Des dispositions applicables aux chantiers prévoient notamment un nettoyage au moins journalier du local-vestiaire ; leur application doit être vérifiée selon l’organisation et la durée du chantier. Les WC et urinoirs doivent faire l’objet d’un nettoyage et d’une désinfection au moins chaque jour. Le réfectoire doit rester propre ; lorsque le régime général de l’article R4228-24 s’applique, le local de restauration et ses équipements sont nettoyés après chaque repas. Une fréquence hebdomadaire unique ne décrit pas à elle seule cette organisation.",
+          "Les interventions externalisées doivent s’inscrire dans cette organisation. Si certaines tâches sont confiées au personnel du site entre les passages, nommez leur responsable et indiquez les moyens disponibles. Désigner un exécutant ou un prestataire ne remplace pas les obligations de l’employeur. Une augmentation de l’effectif, des repas supplémentaires ou des salissures inhabituelles doivent permettre de réexaminer le programme avec le responsable de la base vie."
+        ]
+      },
+      {
+        "id": "matrice-des-taches",
+        "title": "Une matrice espace, tâches, fréquence et responsable",
+        "paragraphs": [
+          "La trame suivante sert à préparer l’échange. Les tâches et moyens retenus doivent être adaptés au site ; cette matrice ne constitue pas un forfait MénageUp. Remplacez les responsables génériques par des noms ou fonctions, et précisez ce qui est inclus dans la prestation."
+        ],
+        "table": {
+          "headers": ["Espace", "Tâches à préciser", "Fréquence à organiser", "Responsable à désigner"],
+          "rows": [
+            ["Sanitaires", "WC et urinoirs, lavabos, robinetterie, poignées et sols ; produits et protocole", "Nettoyage et désinfection quotidiens des WC et urinoirs ; suivi adapté à l’usage", "Responsable du site pour l’organisation ; intervenant désigné pour les tâches"],
+            ["Vestiaires", "Sols, bancs, surfaces accessibles et déchets apparents", "Entretien quotidien à prévoir dans le programme, selon les dispositions applicables", "Équipe du site ou prestataire selon le périmètre écrit"],
+            ["Réfectoire", "Tables, chaises, points de contact, sols et équipements inclus", "Maintien propre ; nettoyage après chaque repas lorsque R4228-24 s’applique", "Obligations de l’employeur ; exécutant et tâches des usagers à préciser"],
+            ["Bureaux", "Sols, surfaces dégagées et points de contact accessibles", "À adapter à l’occupation, aux salissures et au programme d’hygiène", "Intervenant désigné ; utilisateurs pour libérer les surfaces"],
+            ["Entrées et passages", "Seuils, sols et dispositifs de retenue des salissures", "Contrôles et entretien selon les circulations et les apports de boue", "Responsable identifié dans le programme"],
+            ["Consommables et déchets courants", "Savon, papier, sacs et points de collecte définis", "Vérification selon l’effectif et les usages ; réapprovisionnement attribué", "Fournisseur des stocks et personne chargée du contrôle à préciser"]
+          ]
+        }
+      },
+      {
+        "id": "limites-et-consommables",
+        "title": "Distinguer entretien, consommables et maintenance",
+        "paragraphs": [
+          "Précisez qui fournit les produits, le matériel, le savon, le papier et les sacs. La fourniture d’un stock, son contrôle et son réapprovisionnement sont trois tâches différentes. Un passage de nettoyage n’inclut pas automatiquement l’achat des consommables ni la gestion de l’ensemble des déchets du chantier.",
+          "Décrivez également les surfaces accessibles et les équipements inclus : extérieur des appareils, intérieur d’un réfrigérateur ou zones sous les bancs, par exemple. La réparation d’une fuite, l’entretien technique d’un réseau d’eau ou la vidange d’un sanitaire autonome relèvent d’opérations distinctes à organiser. Une anomalie observée doit être transmise au bon interlocuteur."
+        ]
+      },
+      {
+        "id": "acces-et-protocole",
+        "title": "Organiser l’accès et le protocole de chaque zone",
+        "paragraphs": [
+          "Indiquez le contact sur place, la remise des clés, les plages d’accès et la disponibilité de l’eau et de l’électricité. Les pauses repas, changements d’équipe et circulations doivent être pris en compte pour éviter qu’un passage prévu se déroule dans une pièce indisponible.",
+          "Le protocole précise les zones, les méthodes, les produits et les moyens. Le nettoyage enlève les salissures ; la désinfection répond à un objectif complémentaire lorsqu’elle est requise. L’INRS recommande de choisir les produits selon les supports, les salissures et les risques, en respectant les indications du fabricant. La méthode doit limiter le transfert de salissures entre sanitaires, espaces de repas et autres locaux."
+        ]
+      },
+      {
+        "id": "controle-et-bilan",
+        "title": "Prévoir des points de contrôle faciles à utiliser",
+        "paragraphs": [
+          "Le suivi peut reprendre quelques points observables : état des WC, savon disponible, tables débarrassées, sols accessibles, poubelles concernées et anomalies signalées. Associez chaque point à une action attendue. Une mention générale « conforme » explique moins bien le résultat qu’un relevé des zones traitées et des difficultés rencontrées.",
+          "Convenez de la personne qui reçoit les observations, des modalités de retour et des ajustements à étudier. Des photos de contrôle peuvent documenter un point précis, en évitant les personnes, documents et affaires privées. Le bilan doit signaler les espaces inaccessibles et les tâches non réalisées, afin de distinguer une restriction d’accès d’un problème d’exécution."
+        ],
+        "checklist": [
+          "Chaque espace possède une liste de tâches et un responsable identifié.",
+          "Les besoins quotidiens sont couverts, y compris entre les passages externalisés.",
+          "Produits, matériel, consommables et stocks ont une attribution claire.",
+          "Horaires, clés, contacts et conditions d’accès sont précisés.",
+          "Observations, anomalies et modifications d’effectif peuvent être transmises.",
+          "Un bilan reprend les tâches convenues et les éventuelles restrictions."
+        ]
+      },
+      {
+        "id": "entretien-ou-fin-chantier",
+        "title": "Séparer entretien pendant les travaux et remise en état finale",
+        "paragraphs": [
+          "L’entretien de base vie accompagne l’utilisation des locaux pendant le chantier. La remise en état à la fermeture vise une situation différente : modules libérés, équipements retirés et conditions de restitution à préciser. Cette dernière intervention peut nécessiter un état des lieux et un devis distincts.",
+          "Pour étudier votre demande avec MénageUp, transmettez la commune, la liste des modules, l’effectif, les horaires et les tâches recherchées. Ajoutez les contraintes d’accès et des photos utiles si vous en disposez. Le périmètre des passages est à définir avec vous, en articulation avec l’organisation quotidienne du site."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Un passage par semaine suffit-il pour une base vie ?",
+        "answer": "Il ne décrit pas à lui seul l’ensemble des besoins quotidiens, notamment pour les sanitaires et vestiaires. Le programme doit attribuer les tâches à réaliser entre les passages et tenir compte de l’effectif, de l’usage et des exigences applicables."
+      },
+      {
+        "question": "Les consommables sont-ils inclus dans le nettoyage ?",
+        "answer": "La fourniture, le contrôle des stocks et le réapprovisionnement doivent être précisés au devis. Ils ne sont pas automatiquement compris dans un passage d’entretien."
+      },
+      {
+        "question": "Le nettoyage de base vie comprend-il la remise en état finale ?",
+        "answer": "L’entretien pendant l’occupation et la remise en état avant restitution répondent à des besoins distincts. Décrivez les deux étapes afin de définir les tâches, les accès et le périmètre de chacune."
+      }
+    ],
+    "related": [
+      {"href": "/nettoyage-base-vie-chantier-77/", "label": "Préparer une demande d’entretien de base vie en Seine-et-Marne"},
+      {"href": "/nettoyage-fin-de-chantier-77/", "label": "Préciser une remise en état en fin de chantier"},
+      {"href": "/debarras-chantier-77/", "label": "Organiser l’enlèvement des matériaux de chantier"},
+      {"href": "/conseils/", "label": "Consulter les guides de préparation des prestations"}
+    ],
+    "sources": [
+      {"url": "https://www.inrs.fr/metiers/btp/preparation-organisation-chantier.html", "label": "INRS — Organisation et installations de chantier", "context": "Adaptation des installations aux effectifs et à la durée du chantier ; organisation des accès et circulations."},
+      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-137", "label": "Code du travail — Article R4534-137", "context": "Conditions de dérogation pour les installations des chantiers dont la durée n’excède pas quatre mois ; portée des dispositions à vérifier selon le chantier."},
+      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-139", "label": "Code du travail — Article R4534-139", "context": "Entretien au moins quotidien du local-vestiaire pour les chantiers relevant de ces dispositions ; maintien en état de propreté."},
+      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-144", "label": "Code du travail — Article R4534-144", "context": "Renvoi, pour les cabinets d’aisance de chantier, aux dispositions R4228-11 à R4228-15."},
+      {"url": "https://code.travail.gouv.fr/code-du-travail/r4228-13", "label": "Code du travail — Article R4228-13", "context": "Nettoyage et désinfection au moins quotidiens des cabinets d’aisance et urinoirs, organisés par l’employeur."},
+      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-142", "label": "Code du travail — Article R4534-142", "context": "Maintien du local réfectoire en état de propreté, sans fréquence chiffrée dans cet article."},
+      {"url": "https://code.travail.gouv.fr/code-du-travail/r4228-24", "label": "Code du travail — Article R4228-24", "context": "Dans le régime général applicable, l’employeur veille au nettoyage du local de restauration et de ses équipements après chaque repas."},
+      {"url": "https://www.inrs.fr/actualites/faq-nettoyage-entreprise", "label": "INRS — Nettoyage et désinfection en entreprise", "context": "Distinction des opérations et préparation d’un protocole selon les zones, supports, risques et produits."}
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 """Build reviewed service content as static, crawlable pages. Does not deploy."""
-import html, json, re
+import html, json, os, re
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlencode
@@ -7,7 +7,7 @@ from xml.etree import ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
 DOMAIN='https://menageup.fr'
-DATE=date.today().isoformat()
+DATE=date.fromisoformat(os.environ.get('MENAGEUP_CONTENT_DATE', date.today().isoformat())).isoformat()
 def esc(value): return html.escape(str(value),quote=True)
 def render(service):
     s=service;slug=s['slug'];canonical=DOMAIN+'/'+slug+'/'
@@ -38,7 +38,15 @@ def render(service):
     elif s['service_code'] in ['debarras','debarraschantier']:
         proof={'href':'/realisations/debarras-exterieur-pontault-combault-77340/','label':'Débarras extérieur à Pontault-Combault : voir la réalisation'}
     if proof:related+=f'<a href="{proof["href"]}">{esc(proof["label"])}</a>'
-    mobile_nav='''<details class="service-mobile-menu"><summary>Menu <span aria-hidden="true">☰</span></summary><nav aria-label="Navigation mobile"><a href="/#services">Nos prestations</a><a href="/realisations/">Nos réalisations</a><a href="#secteur">Votre secteur</a><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="tel:+33648304965">06 48 30 49 65</a></nav></details>'''
+    guides={
+        'grandnettoyage':('nettoyer-logement-inhabite-depuis-longtemps','Préparer le nettoyage d’un logement longtemps inhabité'),
+        'debarras':('debarras-puis-nettoyage-logement','Débarras puis nettoyage : organiser les deux étapes'),
+        'debarraschantier':('nettoyage-apres-travaux-ou-evacuation-gravats','Après travaux : distinguer nettoyage et évacuation des gravats'),
+        'basevie':('entretien-base-vie-chantier-cahier-des-charges','Entretien de base vie : préparer le cahier des charges'),
+    }
+    guide=guides.get(s['service_code'])
+    if guide:related+=f'<a href="/conseils/{guide[0]}/">{esc(guide[1])}</a>'
+    mobile_nav='''<details class="service-mobile-menu"><summary>Menu <span aria-hidden="true">☰</span></summary><nav aria-label="Navigation mobile"><a href="/#services">Nos prestations</a><a href="/realisations/">Nos réalisations</a><a href="/conseils/">Conseils</a><a href="#secteur">Votre secteur</a><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="tel:+33648304965">06 48 30 49 65</a></nav></details>'''
     fields='<div class="field full"><label for="ville">Commune de l’intervention</label><input id="ville" name="ville" type="text" autocomplete="address-level2" placeholder="Ex. Torcy, Melun, Meaux…" maxlength="100" required></div>'
     for field in s['fields']:
         name=esc(field['name']);labeltext=esc(field['label'])
@@ -60,7 +68,7 @@ def render(service):
 <link rel="stylesheet" href="/assets/services.css"><script defer src="/assets/devis-context.js"></script>
 <script type="application/ld+json">{json.dumps(schema,ensure_ascii=False).replace('</','<\\/')}</script></head>
 <body><a class="skip" href="#contenu">Aller au contenu</a>
-<header class="topbar"><div class="wrap topbar-inner"><a class="brand" href="/" aria-label="MénageUp accueil"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160"></a><nav class="desktop-nav" aria-label="Navigation principale"><a href="/#services">Nos prestations</a><a href="/realisations/">Réalisations</a><a href="#secteur">Votre secteur</a></nav><div class="nav-actions"><a class="phone" href="tel:+33648304965">06 48 30 49 65</a><a class="btn small" href="#preparer-devis">Demander un devis <span aria-hidden="true">↗</span></a>{mobile_nav}</div></div></header>
+<header class="topbar"><div class="wrap topbar-inner"><a class="brand" href="/" aria-label="MénageUp accueil"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160"></a><nav class="desktop-nav" aria-label="Navigation principale"><a href="/#services">Nos prestations</a><a href="/realisations/">Réalisations</a><a href="/conseils/">Conseils</a><a href="#secteur">Votre secteur</a></nav><div class="nav-actions"><a class="phone" href="tel:+33648304965">06 48 30 49 65</a><a class="btn small" href="#preparer-devis">Demander un devis <span aria-hidden="true">↗</span></a>{mobile_nav}</div></div></header>
 <main id="contenu"><div class="wrap"><nav class="breadcrumb" aria-label="Fil d’Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><span>{esc(label)}</span></nav>
 <section class="hero"><div class="hero-grid"><div class="hero-copy"><div class="eyebrow">{esc(s['eyebrow'])}</div><h1>{esc(s['h1'])}</h1><p class="intro">{esc(s['intro'])}</p><div class="hero-actions"><a class="btn" href="#preparer-devis">Parlons de votre besoin <span aria-hidden="true">↗</span></a><a class="btn secondary" href="tel:+33648304965">Nous appeler</a></div><p class="small-note">Une demande précise. Un devis adapté à vos espaces.</p></div>
 <figure class="hero-photo"><img src="{image}" srcset="{stem}-640.webp 640w, {stem}-960.webp 960w, {image} 1536w" sizes="(max-width:700px) calc(100vw - 36px), (max-width:1224px) 48vw, 550px" width="1536" height="1024" fetchpriority="high" alt="{esc(s['image_alt'])}"><div class="photo-label"><strong>{esc(short)}</strong><span>SEINE-ET-MARNE · 77</span></div><figcaption>{esc(s['image_caption'])}</figcaption></figure></div></section>
@@ -71,7 +79,7 @@ def render(service):
 <section class="section quote-section" id="preparer-devis"><div class="wrap quote-grid"><div class="quote-copy"><div class="eyebrow">Votre demande</div><h2>Commençons par vos espaces.</h2><p>{esc(s['quote_intro'])}</p><div class="quote-contact">Vous préférez en parler directement ?<a href="tel:+33648304965">06 48 30 49 65</a></div></div><div class="quote-card"><h3>Préparer mon devis</h3><p class="form-intro">Précisez votre besoin, puis laissez vos coordonnées à l’étape suivante.</p><form data-quote-builder data-service="{s['service_code']}" data-audience="{audience}" action="/" method="get"><input type="hidden" name="service" value="{s['service_code']}"><input type="hidden" name="audience" value="{audience}"><input type="hidden" name="source" value="/{slug}/"><div class="field-grid">{fields}</div><button class="btn" type="submit">Continuer ma demande <span aria-hidden="true">→</span></button><p class="small-note">Les quantités approximatives suffisent pour commencer.</p></form><noscript><p><a href="{esc(direct)}">Accéder directement au formulaire de devis</a></p></noscript></div></div></section>
 <section class="section" id="secteur"><div class="wrap area-grid"><div><div class="eyebrow">À vos côtés dans le 77</div><h2>Une intervention qui se prépare localement.</h2><p>{esc(s['area_intro'])}</p><div class="town-links">{towns}</div></div><div><div class="eyebrow" style="margin-bottom:25px">Vos questions</div><div class="faq-list">{faq}</div></div></div></section>
 <section class="related"><div class="wrap"><h2>Un autre besoin à prévoir ?</h2><div class="related-links">{related}</div></div></section></main>
-<footer class="footer"><div class="wrap footer-grid"><div><a class="brand" href="/"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160" loading="lazy"></a><p>Vos espaces, notre exigence.<br>Nettoyage pour particuliers et professionnels en Seine-et-Marne.</p></div><nav class="footer-links" aria-label="Informations"><a href="/realisations/">Nos réalisations</a><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="/recrutement/">Rejoindre MénageUp</a><a href="/mentions-legales/">Mentions légales</a><a href="mailto:menageup@outlook.fr">Nous écrire</a></nav></div></footer>
+<footer class="footer"><div class="wrap footer-grid"><div><a class="brand" href="/"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160" loading="lazy"></a><p>Vos espaces, notre exigence.<br>Nettoyage pour particuliers et professionnels en Seine-et-Marne.</p></div><nav class="footer-links" aria-label="Informations"><a href="/realisations/">Nos réalisations</a><a href="/conseils/">Conseils</a><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="/recrutement/">Rejoindre MénageUp</a><a href="/mentions-legales/">Mentions légales</a><a href="mailto:menageup@outlook.fr">Nous écrire</a></nav></div></footer>
 <div class="mobile-cta"><a class="btn secondary" href="tel:+33648304965">Appeler</a><a class="btn" href="#preparer-devis">Préparer mon devis ↗</a></div>
 </body></html>'''
 

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://menageup.fr/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://menageup.fr/nettoyage-fin-de-chantier-77/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -263,49 +263,49 @@
   </url>
   <url>
     <loc>https://menageup.fr/nettoyage-base-vie-chantier-77/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/images/base-vie-chantier-menageup.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://menageup.fr/nettoyage-vitres-77/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/images/vitres-professionnelles-menageup-tenue.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://menageup.fr/nettoyage-commerces-77/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/images/commerce-boutique-menageup-tenue.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://menageup.fr/debarras-chantier-77/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/images/debarras-chantier-menageup-tenue.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://menageup.fr/debarras-maison-appartement-77/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/images/debarras-logement-menageup-tenue.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://menageup.fr/nettoyage-logement-inoccupe-77/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/images/grand-nettoyage-menageup-tenue.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://menageup.fr/realisations/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/realisations/chatres-77610/sejour-apres.webp</image:loc>
     </image:image>
@@ -315,7 +315,7 @@
   </url>
   <url>
     <loc>https://menageup.fr/realisations/grand-nettoyage-chatres-77610/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/realisations/chatres-77610/sejour-avant.webp</image:loc>
     </image:image>
@@ -337,7 +337,7 @@
   </url>
   <url>
     <loc>https://menageup.fr/realisations/debarras-exterieur-pontault-combault-77340/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/realisations/debarras-exterieur/avant.webp</image:loc>
     </image:image>
@@ -346,6 +346,50 @@
     </image:image>
     <image:image>
       <image:loc>https://menageup.fr/assets/realisations/debarras-exterieur/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/conseils/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/realisations/chatres-77610/sejour-apres.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/realisations/debarras-exterieur/apres.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/images/debarras-chantier-menageup-tenue.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/images/base-vie-chantier-menageup.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/conseils/nettoyer-logement-inhabite-depuis-longtemps/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/realisations/chatres-77610/sejour-apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/conseils/debarras-puis-nettoyage-logement/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/realisations/debarras-exterieur/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/conseils/nettoyage-apres-travaux-ou-evacuation-gravats/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/images/debarras-chantier-menageup-tenue.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/conseils/entretien-base-vie-chantier-cahier-des-charges/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/images/base-vie-chantier-menageup.webp</image:loc>
     </image:image>
   </url>
 </urlset>
