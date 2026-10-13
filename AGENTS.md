@@ -5,8 +5,10 @@ Appliquer les règles globales de C:/Users/ez/AGENTS.md.
 ## Images et marque
 
 - Utiliser le logo réel fourni dans logo-v3.png, en conservant sa forme et ses couleurs.
-- Sur les tenues et le matériel, floquer uniquement le logo : aucun rectangle blanc,
-  plaque, encadré ou fond ajouté derrière. Préférence explicite d’Enzo du 13 octobre 2026.
+- Limiter le marquage dans les illustrations aux tenues des intervenants, discrètement.
+  Aucun logo ajouté sur les seaux, aspirateurs, chariots, véhicules ou dans le décor.
+  Flocage directement sur le tissu : aucun rectangle blanc, plaque, encadré, badge
+  ou fond ajouté derrière. Correction explicite d’Enzo du 13 octobre 2026.
 - Les images générées représentent des illustrations de prestations ; ne pas les
   présenter comme des photographies de missions clientes réalisées.
 - Conserver la charte claire, les polices et une taille de texte lisible sur mobile.
