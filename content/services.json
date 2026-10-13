@@ -1,0 +1,525 @@
+[
+  {
+    "slug": "nettoyage-base-vie-chantier-77",
+    "service_code": "basevie",
+    "title": "Nettoyage de base vie chantier 77 | MénageUp",
+    "description": "Un besoin d’entretien de base vie en Seine-et-Marne ? Décrivez vos bungalows, sanitaires, réfectoires et fréquences pour une étude adaptée à votre chantier.",
+    "eyebrow": "Professionnels · Bases vie de chantier",
+    "h1": "Nettoyage de base vie de chantier en Seine-et-Marne",
+    "intro": "Sanitaires, réfectoires, vestiaires et bureaux de chantier : l’entretien d’une base vie se prépare selon ses occupants et son fonctionnement. MénageUp étudie votre besoin dans le 77 pour définir les espaces à nettoyer, la fréquence et les conditions d’intervention.",
+    "image": "assets/images/base-vie-chantier-menageup.webp",
+    "image_alt": "Illustration d’un réfectoire de base vie de chantier propre et rangé",
+    "image_caption": "Visuel d’illustration de la prestation.",
+    "benefits": [
+      {
+        "title": "Un périmètre défini",
+        "text": "Listez les modules et les équipements concernés. Le devis distingue l’entretien des locaux, les consommables éventuels et les besoins ponctuels."
+      },
+      {
+        "title": "Un rythme adapté au chantier",
+        "text": "Le nombre d’occupants, les horaires et les phases du chantier permettent d’étudier une fréquence cohérente avec l’usage réel de la base vie."
+      },
+      {
+        "title": "Des accès préparés",
+        "text": "Un créneau, un contact sur place et les consignes d’accès sont à convenir avant toute intervention dans l’enceinte du chantier."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Sanitaires et douches",
+        "text": "Nettoyage des équipements sanitaires, lavabos, robinetteries et sols accessibles, selon l’état constaté et le périmètre retenu. Les besoins en savon et papier sont à préciser."
+      },
+      {
+        "title": "Réfectoires et salles de pause",
+        "text": "Entretien des tables, surfaces accessibles, sols et points de contact. Le nettoyage intérieur des appareils ou des équipements de cuisine doit être indiqué séparément."
+      },
+      {
+        "title": "Vestiaires et circulations",
+        "text": "Nettoyage des sols, bancs et surfaces communes accessibles. Les effets personnels et l’intérieur des casiers ne sont pas déplacés ou traités sans accord préalable."
+      },
+      {
+        "title": "Bureaux et bungalows",
+        "text": "Dépoussiérage des surfaces dégagées, entretien des sols et vidage des corbeilles vers les points de collecte définis. Les documents et équipements de travail restent en place."
+      },
+      {
+        "title": "Vitrages accessibles",
+        "text": "Les fenêtres et portes vitrées des modules peuvent être intégrées à la demande. Le nombre de faces, l’accessibilité et les traces de travaux sont à signaler."
+      },
+      {
+        "title": "Remise en propreté ponctuelle",
+        "text": "Une installation, un changement d’occupation ou la restitution des modules peut nécessiter un passage spécifique. Ce besoin se chiffre séparément de l’entretien régulier."
+      }
+    ],
+    "boundaries": [
+      "L’évacuation des gravats, le traitement des déchets de chantier et le nettoyage des zones de production ne font pas partie de l’entretien courant de la base vie.",
+      "Précisez les accès à l’eau et à l’électricité, les contraintes de circulation et les consignes du chantier : la faisabilité doit être confirmée avant le devis définitif.",
+      "Les consommables, le matériel nécessaire et les interventions en horaires particuliers sont à convenir explicitement."
+    ],
+    "process": [
+      {
+        "title": "Décrivez la base vie",
+        "text": "Indiquez la commune, le nombre de modules, les espaces à entretenir, l’effectif habituel et la durée prévisionnelle du chantier."
+      },
+      {
+        "title": "Définissez le besoin",
+        "text": "Nous examinons avec vous les accès, la fréquence souhaitée et le niveau de remise en propreté. Des précisions ou une visite peuvent être nécessaires."
+      },
+      {
+        "title": "Validez les modalités",
+        "text": "L’intervention se prépare après accord sur le devis : tâches, planning, interlocuteur sur place et modalités de suivi sont définis ensemble."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quelle différence entre base vie et fin de chantier ?",
+        "answer": "La base vie regroupe les locaux utilisés par les équipes pendant les travaux : réfectoire, sanitaires, vestiaires et bureaux. Son entretien peut être récurrent. Le nettoyage de fin de chantier prépare les espaces rénovés ou construits à leur livraison : il relève d’une autre prestation."
+      },
+      {
+        "question": "Peut-on demander plusieurs passages par semaine ?",
+        "answer": "Oui, vous pouvez indiquer la fréquence souhaitée dans votre demande. La possibilité de l’assurer dépend du site, des créneaux et des moyens disponibles. Le planning doit être confirmé avant le début de la prestation."
+      },
+      {
+        "question": "Comment est établi le prix ?",
+        "answer": "Le devis tient compte du nombre et de la surface des modules, des sanitaires, de leur utilisation, de l’état initial, de la fréquence et des accès. Précisez également les consommables attendus pour comparer des prestations de même périmètre."
+      },
+      {
+        "question": "La fourniture de papier et de savon est-elle comprise ?",
+        "answer": "Elle n’est pas incluse automatiquement. Indiquez si vous fournissez les consommables ou si vous souhaitez en étudier la fourniture et le réassort. Le devis doit préciser ce point et les quantités concernées."
+      },
+      {
+        "question": "Quelles informations transmettre pour commencer ?",
+        "answer": "La commune du chantier, les espaces concernés, le nombre approximatif d’occupants, la fréquence et la période souhaitées suffisent pour une première étude. Les codes d’accès et les documents confidentiels du chantier ne sont pas nécessaires dans le formulaire."
+      }
+    ],
+    "quote_intro": "Décrivez votre installation et le rythme souhaité. Ces éléments permettent d’étudier votre demande avant de préciser le périmètre et le devis.",
+    "fields": [
+      {
+        "name": "modules",
+        "label": "Nombre approximatif de modules",
+        "type": "number"
+      },
+      {
+        "name": "occupants",
+        "label": "Nombre approximatif d’occupants",
+        "type": "number"
+      },
+      {
+        "name": "frequence",
+        "label": "Fréquence souhaitée",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À définir ensemble"
+          },
+          {
+            "value": "ponctuel",
+            "label": "Passage ponctuel"
+          },
+          {
+            "value": "hebdomadaire",
+            "label": "Une fois par semaine"
+          },
+          {
+            "value": "plusieurs-fois-semaine",
+            "label": "Plusieurs fois par semaine"
+          },
+          {
+            "value": "quotidien",
+            "label": "Chaque jour — à étudier"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/nettoyage-fin-de-chantier-77/",
+        "label": "Nettoyage de fin de chantier"
+      },
+      {
+        "href": "/nettoyage-bureaux-commerces-77/",
+        "label": "Entretien de bureaux et locaux professionnels"
+      },
+      {
+        "href": "/nettoyage-etat-des-lieux-77/",
+        "label": "Remise en propreté avant état des lieux"
+      },
+      {
+        "href": "/debarras-chantier-77/",
+        "label": "Débarras et évacuation après travaux"
+      }
+    ],
+    "area_intro": "Votre chantier se situe en Seine-et-Marne ? Indiquez sa commune et ses contraintes d’accès. La zone et la fréquence d’intervention sont confirmées lors de l’étude du besoin.",
+    "local_links": [
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-torcy/",
+        "label": "Torcy"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      },
+      {
+        "href": "/nettoyage-savigny-le-temple/",
+        "label": "Savigny-le-Temple"
+      },
+      {
+        "href": "/nettoyage-moissy-cramayel/",
+        "label": "Moissy-Cramayel"
+      }
+    ]
+  },
+  {
+    "slug": "nettoyage-vitres-77",
+    "service_code": "vitres",
+    "title": "Nettoyage de vitres et vitrines dans le 77 | MénageUp",
+    "description": "Nettoyage de vitres, vitrines et cloisons vitrées en Seine-et-Marne. Précisez les surfaces, l’accès et la fréquence pour un devis adapté à vos locaux.",
+    "eyebrow": "Professionnels · Vitres et vitrines",
+    "h1": "Nettoyage de vitres et vitrines en Seine-et-Marne",
+    "intro": "Vitrine de boutique, fenêtres de bureaux ou porte vitrée d’immeuble : chaque surface a ses contraintes. MénageUp prépare votre demande de nettoyage de vitres dans le 77 selon l’accès, les faces à traiter, l’état des vitrages et la fréquence souhaitée.",
+    "image": "assets/images/vitres-professionnelles-menageup.webp",
+    "image_alt": "Illustration du nettoyage d’une surface vitrée professionnelle à la raclette",
+    "image_caption": "Visuel d’illustration de la prestation.",
+    "benefits": [
+      {
+        "title": "Des surfaces bien identifiées",
+        "text": "Vitrages, encadrements, rebords et cloisons : le devis précise les éléments retenus et les faces concernées, pour éviter les malentendus."
+      },
+      {
+        "title": "Un accès vérifié",
+        "text": "La hauteur, les obstacles et la possibilité d’ouvrir les fenêtres sont examinés avant de confirmer les moyens nécessaires à l’intervention."
+      },
+      {
+        "title": "Un rythme selon votre usage",
+        "text": "Un passage ponctuel ou un entretien régulier peut être étudié selon l’exposition des vitrages et les horaires de votre activité."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Vitrines de commerces",
+        "text": "Nettoyage des faces accessibles et des portes vitrées. Précisez la présence d’adhésifs, de décorations ou d’un étalage pour préparer les surfaces à traiter sans gêner votre activité."
+      },
+      {
+        "title": "Fenêtres de bureaux",
+        "text": "Lavage des vitrages accessibles depuis les locaux, avec un périmètre défini pour les encadrements et rebords. Les postes de travail proches des fenêtres doivent pouvoir être dégagés."
+      },
+      {
+        "title": "Cloisons et portes vitrées",
+        "text": "Entretien des séparations de bureaux, salles de réunion et portes intérieures. Les films décoratifs et traitements particuliers sont à signaler pour adapter la méthode."
+      },
+      {
+        "title": "Entrées d’immeubles",
+        "text": "Nettoyage des portes et parois vitrées des halls, en prestation ponctuelle ou dans une demande d’entretien de copropriété. Les horaires et conditions d’accès sont convenus au préalable."
+      },
+      {
+        "title": "Vitres après travaux",
+        "text": "Les poussières, traces de peinture, colle ou ciment demandent un diagnostic distinct. Décrivez les résidus et le type de vitrage : leur retrait et les éventuelles limites sont à confirmer avant intervention."
+      }
+    ],
+    "boundaries": [
+      "Les vitrages en hauteur ou difficiles d’accès font l’objet d’une validation préalable des moyens et de la faisabilité. Une nacelle ou une intervention sur cordes n’est pas incluse automatiquement.",
+      "Signalez les films, vitrages abîmés, rayures et dépôts incrustés. Un nettoyage ne répare pas une surface endommagée.",
+      "Les stores, volets, enseignes et façades ne sont pas compris sauf mention explicite au devis."
+    ],
+    "process": [
+      {
+        "title": "Repérez les vitrages",
+        "text": "Transmettez la commune, le nombre approximatif de fenêtres ou la longueur de vitrine, les faces concernées et la hauteur d’accès."
+      },
+      {
+        "title": "Précisez les conditions",
+        "text": "Nous examinons l’état des surfaces, les obstacles et le créneau souhaité. Une description complémentaire ou une visite peut être nécessaire pour établir le devis."
+      },
+      {
+        "title": "Convenez du passage",
+        "text": "Après validation, les surfaces à dégager, les accès et les éléments inclus sont confirmés. Pour un besoin récurrent, la fréquence est définie avec vous."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Le nettoyage porte-t-il sur les deux faces ?",
+        "answer": "Le devis le précise. Certaines fenêtres sont accessibles des deux côtés, d’autres uniquement depuis l’intérieur. Indiquez votre besoin et les contraintes d’ouverture afin de définir un périmètre réalisable."
+      },
+      {
+        "question": "Comment est calculé le tarif du lavage de vitres ?",
+        "answer": "Le prix dépend de la surface ou du nombre de vitrages, des faces à nettoyer, de la hauteur, des accès, de l’état initial et de la fréquence. Les petits carreaux, encadrements ou résidus de travaux peuvent modifier le temps nécessaire."
+      },
+      {
+        "question": "Peut-on prévoir un entretien régulier de la vitrine ?",
+        "answer": "Oui, précisez la fréquence et les créneaux compatibles avec l’ouverture du commerce. Le rythme utile dépend notamment de l’exposition à la rue, des traces de contact et de vos attentes. Les disponibilités sont confirmées lors du devis."
+      },
+      {
+        "question": "Les fenêtres en hauteur peuvent-elles être nettoyées ?",
+        "answer": "Leur prise en charge dépend des accès et des moyens nécessaires. Indiquez l’étage, la hauteur approximative et la possibilité d’ouvrir la fenêtre. Une intervention technique particulière doit être étudiée et confirmée avant tout engagement."
+      },
+      {
+        "question": "Faut-il préparer les locaux avant votre passage ?",
+        "answer": "Il est utile de dégager les rebords et les abords des vitrages, puis de signaler les équipements fragiles ou les zones occupées. Les modalités précises sont convenues avant le passage. Ne transmettez pas de codes d’accès dans le formulaire de demande."
+      }
+    ],
+    "quote_intro": "Indiquez les vitrages concernés et leurs conditions d’accès. Une estimation du nombre de fenêtres ou de la surface suffit pour décrire votre besoin initial.",
+    "fields": [
+      {
+        "name": "surface",
+        "label": "Surface vitrée approximative, en m²",
+        "type": "number"
+      },
+      {
+        "name": "frequence",
+        "label": "Fréquence souhaitée",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À définir ensemble"
+          },
+          {
+            "value": "ponctuel",
+            "label": "Passage ponctuel"
+          },
+          {
+            "value": "hebdomadaire",
+            "label": "Une fois par semaine"
+          },
+          {
+            "value": "plusieurs-fois-semaine",
+            "label": "Plusieurs fois par semaine"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/nettoyage-bureaux-commerces-77/",
+        "label": "Entretien de bureaux et commerces"
+      },
+      {
+        "href": "/nettoyage-copropriete-77/",
+        "label": "Nettoyage des parties communes"
+      },
+      {
+        "href": "/nettoyage-fin-de-chantier-77/",
+        "label": "Nettoyage après travaux"
+      },
+      {
+        "href": "/nettoyage-logement-inoccupe-77/",
+        "label": "Grand nettoyage d’un logement inoccupé"
+      }
+    ],
+    "area_intro": "Décrivez votre besoin de vitrerie en Seine-et-Marne. La commune, la quantité de vitrages et les accès permettent d’étudier un passage ponctuel ou une fréquence adaptée.",
+    "local_links": [
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-ozoir-la-ferriere/",
+        "label": "Ozoir-la-Ferrière"
+      },
+      {
+        "href": "/nettoyage-torcy/",
+        "label": "Torcy"
+      },
+      {
+        "href": "/nettoyage-bussy-saint-georges/",
+        "label": "Bussy-Saint-Georges"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      }
+    ]
+  },
+  {
+    "slug": "nettoyage-commerces-77",
+    "service_code": "commerce",
+    "title": "Nettoyage de commerces et boutiques 77 | MénageUp",
+    "description": "Entretien de commerces, boutiques et magasins en Seine-et-Marne : sols, surfaces accessibles, sanitaires et vitrines selon vos besoins. Devis personnalisé.",
+    "eyebrow": "Professionnels · Commerces et boutiques",
+    "h1": "Nettoyage de commerces et boutiques en Seine-et-Marne",
+    "intro": "Un magasin propre se prépare selon son activité, ses horaires et ses surfaces. MénageUp accompagne votre demande d’entretien de commerce dans le 77 : espace de vente, cabines, réserves accessibles, sanitaires et vitrines, avec un périmètre défini dans le devis.",
+    "image": "assets/images/commerce-boutique-menageup.webp",
+    "image_alt": "Illustration d’une boutique propre avec une surface de vente dégagée et une vitrine lumineuse",
+    "image_caption": "Visuel d’illustration de la prestation.",
+    "benefits": [
+      {
+        "title": "Un devis pour votre magasin",
+        "text": "La surface de vente, les espaces annexes et les tâches attendues sont distingués pour construire une prestation adaptée à votre commerce."
+      },
+      {
+        "title": "Des horaires à convenir",
+        "text": "Indiquez les créneaux compatibles avec vos clients, livraisons et équipes. Le planning est confirmé avant la mise en place de l’entretien."
+      },
+      {
+        "title": "Des priorités lisibles",
+        "text": "Entrée, cabines, comptoirs ou sanitaires : identifiez les zones qui nécessitent le plus d’attention et celles dont le traitement peut être moins fréquent."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Sols et espace de vente",
+        "text": "Aspiration ou balayage, puis nettoyage selon le revêtement et l’état du sol. Les zones très fréquentées, tapis d’entrée et traces particulières sont à signaler pour définir la méthode."
+      },
+      {
+        "title": "Surfaces et comptoirs dégagés",
+        "text": "Dépoussiérage et nettoyage des surfaces accessibles prévues au devis. Les marchandises, vitrines d’exposition fermées et équipements sensibles ne sont pas manipulés sans consigne convenue."
+      },
+      {
+        "title": "Cabines d’essayage",
+        "text": "Entretien des sols, miroirs et surfaces accessibles dans les cabines. Leur nombre et leur utilisation aident à prévoir le temps de passage nécessaire."
+      },
+      {
+        "title": "Sanitaires et espace du personnel",
+        "text": "Nettoyage des sanitaires, lavabos, sols et points de contact convenus. La gestion des consommables et l’entretien des appareils de l’espace de pause sont à préciser."
+      },
+      {
+        "title": "Réserves et locaux annexes",
+        "text": "Entretien des circulations et des zones dégagées de la réserve. Le déplacement de cartons, le rangement du stock et les manutentions particulières ne sont pas inclus par défaut."
+      },
+      {
+        "title": "Vitrine et porte d’entrée",
+        "text": "Le lavage des surfaces vitrées accessibles peut compléter l’entretien du magasin. Les faces, encadrements et fréquences sont à détailler pour distinguer la vitrerie du nettoyage courant."
+      }
+    ],
+    "boundaries": [
+      "Les cuisines professionnelles, chambres froides et équipements de préparation alimentaire nécessitent une étude spécifique; ils ne relèvent pas automatiquement de cette prestation.",
+      "Le décapage, le traitement d’un sol, le nettoyage en hauteur et l’enlèvement de déchets particuliers doivent être précisés et validés séparément.",
+      "Les procédures d’ouverture, de fermeture et d’accès au local sont convenues avant l’intervention; aucun code d’alarme n’est à transmettre via le formulaire."
+    ],
+    "process": [
+      {
+        "title": "Présentez votre commerce",
+        "text": "Indiquez la commune, l’activité, la surface approximative et les espaces à entretenir. Précisez si vous recherchez un passage ponctuel ou régulier."
+      },
+      {
+        "title": "Définissez les tâches",
+        "text": "Nous précisons avec vous les sols, surfaces, sanitaires, annexes et vitrages concernés. Une visite peut compléter les informations pour préparer le devis."
+      },
+      {
+        "title": "Validez le fonctionnement",
+        "text": "Après accord sur le devis, le planning, les accès et les consignes sont établis. Toute évolution du périmètre se convient avant d’ajouter des tâches."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quels commerces peuvent demander un devis ?",
+        "answer": "Boutiques, magasins et points de vente peuvent décrire leur besoin d’entretien courant. Précisez votre activité et les espaces concernés : certaines surfaces ou activités demandent des méthodes spécifiques dont la prise en charge doit être confirmée."
+      },
+      {
+        "question": "Peut-on prévoir le ménage avant l’ouverture ?",
+        "answer": "Vous pouvez indiquer un créneau avant l’ouverture ou après la fermeture. La disponibilité et les conditions d’accès sont examinées avec la demande. Un horaire n’est confirmé qu’après validation du planning."
+      },
+      {
+        "question": "Le nettoyage de la vitrine est-il inclus ?",
+        "answer": "Il peut être prévu dans le devis ou faire l’objet d’un besoin distinct. Le nombre de faces, la surface, l’accessibilité et la fréquence de lavage sont précisés : une vitrine n’a pas nécessairement besoin du même rythme que le sol du magasin."
+      },
+      {
+        "question": "Combien coûte l’entretien d’une boutique ?",
+        "answer": "Le tarif dépend des surfaces, des revêtements, du nombre de sanitaires et de cabines, de l’état initial, des créneaux et de la fréquence. La présence de vitrages ou d’une réserve à entretenir est également prise en compte. Un devis permet de fixer le périmètre et son prix."
+      },
+      {
+        "question": "Peut-on demander un passage ponctuel ?",
+        "answer": "Oui, indiquez le contexte : besoin occasionnel, reprise d’un local ou préparation d’une ouverture. Si des travaux viennent de se terminer, signalez les poussières et résidus afin d’étudier une prestation de fin de chantier plutôt qu’un entretien courant."
+      }
+    ],
+    "quote_intro": "Présentez votre commerce et les espaces à entretenir. La surface, la fréquence et les créneaux souhaités nous aident à préparer une demande adaptée.",
+    "fields": [
+      {
+        "name": "surface",
+        "label": "Surface approximative à entretenir, en m²",
+        "type": "number"
+      },
+      {
+        "name": "frequence",
+        "label": "Fréquence souhaitée",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À définir ensemble"
+          },
+          {
+            "value": "ponctuel",
+            "label": "Passage ponctuel"
+          },
+          {
+            "value": "hebdomadaire",
+            "label": "Une fois par semaine"
+          },
+          {
+            "value": "plusieurs-fois-semaine",
+            "label": "Plusieurs fois par semaine"
+          },
+          {
+            "value": "quotidien",
+            "label": "Chaque jour — à étudier"
+          }
+        ]
+      },
+      {
+        "name": "vitres",
+        "label": "Ajouter le nettoyage des vitrines ?",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À définir ensemble"
+          },
+          {
+            "value": "oui",
+            "label": "Oui"
+          },
+          {
+            "value": "non",
+            "label": "Non"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/nettoyage-bureaux-commerces-77/",
+        "label": "Entretien de bureaux et locaux professionnels"
+      },
+      {
+        "href": "/nettoyage-fin-de-chantier-77/",
+        "label": "Nettoyage d’un local après travaux"
+      },
+      {
+        "href": "/nettoyage-copropriete-77/",
+        "label": "Entretien des parties communes d’immeubles"
+      },
+      {
+        "href": "/debarras-chantier-77/",
+        "label": "Débarras après rénovation d’un local"
+      }
+    ],
+    "area_intro": "Votre boutique se trouve dans le 77 ? Précisez sa commune et les créneaux disponibles. Les conditions d’intervention sont étudiées selon le local et le rythme demandé.",
+    "local_links": [
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-torcy/",
+        "label": "Torcy"
+      },
+      {
+        "href": "/nettoyage-chelles/",
+        "label": "Chelles"
+      },
+      {
+        "href": "/nettoyage-brie-comte-robert/",
+        "label": "Brie-Comte-Robert"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      }
+    ]
+  }
+]

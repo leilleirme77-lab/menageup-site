@@ -1,0 +1,587 @@
+[
+  {
+    "slug": "debarras-chantier-77",
+    "service_code": "debarraschantier",
+    "audience": "ent",
+    "title": "Débarras de chantier dans le 77 | MénageUp",
+    "description": "Débarras de chantier en Seine-et-Marne : tri, enlèvement et mise en déchèterie selon les flux acceptés. Précisez déchets, volume et accès pour votre devis.",
+    "eyebrow": "Professionnels et particuliers · Après travaux",
+    "h1": "Débarras de chantier en Seine-et-Marne",
+    "intro": "Une rénovation terminée laisse parfois autant de choses à enlever que de surfaces à nettoyer. MénageUp prend en charge le débarras de chantier dans le 77 : identification des déchets, enlèvement et acheminement vers une déchèterie ou une filière adaptée, selon les flux acceptés. Le volume, la nature des matériaux et les accès servent à préparer votre devis.",
+    "image": "assets/images/debarras-chantier-menageup.webp",
+    "image_alt": "Illustration du tri et de l'enlèvement de déchets après des travaux",
+    "image_caption": "Visuel d'illustration de la prestation.",
+    "benefits": [
+      {
+        "title": "Un chantier dégagé",
+        "text": "Vous définissez les éléments à enlever et les matériaux à conserver. Les espaces libérés peuvent ensuite être préparés pour leur nettoyage ou leur utilisation."
+      },
+      {
+        "title": "Des déchets identifiés",
+        "text": "Gravats, emballages et éléments déposés ne constituent pas un seul lot. Leur nature est précisée pour organiser le tri et déterminer les filières possibles."
+      },
+      {
+        "title": "Un devis lisible",
+        "text": "L'enlèvement, le transport et les éventuels coûts de filière sont précisés. Le nettoyage après évacuation apparaît séparément lorsqu'il fait partie de votre demande."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Repérer ce qui doit partir",
+        "text": "Restes de matériaux, éléments démontés, emballages : indiquez les catégories présentes et les zones concernées. Les outils et matériaux encore utiles sont distingués avant le débarras."
+      },
+      {
+        "title": "Trier les déchets",
+        "text": "Nous préparons le tri selon les matériaux identifiés et les conditions d'acceptation des destinations retenues. Signalez les mélanges difficiles à séparer et les déchets dont la composition est incertaine."
+      },
+      {
+        "title": "Enlever les encombrants",
+        "text": "Les équipements déposés, portes, meubles ou autres éléments volumineux sont évalués selon leur taille, leur état et le chemin de sortie. Un démontage nécessaire doit être prévu au devis."
+      },
+      {
+        "title": "Organiser la manutention",
+        "text": "L'étage, les escaliers, l'ascenseur, la distance jusqu'au véhicule et les possibilités de stationnement influencent l'organisation. Les accès partagés et les espaces à protéger sont repérés avec vous."
+      },
+      {
+        "title": "Acheminer les déchets",
+        "text": "Le transport et la mise en déchèterie sont organisés selon les flux acceptés, les quantités et les modalités d'accès. Le devis précise la prise en charge prévue et les coûts de filière éventuels."
+      },
+      {
+        "title": "Prévoir le nettoyage ensuite",
+        "text": "Une fois les éléments évacués, un nettoyage de fin de chantier peut compléter la prestation : poussières, sols et surfaces accessibles. Son périmètre est défini après examen de l'état des lieux."
+      }
+    ],
+    "boundaries": [
+      "Précisez la nature des déchets : les produits chimiques, matériaux suspects ou déchets exigeant une filière spécifique ne sont pas assimilés aux déchets ordinaires. Leur prise en charge nécessite une validation dédiée.",
+      "Les quantités importantes, charges lourdes, démontages et accès difficiles doivent être signalés. Les moyens nécessaires et la faisabilité sont confirmés avant l'intervention.",
+      "La démolition, la location d'une benne et le nettoyage ne sont pas inclus automatiquement. Le devis distingue les tâches, le transport et les éventuels coûts liés à la destination des déchets."
+    ],
+    "process": [
+      {
+        "title": "Décrivez le chantier",
+        "text": "Indiquez la commune, les catégories de déchets, un volume approximatif et les accès. Des photos d'ensemble aident à repérer les encombrants et les zones à dégager."
+      },
+      {
+        "title": "Définissez l'évacuation",
+        "text": "Nous précisons ensemble les éléments à enlever, le tri, le chemin de sortie et la destination adaptée. Une visite peut être nécessaire pour établir un devis complet."
+      },
+      {
+        "title": "Validez la prestation",
+        "text": "Après accord sur le devis, nous convenons des modalités d'accès, de l'enlèvement et du transport. Si vous demandez un nettoyage, il est organisé après le débarras."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Peut-on prévoir débarras et nettoyage de fin de chantier ensemble ?",
+        "answer": "Oui. Le débarras libère les surfaces avant le nettoyage. Décrivez les déchets et l'état du logement ou des locaux : le devis précise chaque étape, ainsi que les surfaces et finitions concernées."
+      },
+      {
+        "question": "Prenez-vous en charge les gravats ?",
+        "answer": "Vous pouvez les inclure dans votre demande. Précisez leur nature, leur quantité et leur emplacement. La destination, les moyens de manutention et la prise en charge sont confirmés selon les matériaux et les flux acceptés."
+      },
+      {
+        "question": "Comment est calculé le prix du débarras ?",
+        "answer": "Le devis dépend du volume, de la nature des déchets, des éléments lourds, du tri, de l'étage et du transport. Les coûts éventuels de déchèterie ou d'une autre filière doivent également être précisés pour comparer des prestations complètes."
+      },
+      {
+        "question": "Faut-il connaître le volume exact avant de vous contacter ?",
+        "answer": "Non. Une estimation et des photos suffisent pour commencer. Si le volume ou les accès sont difficiles à évaluer, des précisions ou une visite permettent de confirmer les moyens et le devis."
+      },
+      {
+        "question": "Le débarras concerne-t-il seulement les entreprises du bâtiment ?",
+        "answer": "Non. Vous pouvez nous contacter pour les déchets d'une rénovation chez vous, un logement à remettre en état ou un local professionnel. Le contenu à enlever et les conditions d'accès restent à définir avant l'intervention."
+      }
+    ],
+    "quote_intro": "Précisez la commune, les déchets et leur volume approximatif. Ajoutez l'étage et les accès pour préparer un devis détaillant l'enlèvement, le transport et les éventuels coûts de filière.",
+    "fields": [
+      {
+        "name": "volume",
+        "label": "Volume approximatif à enlever (m³)",
+        "type": "number"
+      },
+      {
+        "name": "surface",
+        "label": "Surface du chantier (m²)",
+        "type": "number"
+      },
+      {
+        "name": "etage",
+        "label": "Accès aux éléments à enlever",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À préciser ensemble"
+          },
+          {
+            "value": "rdc",
+            "label": "Rez-de-chaussée"
+          },
+          {
+            "value": "avec-ascenseur",
+            "label": "Étage avec ascenseur"
+          },
+          {
+            "value": "sans-ascenseur",
+            "label": "Étage sans ascenseur"
+          }
+        ]
+      },
+      {
+        "name": "dechets",
+        "label": "Nature principale des éléments",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À préciser ensemble"
+          },
+          {
+            "value": "gravats",
+            "label": "Gravats et matériaux de travaux"
+          },
+          {
+            "value": "mobilier",
+            "label": "Mobilier et encombrants"
+          },
+          {
+            "value": "mixte",
+            "label": "Plusieurs catégories"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/nettoyage-fin-de-chantier-77/",
+        "label": "Nettoyage après travaux"
+      },
+      {
+        "href": "/nettoyage-base-vie-chantier-77/",
+        "label": "Entretien de bases vie pendant le chantier"
+      },
+      {
+        "href": "/debarras-maison-appartement-77/",
+        "label": "Débarras de maison ou d'appartement"
+      },
+      {
+        "href": "/nettoyage-logement-inoccupe-77/",
+        "label": "Grand nettoyage d'un logement inoccupé"
+      },
+      {
+        "href": "/nettoyage-etat-des-lieux-77/",
+        "label": "Nettoyage avant état des lieux"
+      }
+    ],
+    "area_intro": "Indiquez la commune de votre chantier en Seine-et-Marne, ainsi que l'emplacement des déchets et les accès. La préparation de l'intervention tient compte du déplacement, des conditions de manutention et de la destination des matériaux.",
+    "local_links": [
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      },
+      {
+        "href": "/nettoyage-chelles/",
+        "label": "Chelles"
+      },
+      {
+        "href": "/nettoyage-coulommiers/",
+        "label": "Coulommiers"
+      },
+      {
+        "href": "/nettoyage-moissy-cramayel/",
+        "label": "Moissy-Cramayel"
+      }
+    ]
+  },
+  {
+    "slug": "debarras-maison-appartement-77",
+    "service_code": "debarras",
+    "audience": "part",
+    "title": "Débarras maison et appartement dans le 77 | MénageUp",
+    "description": "Débarras de maison ou appartement en Seine-et-Marne : mobilier, encombrants, tri et mise en déchèterie. Devis selon le volume, l'étage et les accès.",
+    "eyebrow": "Logements · Débarras et remise en propreté",
+    "h1": "Débarras de maison et d'appartement en Seine-et-Marne",
+    "intro": "Vider une pièce, enlever des meubles ou dégager un logement avant un grand nettoyage : chaque débarras commence par savoir ce qui doit partir et ce qui reste. MénageUp prend en charge le débarras de maison et d'appartement dans le 77, avec tri, enlèvement et mise en déchèterie selon les flux acceptés. Vous pouvez aussi prévoir le nettoyage des espaces libérés.",
+    "image": "assets/images/debarras-logement-menageup.webp",
+    "image_alt": "Illustration de l'enlèvement de mobilier lors du débarras d'un logement",
+    "image_caption": "Visuel d'illustration de la prestation.",
+    "benefits": [
+      {
+        "title": "Vous décidez ce qui reste",
+        "text": "Le périmètre est défini pièce par pièce. Les objets à garder, les documents et les effets personnels sont repérés avant l'enlèvement."
+      },
+      {
+        "title": "Des accès anticipés",
+        "text": "Portes, escaliers, ascenseur et stationnement sont pris en compte. Le devis repose sur les conditions réelles de sortie du mobilier et des encombrants."
+      },
+      {
+        "title": "Un lieu prêt pour la suite",
+        "text": "Le débarras peut être suivi d'un nettoyage ponctuel. Les surfaces devenues accessibles et le niveau de remise en propreté souhaité sont précisés ensemble."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Débarras partiel",
+        "text": "Une seule pièce, quelques meubles ou une zone encombrée peuvent être concernés. Désignez les éléments à enlever : le logement n'a pas besoin d'être vidé entièrement pour préparer une intervention."
+      },
+      {
+        "title": "Débarras de plusieurs pièces",
+        "text": "Pour une maison ou un appartement à libérer, nous repérons les volumes et les catégories présentes. Le tri et l'ordre d'enlèvement sont préparés selon les espaces et les objets conservés."
+      },
+      {
+        "title": "Mobilier et encombrants",
+        "text": "Meubles, literie et autres éléments volumineux sont évalués selon leurs dimensions et leur poids. Un démontage ou une manutention particulière doit être identifié avant d'arrêter les moyens nécessaires."
+      },
+      {
+        "title": "Cave, garage ou dépendance",
+        "text": "Ces espaces peuvent être ajoutés à votre demande. Décrivez leur contenu, l'éclairage, les marches, la largeur du passage et les éventuelles contraintes qui compliquent l'accès ou la sortie des objets."
+      },
+      {
+        "title": "Tri et évacuation",
+        "text": "Les catégories de déchets sont distinguées avant leur acheminement vers les destinations adaptées. La mise en déchèterie dépend des flux acceptés et des conditions d'accès. Transport et coûts de filière sont détaillés au devis."
+      },
+      {
+        "title": "Nettoyage après débarras",
+        "text": "Les poussières, sols et surfaces accessibles peuvent être nettoyés une fois les pièces dégagées. Cuisine, sanitaires et vitrages se précisent séparément selon l'état du logement et votre projet d'occupation."
+      }
+    ],
+    "boundaries": [
+      "Confirmez les objets à enlever et ceux à conserver avant le débarras. Une estimation de volume ne remplace pas la liste des espaces et éléments concernés.",
+      "Les produits dangereux, matériaux suspects et déchets nécessitant une filière particulière doivent être signalés. Leur prise en charge n'est pas incluse dans une évacuation ordinaire sans validation dédiée.",
+      "Les charges lourdes, accès difficiles et démontages sont étudiés au préalable. Le devis précise l'enlèvement, le transport, les coûts de filière éventuels et le nettoyage s'il est demandé."
+    ],
+    "process": [
+      {
+        "title": "Présentez le logement",
+        "text": "Indiquez la commune, les pièces concernées et le volume approximatif. Des photos permettent de repérer les meubles et les zones encombrées, sans montrer vos documents personnels."
+      },
+      {
+        "title": "Préparez le périmètre",
+        "text": "Nous précisons avec vous les objets conservés, les éléments à enlever et les accès. Une visite peut être nécessaire pour confirmer le volume et les moyens de manutention."
+      },
+      {
+        "title": "Organisez la remise en état",
+        "text": "Après validation du devis, nous convenons de l'accès et de l'enlèvement. Si un nettoyage est prévu, son périmètre suit les pièces et surfaces effectivement libérées."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Pouvez-vous débarrasser seulement une pièce ?",
+        "answer": "Oui. Un débarras peut concerner une pièce, quelques meubles ou plusieurs espaces. Indiquez clairement ce qui doit partir et ce qui reste pour définir le volume, les accès et le devis."
+      },
+      {
+        "question": "Le nettoyage est-il compris dans le débarras ?",
+        "answer": "Il peut être ajouté, mais il n'est pas inclus automatiquement. Décrivez le résultat souhaité : simple libération des espaces, nettoyage des sols ou remise en propreté plus complète. Le devis distingue le débarras et le nettoyage."
+      },
+      {
+        "question": "Comment évaluer le volume à enlever ?",
+        "answer": "Donnez une estimation en mètres cubes si vous en avez une, ou décrivez les meubles et les pièces concernées. Des photos d'ensemble et les dimensions des éléments les plus encombrants aident à préparer l'étude."
+      },
+      {
+        "question": "Un étage sans ascenseur change-t-il l'organisation ?",
+        "answer": "Oui. Les escaliers, leur largeur et la distance jusqu'au véhicule influencent la manutention. Précisez également les objets lourds et les possibilités de stationnement : ces éléments permettent d'établir un devis adapté aux accès."
+      },
+      {
+        "question": "Peut-on vider un logement resté inoccupé longtemps ?",
+        "answer": "Oui, vous pouvez combiner le débarras avec un grand nettoyage du logement. Nous distinguons les éléments à évacuer, les surfaces à traiter et les éventuels problèmes du bâtiment qui demandent une autre intervention, comme une fuite ou des matériaux dégradés."
+      }
+    ],
+    "quote_intro": "Indiquez les pièces à débarrasser, le volume approximatif et l'accès au logement. Le devis doit préciser le tri, l'enlèvement, le transport, les coûts de filière éventuels et le nettoyage demandé.",
+    "fields": [
+      {
+        "name": "volume",
+        "label": "Volume approximatif à enlever (m³)",
+        "type": "number"
+      },
+      {
+        "name": "surface",
+        "label": "Surface du logement concerné (m²)",
+        "type": "number"
+      },
+      {
+        "name": "etage",
+        "label": "Accès au logement",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À préciser ensemble"
+          },
+          {
+            "value": "rdc",
+            "label": "Rez-de-chaussée"
+          },
+          {
+            "value": "avec-ascenseur",
+            "label": "Étage avec ascenseur"
+          },
+          {
+            "value": "sans-ascenseur",
+            "label": "Étage sans ascenseur"
+          }
+        ]
+      },
+      {
+        "name": "dechets",
+        "label": "Nature principale des éléments",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À préciser ensemble"
+          },
+          {
+            "value": "mobilier",
+            "label": "Mobilier et encombrants"
+          },
+          {
+            "value": "gravats",
+            "label": "Gravats et matériaux de travaux"
+          },
+          {
+            "value": "mixte",
+            "label": "Plusieurs catégories"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/nettoyage-logement-inoccupe-77/",
+        "label": "Grand nettoyage d'un logement inoccupé"
+      },
+      {
+        "href": "/debarras-chantier-77/",
+        "label": "Débarras de déchets après travaux"
+      },
+      {
+        "href": "/nettoyage-etat-des-lieux-77/",
+        "label": "Nettoyage avant état des lieux"
+      },
+      {
+        "href": "/nettoyage-vitres-77/",
+        "label": "Nettoyage de fenêtres et baies vitrées"
+      },
+      {
+        "href": "/menage-a-domicile-77/",
+        "label": "Entretien courant après la remise en propreté"
+      }
+    ],
+    "area_intro": "Votre maison ou votre appartement se trouve en Seine-et-Marne ? Indiquez la commune et les accès, y compris pour une cave ou un garage. Les déplacements, la manutention et la destination des déchets sont pris en compte dans l'étude de votre demande.",
+    "local_links": [
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      },
+      {
+        "href": "/nettoyage-chelles/",
+        "label": "Chelles"
+      },
+      {
+        "href": "/nettoyage-lagny-sur-marne/",
+        "label": "Lagny-sur-Marne"
+      },
+      {
+        "href": "/nettoyage-coulommiers/",
+        "label": "Coulommiers"
+      }
+    ]
+  },
+  {
+    "slug": "nettoyage-logement-inoccupe-77",
+    "service_code": "grandnettoyage",
+    "audience": "part",
+    "title": "Grand nettoyage de logement très sale ou inhabité 77 | MénageUp",
+    "description": "Grand nettoyage de logements très sales, inhabités ou fermés depuis des années en Seine-et-Marne. Remise en propreté, débarras et photos avant/après sur devis.",
+    "eyebrow": "Maisons et appartements · Avant une nouvelle occupation",
+    "h1": "Grand nettoyage de logements très sales ou inhabités dans le 77",
+    "intro": "Une maison ou un appartement resté inhabité pendant des années peut demander un grand nettoyage. MénageUp prend en charge les logements très sales, fermés ou encombrés en Seine-et-Marne, avec un périmètre adapté à l’état constaté. Le nettoyage s’organise autour du mobilier conservé et peut être associé au débarras des objets à enlever. Présentez-nous votre situation : nous étudions chaque demande de devis.",
+    "image": "assets/images/grand-nettoyage-menageup.webp",
+    "image_alt": "Illustration du grand nettoyage d'une pièce de logement avant sa réoccupation",
+    "image_caption": "Visuel d'illustration de la prestation.",
+    "benefits": [
+      {
+        "title": "Un état initial examiné",
+        "text": "La durée d'inoccupation donne un contexte, mais l'état réel des pièces guide la prestation. Les surfaces, les dépôts et les accès sont repérés avant le devis."
+      },
+      {
+        "title": "Les pièces utiles à la reprise",
+        "text": "Cuisine, sanitaires et espaces de vie sont traités selon les tâches retenues. Vous définissez les zones prioritaires et le résultat attendu avant la réoccupation."
+      },
+      {
+        "title": "Débarras et nettoyage coordonnés",
+        "text": "Si des meubles ou encombrants empêchent le nettoyage, leur enlèvement peut être étudié. Les objets conservés et les surfaces libérées sont identifiés au préalable."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Logements très encrassés",
+        "text": "Un logement longtemps inhabité, des salissures accumulées ou des pièces devenues difficiles à entretenir : nous examinons l’état des espaces et organisons leur remise en propreté. Signalez dès la demande les déjections, odeurs, objets ou dépôts présents afin de préparer la prise en charge."
+      },
+      {
+        "title": "Cuisine et rangements",
+        "text": "Nettoyage des surfaces, du plan de travail et de l'évier selon leur état. L'intérieur des placards et des appareils se prévoit séparément : indiquez les équipements présents et les rangements pouvant être vidés."
+      },
+      {
+        "title": "Salle de bains et sanitaires",
+        "text": "Nettoyage des équipements, robinetteries, surfaces et sols accessibles. Les dépôts de calcaire et les traces incrustées sont examinés pour adapter la méthode au matériau et à son état."
+      },
+      {
+        "title": "Sols et zones de circulation",
+        "text": "Aspiration et lavage adaptés au revêtement et à l'état des sols. Les passages encombrés doivent être dégagés ou intégrés au débarras. Une surface abîmée nécessite un traitement distinct du nettoyage."
+      },
+      {
+        "title": "Fenêtres et vitrages",
+        "text": "Les faces accessibles, rebords et encadrements peuvent compléter la demande. Précisez les ouvertures, la hauteur et les obstacles ; les moyens d'accès et le périmètre sont confirmés avant intervention."
+      },
+      {
+        "title": "Pièces meublées ou à vider",
+        "text": "Un logement n'a pas besoin d'être totalement vide. Le nettoyage s'organise autour du mobilier conservé. Les déplacements de meubles et le débarras des éléments à évacuer se définissent selon les accès et les volumes."
+      }
+    ],
+    "boundaries": [
+      "Signalez les fuites, traces d'humidité, matériaux dégradés et odeurs persistantes. Le nettoyage ne répare pas le bâtiment et ne garantit pas la suppression de la cause d'un désordre.",
+      "Un logement simplement resté fermé ne relève pas automatiquement d'un nettoyage spécialisé. Une contamination, des déchets dangereux ou une infestation signalée nécessitent une évaluation distincte avant de confirmer la prestation.",
+      "Le débarras, le transport et les éventuels coûts de filière se précisent au devis. Le grand nettoyage n'inclut pas les réparations, travaux ou remise en service des installations."
+    ],
+    "process": [
+      {
+        "title": "Présentez l'état du logement",
+        "text": "Indiquez la commune, la surface, les pièces et la durée approximative d'inoccupation. Des photos d'ensemble aident à repérer les salissures et les éventuels éléments à débarrasser."
+      },
+      {
+        "title": "Choisissez les zones à traiter",
+        "text": "Nous examinons les surfaces, les équipements et le mobilier conservé. Les accès à l'eau et à l'électricité, les tâches particulières et le besoin de débarras sont précisés avant le devis."
+      },
+      {
+        "title": "Préparez la réoccupation",
+        "text": "Après validation du devis, nous convenons de l'accès et de l'organisation. Le débarras éventuel précède le nettoyage, puis le périmètre traité est vérifié avec vous selon les modalités convenues."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Intervenez-vous dans un logement inhabité depuis plusieurs années ?",
+        "answer": "Oui. À Châtres, nous sommes intervenus dans une habitation restée inhabitée pendant six ans : trois intervenants ont été mobilisés pour neuf heures d’intervention. Le dossier de réalisation présente les photos réelles du séjour et de la cuisine. Pour votre logement, l’état, les accès, les surfaces et les objets présents déterminent le périmètre du devis."
+      },
+      {
+        "question": "Le logement doit-il être vide pour être nettoyé ?",
+        "answer": "Non. Le nettoyage peut concerner un logement meublé si les surfaces à traiter sont accessibles. Précisez les meubles à conserver et ceux à enlever : leur déplacement ou leur débarras se prévoit selon les dimensions et les accès."
+      },
+      {
+        "question": "Quelle différence avec un nettoyage avant état des lieux ?",
+        "answer": "Le grand nettoyage d'un logement inoccupé répond à l'état d'un lieu resté fermé et à sa future utilisation. Un nettoyage avant état des lieux prépare une entrée ou une sortie de bail. Les tâches peuvent se recouper, mais le périmètre dépend du projet et de l'état constaté."
+      },
+      {
+        "question": "Pouvez-vous débarrasser puis nettoyer le logement ?",
+        "answer": "Oui. Nous distinguons les objets à enlever, leur tri et leur évacuation, puis les surfaces à nettoyer. Le devis précise l'enlèvement, le transport, les éventuels coûts de filière et les tâches de remise en propreté."
+      },
+      {
+        "question": "Comment préparer le devis d'un grand nettoyage ?",
+        "answer": "Transmettez la surface, les pièces concernées, l'état de la cuisine et des sanitaires, ainsi que les accès. Indiquez le mobilier présent et les salissures importantes. Des photos ou une visite peuvent être nécessaires pour chiffrer le travail réellement attendu."
+      },
+      {
+        "question": "Un nettoyage suffit-il si le logement présente de l'humidité ?",
+        "answer": "Il ne règle pas la cause de l'humidité. Signalez les traces, odeurs ou matériaux abîmés dès la demande : l'état doit être examiné pour déterminer les surfaces pouvant être nettoyées et les besoins qui relèvent d'une autre intervention."
+      }
+    ],
+    "quote_intro": "Logement très sale, resté fermé ou encombré : indiquez la commune, la surface, les accès et l’état des pièces. Signalez les salissures particulières et les objets à enlever. Nous échangeons avec vous pour préparer le devis et organiser le grand nettoyage.",
+    "fields": [
+      {
+        "name": "surface",
+        "label": "Surface du logement concerné (m²)",
+        "type": "number"
+      },
+      {
+        "name": "etage",
+        "label": "Accès au logement",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À préciser ensemble"
+          },
+          {
+            "value": "rdc",
+            "label": "Rez-de-chaussée"
+          },
+          {
+            "value": "avec-ascenseur",
+            "label": "Étage avec ascenseur"
+          },
+          {
+            "value": "sans-ascenseur",
+            "label": "Étage sans ascenseur"
+          }
+        ]
+      },
+      {
+        "name": "frequence",
+        "label": "Besoin de nettoyage",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À définir ensemble"
+          },
+          {
+            "value": "ponctuel",
+            "label": "Grand nettoyage ponctuel"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/debarras-maison-appartement-77/",
+        "label": "Débarras de mobilier et encombrants"
+      },
+      {
+        "href": "/debarras-chantier-77/",
+        "label": "Débarras de déchets après des travaux"
+      },
+      {
+        "href": "/nettoyage-etat-des-lieux-77/",
+        "label": "Nettoyage pour une entrée ou une sortie de bail"
+      },
+      {
+        "href": "/nettoyage-vitres-77/",
+        "label": "Nettoyage de fenêtres et baies vitrées"
+      },
+      {
+        "href": "/menage-a-domicile-77/",
+        "label": "Ménage régulier après votre installation"
+      }
+    ],
+    "area_intro": "Vous préparez la réoccupation d'un logement en Seine-et-Marne ? Indiquez sa commune, son état et les accès. Le périmètre, le déplacement et les conditions pratiques sont définis pendant l'étude de votre demande.",
+    "local_links": [
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      },
+      {
+        "href": "/nettoyage-chelles/",
+        "label": "Chelles"
+      },
+      {
+        "href": "/nettoyage-coulommiers/",
+        "label": "Coulommiers"
+      },
+      {
+        "href": "/nettoyage-brie-comte-robert/",
+        "label": "Brie-Comte-Robert"
+      }
+    ]
+  }
+]

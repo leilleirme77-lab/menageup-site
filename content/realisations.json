@@ -1,0 +1,169 @@
+{
+  "hub": {
+    "title": "Nos réalisations en Seine-et-Marne | MénageUp",
+    "description": "Photos de réalisations MénageUp dans le 77 : nettoyage d'une habitation inhabitée six ans à Châtres et débarras extérieur à Pontault-Combault.",
+    "h1": "Nos interventions, en images.",
+    "intro": "Grand nettoyage, remise en ordre, débarras : découvrez des réalisations MénageUp en Seine-et-Marne. À Châtres, une habitation était restée inhabitée six ans ; à Pontault-Combault, un espace extérieur devait être dégagé. Les photos présentent ces interventions sur place."
+  },
+  "cases": [
+    {
+      "slug": "grand-nettoyage-chatres-77610",
+      "city": "Châtres",
+      "postal_code": "77610",
+      "category": "Grand nettoyage d'habitation inhabitée",
+      "title": "Nettoyage d’habitation inhabitée à Châtres | MénageUp",
+      "description": "Habitation inhabitée depuis six ans à Châtres : grand nettoyage et remise en ordre par MénageUp. Vraies photos du séjour et de la cuisine avant/après.",
+      "h1": "Grand nettoyage d’une habitation inhabitée à Châtres",
+      "intro": "Cette habitation à Châtres était restée inhabitée pendant six ans. L'encrassement était important ; des souris, des rats, des oiseaux et des déjections de rongeurs avaient été retrouvés sur place. MénageUp a réalisé un grand nettoyage et une remise en ordre, avec les meubles et équipements conservés.",
+      "card_text": "Une habitation restée inhabitée six ans, avec un encrassement important. Les photos montrent le séjour et la cuisine avant et après l'intervention.",
+      "stats": [
+        {"value": "6 ans", "label": "d'inoccupation"},
+        {"value": "9 h", "label": "d'intervention"},
+        {"value": "3", "label": "intervenants mobilisés"}
+      ],
+      "context": {
+        "title": "Une remise en propreté après six ans d'inoccupation.",
+        "intro": "Le grand nettoyage répondait à l'état de cette habitation très sale, après une longue période sans occupation. Le périmètre devait tenir compte des pièces et du mobilier conservé.",
+        "points": [
+          {"title": "L'état initial", "text": "Une habitation inhabitée depuis six ans, avec un encrassement important et des traces de présence d'animaux retrouvées sur place."},
+          {"title": "L'objectif de l'intervention", "text": "Un grand nettoyage et une remise en ordre des espaces, en conservant les meubles et équipements présents."},
+          {"title": "Les photos présentées", "text": "Le séjour avant et après, trois détails de cuisine avant l'intervention et une vue générale de la cuisine après."}
+        ]
+      },
+      "service_code": "grandnettoyage",
+      "audience": "part",
+      "hero": "assets/realisations/chatres-77610/sejour-apres.webp",
+      "hero_alt": "Le séjour après l'intervention MénageUp à Châtres, avec le sol dégagé et le mobilier regroupé",
+      "hero_stage": "Après intervention",
+      "primary_image": "assets/realisations/chatres-77610/sejour-apres.webp",
+      "og_image": "assets/realisations/chatres-77610/sejour-apres.webp",
+      "sections": [
+        {
+          "id": "sejour",
+          "eyebrow": "Le séjour",
+          "title": "Avant et après la remise en ordre.",
+          "intro": "Deux vues du séjour, prises sous des angles différents. Après l'intervention, la zone de circulation est dégagée et le mobilier reste présent dans la pièce.",
+          "layout": "pair",
+          "photos": [
+            {
+              "file": "assets/realisations/chatres-77610/sejour-avant.webp",
+              "stage": "Avant",
+              "alt": "Le séjour avant le grand nettoyage à Châtres, avec des objets sur la table et dans les zones de passage",
+              "caption": "Le séjour avant l'intervention.",
+              "fit": "center-crop"
+            },
+            {
+              "file": "assets/realisations/chatres-77610/sejour-apres.webp",
+              "stage": "Après",
+              "alt": "Le séjour après l'intervention à Châtres : sol dégagé et mobilier regroupé",
+              "caption": "Le séjour après l'intervention, depuis un autre angle."
+            }
+          ]
+        },
+        {
+          "id": "cuisine",
+          "eyebrow": "La cuisine",
+          "title": "Les détails avant, la pièce après.",
+          "intro": "Les vues avant montrent plusieurs rangements de la cuisine. La photographie après présente la pièce dans son ensemble, avec ses meubles et appareils conservés.",
+          "layout": "details-and-wide",
+          "photos": [
+            {
+              "file": "assets/realisations/chatres-77610/cuisine-placard-avant.webp",
+              "stage": "Avant",
+              "alt": "Placard de cuisine ouvert avant l'intervention à Châtres",
+              "caption": "Le placard de cuisine et ses abords, avant."
+            },
+            {
+              "file": "assets/realisations/chatres-77610/cuisine-buffet-avant.webp",
+              "stage": "Avant",
+              "alt": "Le buffet et les rangements de cuisine avant la remise en ordre à Châtres",
+              "caption": "Le buffet et les rangements, avant."
+            },
+            {
+              "file": "assets/realisations/chatres-77610/cuisine-sous-evier-avant.webp",
+              "stage": "Avant",
+              "alt": "Le rangement sous l'évier avant le grand nettoyage à Châtres",
+              "caption": "Le rangement sous l'évier, avant."
+            },
+            {
+              "file": "assets/realisations/chatres-77610/cuisine-apres.webp",
+              "stage": "Après",
+              "alt": "Vue générale de la cuisine après l'intervention MénageUp à Châtres",
+              "caption": "Vue générale de la cuisine après l'intervention.",
+              "wide": true
+            }
+          ]
+        }
+      ],
+      "follow_up": {
+        "title": "Un suivi clair, du devis au résultat.",
+        "text": "Nous échangeons avec vous sur le périmètre avant de préparer le devis et vous tenons informé pendant la prestation. Des photos avant/après vous sont transmises, avec un point sur le résultat. Nous restons disponibles pour vos questions."
+      },
+      "quote_title": "Logement très sale, inhabité ou situation particulière ?",
+      "quote_text": "Décrivez votre besoin : nous étudions chaque demande de devis. Précisez l'état des pièces, les accès et les éléments à conserver ou à enlever pour définir une intervention adaptée.",
+      "related": [
+        {"href": "/nettoyage-logement-inoccupe-77/", "label": "Notre service de grand nettoyage"},
+        {"href": "/debarras-maison-appartement-77/", "label": "Débarras de maison et d'appartement"},
+        {"href": "/realisations/debarras-exterieur-pontault-combault-77340/", "label": "Voir notre débarras extérieur à Pontault-Combault"}
+      ]
+    },
+    {
+      "slug": "debarras-exterieur-pontault-combault-77340",
+      "city": "Pontault-Combault",
+      "postal_code": "77340",
+      "category": "Débarras extérieur",
+      "title": "Débarras extérieur à Pontault-Combault : réalisation | MénageUp",
+      "description": "Débarras extérieur réalisé par MénageUp à Pontault-Combault (77340). Photos avant, pendant l'intervention et après, avec le passage dégagé.",
+      "h1": "Débarras extérieur à Pontault-Combault",
+      "intro": "Cette réalisation MénageUp à Pontault-Combault présente le débarras d'un espace extérieur encombré. Les trois photographies suivent l'état initial, l'intervention et le passage dégagé après la prise en charge des éléments concernés.",
+      "card_text": "Un espace extérieur documenté en trois étapes : avant, pendant l'intervention et après le dégagement du passage.",
+      "service_code": "debarras",
+      "audience": "part",
+      "hero": "assets/realisations/debarras-exterieur/avant.webp",
+      "hero_alt": "L'espace extérieur avant le débarras MénageUp à Pontault-Combault",
+      "hero_stage": "Avant intervention",
+      "primary_image": "assets/realisations/debarras-exterieur/apres.webp",
+      "og_image": "assets/realisations/debarras-exterieur/avant.webp",
+      "sections": [
+        {
+          "id": "etapes",
+          "eyebrow": "Les étapes en photos",
+          "title": "Avant, pendant, après.",
+          "intro": "Les photos montrent les éléments présents, leur prise en charge et l'espace de circulation après l'intervention. Un grand élément métallique reste visible sur la vue finale.",
+          "layout": "sequence",
+          "photos": [
+            {
+              "file": "assets/realisations/debarras-exterieur/avant.webp",
+              "stage": "Avant",
+              "alt": "Espace extérieur encombré avant le débarras à Pontault-Combault, avec du bois, du grillage et des éléments métalliques",
+              "caption": "L'état initial de l'espace extérieur."
+            },
+            {
+              "file": "assets/realisations/debarras-exterieur/intervention.webp",
+              "stage": "Intervention",
+              "alt": "La prise en charge des éléments à enlever pendant le débarras extérieur à Pontault-Combault",
+              "caption": "Une étape de l'intervention de débarras."
+            },
+            {
+              "file": "assets/realisations/debarras-exterieur/apres.webp",
+              "stage": "Après",
+              "alt": "Le passage dégagé après le débarras extérieur à Pontault-Combault ; un grand élément métallique reste présent",
+              "caption": "Le passage dégagé après l'intervention."
+            }
+          ]
+        }
+      ],
+      "quote_title": "Un espace extérieur à dégager ?",
+      "quote_text": "Indiquez les éléments à enlever, leur volume approximatif et les accès. Le devis précise le périmètre du débarras, le transport et les éventuels coûts de filière selon les matériaux et les destinations adaptées.",
+      "follow_up": {
+        "title": "Un suivi clair, du devis au résultat.",
+        "text": "Nous échangeons avec vous sur le périmètre avant de préparer le devis et vous tenons informé pendant la prestation. Des photos avant/après vous sont transmises, avec un point sur le résultat. Nous restons disponibles pour vos questions."
+      },
+      "related": [
+        {"href": "/debarras-maison-appartement-77/", "label": "Débarras et enlèvement d'encombrants"},
+        {"href": "/nettoyage-pontault-combault/", "label": "Nos prestations à Pontault-Combault"},
+        {"href": "/realisations/grand-nettoyage-chatres-77610/", "label": "Voir notre grand nettoyage à Châtres"}
+      ]
+    }
+  ]
+}
