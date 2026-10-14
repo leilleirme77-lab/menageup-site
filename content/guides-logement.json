@@ -14,6 +14,7 @@
     "service_code": "grandnettoyage",
     "audience": "part",
     "updated_at": "2026-10-14",
+    "published_at": "2026-10-14",
     "sections": [
       {
         "id": "etat-initial",
@@ -154,6 +155,7 @@
     "service_code": "debarras",
     "audience": "part",
     "updated_at": "2026-10-14",
+    "published_at": "2026-10-14",
     "sections": [
       {
         "id": "objets-a-conserver",

@@ -12,6 +12,10 @@ Appliquer les règles globales de C:/Users/ez/AGENTS.md.
 - Les images générées représentent des illustrations de prestations ; ne pas les
   présenter comme des photographies de missions clientes réalisées.
 - Conserver la charte claire, les polices et une taille de texte lisible sur mobile.
+- Les sélecteurs de navigation ou de filtre éditorial doivent ouvrir une liste
+  intégrée à la charte du site. Vérifier le menu ouvert sur ordinateur et mobile,
+  son focus clavier et ses interactions ; éviter la liste native Windows pour
+  ces composants. Correction explicite d’Enzo du 14 octobre 2026.
 
 ## Publication
 

@@ -14,6 +14,7 @@
     "service_code": "chantier",
     "audience": "ent",
     "updated_at": "2026-10-14",
+    "published_at": "2026-10-14",
     "sections": [
       {
         "id": "identifier-le-besoin",
@@ -132,6 +133,7 @@
     "service_code": "basevie",
     "audience": "ent",
     "updated_at": "2026-10-14",
+    "published_at": "2026-10-14",
     "quote_fields": [
       "Commune du chantier et contact responsable de la base vie.",
       "Liste des modules, usages et surfaces approximatives.",
