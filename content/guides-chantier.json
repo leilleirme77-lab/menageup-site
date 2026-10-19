@@ -1,7 +1,7 @@
 [
   {
     "slug": "nettoyage-apres-travaux-ou-evacuation-gravats",
-    "title": "Après travaux : nettoyage ou évacuation des gravats ?",
+    "title": "Nettoyage après travaux ou évacuation des gravats | MénageUp",
     "description": "Distinguez nettoyage après travaux, débarras et évacuation des gravats. Préparez le périmètre, l’accès et l’ordre des interventions avant le devis.",
     "h1": "Nettoyage après travaux ou évacuation des gravats : que prévoir ?",
     "intro": [
@@ -24,13 +24,37 @@
           "Les petites salissures et les matériaux volumineux ne se mesurent donc pas de la même façon. La surface du local aide à décrire le nettoyage ; la nature, le volume, le poids et l’emplacement des éléments à sortir renseignent le débarras."
         ],
         "table": {
-          "headers": ["Ce que vous constatez", "Besoin à décrire", "Point à préciser"],
+          "headers": [
+            "Ce que vous constatez",
+            "Besoin à décrire",
+            "Point à préciser"
+          ],
           "rows": [
-            ["Poussière sur sols, plinthes et mobilier", "Nettoyage après travaux", "Matériaux, surfaces accessibles et travaux encore prévus"],
-            ["Traces de peinture, colle ou joint", "Traitement de résidus à étudier", "Nature de la trace et du support ; méthode à confirmer"],
-            ["Cartons, palettes, équipements déposés", "Débarras des éléments désignés", "Liste des éléments à enlever ou conserver"],
-            ["Briques, béton, carrelage cassé", "Évacuation de gravats à qualifier", "Nature, quantité, conditionnement et destination"],
-            ["Matériaux de nature inconnue", "Identification préalable", "Ne pas les intégrer à un enlèvement courant sans qualification"]
+            [
+              "Poussière sur sols, plinthes et mobilier",
+              "Nettoyage après travaux",
+              "Matériaux, surfaces accessibles et travaux encore prévus"
+            ],
+            [
+              "Traces de peinture, colle ou joint",
+              "Traitement de résidus à étudier",
+              "Nature de la trace et du support ; méthode à confirmer"
+            ],
+            [
+              "Cartons, palettes, équipements déposés",
+              "Débarras des éléments désignés",
+              "Liste des éléments à enlever ou conserver"
+            ],
+            [
+              "Briques, béton, carrelage cassé",
+              "Évacuation de gravats à qualifier",
+              "Nature, quantité, conditionnement et destination"
+            ],
+            [
+              "Matériaux de nature inconnue",
+              "Identification préalable",
+              "Ne pas les intégrer à un enlèvement courant sans qualification"
+            ]
           ]
         }
       },
@@ -105,22 +129,53 @@
       }
     ],
     "related": [
-      {"href": "/nettoyage-fin-de-chantier-77/", "label": "Étudier un nettoyage de fin de chantier en Seine-et-Marne"},
-      {"href": "/debarras-chantier-77/", "label": "Décrire un besoin de débarras de chantier"},
-      {"href": "/nettoyage-base-vie-chantier-77/", "label": "Organiser l’entretien des locaux de base vie"},
-      {"href": "/nettoyage-vitres-77/", "label": "Préciser le nettoyage des vitrages professionnels"},
-      {"href": "/conseils/", "label": "Retrouver les conseils de préparation d’une intervention"}
+      {
+        "href": "/nettoyage-fin-de-chantier-77/",
+        "label": "Étudier un nettoyage de fin de chantier en Seine-et-Marne"
+      },
+      {
+        "href": "/debarras-chantier-77/",
+        "label": "Décrire un besoin de débarras de chantier"
+      },
+      {
+        "href": "/nettoyage-base-vie-chantier-77/",
+        "label": "Organiser l’entretien des locaux de base vie"
+      },
+      {
+        "href": "/nettoyage-vitres-77/",
+        "label": "Préciser le nettoyage des vitrages professionnels"
+      },
+      {
+        "href": "/conseils/",
+        "label": "Retrouver les conseils de préparation d’une intervention"
+      }
     ],
     "sources": [
-      {"url": "https://www.inrs.fr/metiers/btp/preparation-organisation-chantier.html", "label": "INRS — Préparation et organisation d’un chantier", "context": "Organisation des circulations et anticipation de la collecte, du tri et de l’évacuation des déchets."},
-      {"url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37825", "label": "Service Public Entreprendre — Gestion des déchets de l’entreprise", "context": "Responsabilité du producteur ou détenteur, identification, tri et suivi des déchets professionnels."},
-      {"url": "https://www.ecologie.gouv.fr/sites/default/files/documents/TRI-DECHETS-4p-A4-Imprimable.pdf", "label": "Ministère de la Transition écologique — Tri des déchets professionnels", "context": "Flux de matières à distinguer selon l’activité et la nature des déchets."},
-      {"url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31954", "label": "Service Public — Déchets encombrants", "context": "Les gravats sont distincts des déchets admis à la collecte ordinaire des encombrants."}
+      {
+        "url": "https://www.inrs.fr/metiers/btp/preparation-organisation-chantier.html",
+        "label": "INRS — Préparation et organisation d’un chantier",
+        "context": "Organisation des circulations et anticipation de la collecte, du tri et de l’évacuation des déchets."
+      },
+      {
+        "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F37825",
+        "label": "Service Public Entreprendre — Gestion des déchets de l’entreprise",
+        "context": "Responsabilité du producteur ou détenteur, identification, tri et suivi des déchets professionnels."
+      },
+      {
+        "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/TRI-DECHETS-4p-A4-Imprimable.pdf",
+        "label": "Ministère de la Transition écologique — Tri des déchets professionnels",
+        "context": "Flux de matières à distinguer selon l’activité et la nature des déchets."
+      },
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31954",
+        "label": "Service Public — Déchets encombrants",
+        "context": "Les gravats sont distincts des déchets admis à la collecte ordinaire des encombrants."
+      }
     ]
   },
   {
     "slug": "entretien-base-vie-chantier-cahier-des-charges",
-    "title": "Entretien d’une base vie : préparer le cahier des charges",
+    "title": "Base vie : le cahier des charges d’entretien | MénageUp",
     "description": "Préparez l’entretien de votre base vie de chantier : espaces, tâches, hygiène quotidienne, responsables, consommables et points de contrôle.",
     "h1": "Entretien d’une base vie de chantier : quel cahier des charges ?",
     "intro": [
@@ -167,14 +222,49 @@
           "La trame suivante sert à préparer l’échange. Les tâches et moyens retenus doivent être adaptés au site ; cette matrice ne constitue pas un forfait MénageUp. Remplacez les responsables génériques par des noms ou fonctions, et précisez ce qui est inclus dans la prestation."
         ],
         "table": {
-          "headers": ["Espace", "Tâches à préciser", "Fréquence à organiser", "Responsable à désigner"],
+          "headers": [
+            "Espace",
+            "Tâches à préciser",
+            "Fréquence à organiser",
+            "Responsable à désigner"
+          ],
           "rows": [
-            ["Sanitaires", "WC et urinoirs, lavabos, robinetterie, poignées et sols ; produits et protocole", "Nettoyage et désinfection quotidiens des WC et urinoirs ; suivi adapté à l’usage", "Responsable du site pour l’organisation ; intervenant désigné pour les tâches"],
-            ["Vestiaires", "Sols, bancs, surfaces accessibles et déchets apparents", "Entretien quotidien à prévoir dans le programme, selon les dispositions applicables", "Équipe du site ou prestataire selon le périmètre écrit"],
-            ["Réfectoire", "Tables, chaises, points de contact, sols et équipements inclus", "Maintien propre ; nettoyage après chaque repas lorsque R4228-24 s’applique", "Obligations de l’employeur ; exécutant et tâches des usagers à préciser"],
-            ["Bureaux", "Sols, surfaces dégagées et points de contact accessibles", "À adapter à l’occupation, aux salissures et au programme d’hygiène", "Intervenant désigné ; utilisateurs pour libérer les surfaces"],
-            ["Entrées et passages", "Seuils, sols et dispositifs de retenue des salissures", "Contrôles et entretien selon les circulations et les apports de boue", "Responsable identifié dans le programme"],
-            ["Consommables et déchets courants", "Savon, papier, sacs et points de collecte définis", "Vérification selon l’effectif et les usages ; réapprovisionnement attribué", "Fournisseur des stocks et personne chargée du contrôle à préciser"]
+            [
+              "Sanitaires",
+              "WC et urinoirs, lavabos, robinetterie, poignées et sols ; produits et protocole",
+              "Nettoyage et désinfection quotidiens des WC et urinoirs ; suivi adapté à l’usage",
+              "Responsable du site pour l’organisation ; intervenant désigné pour les tâches"
+            ],
+            [
+              "Vestiaires",
+              "Sols, bancs, surfaces accessibles et déchets apparents",
+              "Entretien quotidien à prévoir dans le programme, selon les dispositions applicables",
+              "Équipe du site ou prestataire selon le périmètre écrit"
+            ],
+            [
+              "Réfectoire",
+              "Tables, chaises, points de contact, sols et équipements inclus",
+              "Maintien propre ; nettoyage après chaque repas lorsque R4228-24 s’applique",
+              "Obligations de l’employeur ; exécutant et tâches des usagers à préciser"
+            ],
+            [
+              "Bureaux",
+              "Sols, surfaces dégagées et points de contact accessibles",
+              "À adapter à l’occupation, aux salissures et au programme d’hygiène",
+              "Intervenant désigné ; utilisateurs pour libérer les surfaces"
+            ],
+            [
+              "Entrées et passages",
+              "Seuils, sols et dispositifs de retenue des salissures",
+              "Contrôles et entretien selon les circulations et les apports de boue",
+              "Responsable identifié dans le programme"
+            ],
+            [
+              "Consommables et déchets courants",
+              "Savon, papier, sacs et points de collecte définis",
+              "Vérification selon l’effectif et les usages ; réapprovisionnement attribué",
+              "Fournisseur des stocks et personne chargée du contrôle à préciser"
+            ]
           ]
         }
       },
@@ -234,20 +324,64 @@
       }
     ],
     "related": [
-      {"href": "/nettoyage-base-vie-chantier-77/", "label": "Préparer une demande d’entretien de base vie en Seine-et-Marne"},
-      {"href": "/nettoyage-fin-de-chantier-77/", "label": "Préciser une remise en état en fin de chantier"},
-      {"href": "/debarras-chantier-77/", "label": "Organiser l’enlèvement des matériaux de chantier"},
-      {"href": "/conseils/", "label": "Consulter les guides de préparation des prestations"}
+      {
+        "href": "/nettoyage-base-vie-chantier-77/",
+        "label": "Préparer une demande d’entretien de base vie en Seine-et-Marne"
+      },
+      {
+        "href": "/nettoyage-fin-de-chantier-77/",
+        "label": "Préciser une remise en état en fin de chantier"
+      },
+      {
+        "href": "/debarras-chantier-77/",
+        "label": "Organiser l’enlèvement des matériaux de chantier"
+      },
+      {
+        "href": "/conseils/",
+        "label": "Consulter les guides de préparation des prestations"
+      }
     ],
     "sources": [
-      {"url": "https://www.inrs.fr/metiers/btp/preparation-organisation-chantier.html", "label": "INRS — Organisation et installations de chantier", "context": "Adaptation des installations aux effectifs et à la durée du chantier ; organisation des accès et circulations."},
-      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-137", "label": "Code du travail — Article R4534-137", "context": "Conditions de dérogation pour les installations des chantiers dont la durée n’excède pas quatre mois ; portée des dispositions à vérifier selon le chantier."},
-      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-139", "label": "Code du travail — Article R4534-139", "context": "Entretien au moins quotidien du local-vestiaire pour les chantiers relevant de ces dispositions ; maintien en état de propreté."},
-      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-144", "label": "Code du travail — Article R4534-144", "context": "Renvoi, pour les cabinets d’aisance de chantier, aux dispositions R4228-11 à R4228-15."},
-      {"url": "https://code.travail.gouv.fr/code-du-travail/r4228-13", "label": "Code du travail — Article R4228-13", "context": "Nettoyage et désinfection au moins quotidiens des cabinets d’aisance et urinoirs, organisés par l’employeur."},
-      {"url": "https://code.travail.gouv.fr/code-du-travail/r4534-142", "label": "Code du travail — Article R4534-142", "context": "Maintien du local réfectoire en état de propreté, sans fréquence chiffrée dans cet article."},
-      {"url": "https://code.travail.gouv.fr/code-du-travail/r4228-24", "label": "Code du travail — Article R4228-24", "context": "Dans le régime général applicable, l’employeur veille au nettoyage du local de restauration et de ses équipements après chaque repas."},
-      {"url": "https://www.inrs.fr/actualites/faq-nettoyage-entreprise", "label": "INRS — Nettoyage et désinfection en entreprise", "context": "Distinction des opérations et préparation d’un protocole selon les zones, supports, risques et produits."}
+      {
+        "url": "https://www.inrs.fr/metiers/btp/preparation-organisation-chantier.html",
+        "label": "INRS — Organisation et installations de chantier",
+        "context": "Adaptation des installations aux effectifs et à la durée du chantier ; organisation des accès et circulations."
+      },
+      {
+        "url": "https://code.travail.gouv.fr/code-du-travail/r4534-137",
+        "label": "Code du travail — Article R4534-137",
+        "context": "Conditions de dérogation pour les installations des chantiers dont la durée n’excède pas quatre mois ; portée des dispositions à vérifier selon le chantier."
+      },
+      {
+        "url": "https://code.travail.gouv.fr/code-du-travail/r4534-139",
+        "label": "Code du travail — Article R4534-139",
+        "context": "Entretien au moins quotidien du local-vestiaire pour les chantiers relevant de ces dispositions ; maintien en état de propreté."
+      },
+      {
+        "url": "https://code.travail.gouv.fr/code-du-travail/r4534-144",
+        "label": "Code du travail — Article R4534-144",
+        "context": "Renvoi, pour les cabinets d’aisance de chantier, aux dispositions R4228-11 à R4228-15."
+      },
+      {
+        "url": "https://code.travail.gouv.fr/code-du-travail/r4228-13",
+        "label": "Code du travail — Article R4228-13",
+        "context": "Nettoyage et désinfection au moins quotidiens des cabinets d’aisance et urinoirs, organisés par l’employeur."
+      },
+      {
+        "url": "https://code.travail.gouv.fr/code-du-travail/r4534-142",
+        "label": "Code du travail — Article R4534-142",
+        "context": "Maintien du local réfectoire en état de propreté, sans fréquence chiffrée dans cet article."
+      },
+      {
+        "url": "https://code.travail.gouv.fr/code-du-travail/r4228-24",
+        "label": "Code du travail — Article R4228-24",
+        "context": "Dans le régime général applicable, l’employeur veille au nettoyage du local de restauration et de ses équipements après chaque repas."
+      },
+      {
+        "url": "https://www.inrs.fr/actualites/faq-nettoyage-entreprise",
+        "label": "INRS — Nettoyage et désinfection en entreprise",
+        "context": "Distinction des opérations et préparation d’un protocole selon les zones, supports, risques et produits."
+      }
     ]
   }
 ]

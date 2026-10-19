@@ -1,7 +1,7 @@
 [
   {
     "slug": "nettoyer-logement-inhabite-depuis-longtemps",
-    "title": "Nettoyer un logement longtemps inhabité : préparer l’intervention",
+    "title": "Nettoyer un logement inhabité depuis longtemps | MénageUp",
     "description": "État des pièces, mobilier à conserver, accès et suivi : préparez le grand nettoyage d’un logement longtemps inhabité, avec l’exemple réel de Châtres.",
     "h1": "Comment préparer le nettoyage d’un logement resté inhabité ?",
     "intro": [
@@ -39,11 +39,23 @@
           "L’INRS rappelle notamment l’importance de supprimer les causes d’humidité lorsqu’il existe des moisissures. Le nettoyage seul ne répare donc pas une fuite et ne règle pas une cause d’humidité. Si vous avez observé ces signes, précisez leur emplacement pour organiser les étapes dans le bon ordre."
         ],
         "table": {
-          "headers": ["Constat", "Information utile avant le devis"],
+          "headers": [
+            "Constat",
+            "Information utile avant le devis"
+          ],
           "rows": [
-            ["Poussière ou salissures sur une surface", "Vue générale, détail et matériau concerné."],
-            ["Trace d’humidité ou écoulement", "Emplacement, problème connu et éventuelle réparation prévue."],
-            ["Meuble ou revêtement détérioré", "Votre décision de le conserver, de le réparer ou de l’enlever."]
+            [
+              "Poussière ou salissures sur une surface",
+              "Vue générale, détail et matériau concerné."
+            ],
+            [
+              "Trace d’humidité ou écoulement",
+              "Emplacement, problème connu et éventuelle réparation prévue."
+            ],
+            [
+              "Meuble ou revêtement détérioré",
+              "Votre décision de le conserver, de le réparer ou de l’enlever."
+            ]
           ]
         }
       },
@@ -126,11 +138,26 @@
       }
     ],
     "related": [
-      {"href": "/nettoyage-logement-inoccupe-77/", "label": "Grand nettoyage de logement inhabité en Seine-et-Marne"},
-      {"href": "/realisations/grand-nettoyage-chatres-77610/", "label": "Voir les photos de notre intervention à Châtres"},
-      {"href": "/debarras-maison-appartement-77/", "label": "Préparer le débarras d’une maison ou d’un appartement"},
-      {"href": "/nettoyage-vitres-77/", "label": "Définir le nettoyage des vitrages"},
-      {"href": "/conseils/debarras-puis-nettoyage-logement/", "label": "Débarras puis nettoyage : organiser les deux étapes"}
+      {
+        "href": "/nettoyage-logement-inoccupe-77/",
+        "label": "Grand nettoyage de logement inhabité en Seine-et-Marne"
+      },
+      {
+        "href": "/realisations/grand-nettoyage-chatres-77610/",
+        "label": "Voir les photos de notre intervention à Châtres"
+      },
+      {
+        "href": "/debarras-maison-appartement-77/",
+        "label": "Préparer le débarras d’une maison ou d’un appartement"
+      },
+      {
+        "href": "/nettoyage-vitres-77/",
+        "label": "Définir le nettoyage des vitrages"
+      },
+      {
+        "href": "/conseils/debarras-puis-nettoyage-logement/",
+        "label": "Débarras puis nettoyage : organiser les deux étapes"
+      }
     ],
     "sources": [
       {
@@ -142,7 +169,7 @@
   },
   {
     "slug": "debarras-puis-nettoyage-logement",
-    "title": "Débarras puis nettoyage : préparer les étapes d’un logement",
+    "title": "Débarras puis nettoyage d’un logement | MénageUp",
     "description": "Objets à garder, volume, accès, évacuation et surfaces libérées : organisez un débarras suivi d’un nettoyage avec un devis et un suivi précis.",
     "h1": "Débarras puis nettoyage : comment organiser les deux étapes ?",
     "intro": [
@@ -191,12 +218,27 @@
           "Demandez que le périmètre précise l’enlèvement, les manutentions prévues, le transport, la destination adaptée et les éventuels frais de filière compris. Pour le nettoyage, identifiez les pièces, les surfaces accessibles et les besoins supplémentaires. Vous pouvez ainsi relire la proposition à partir de votre objectif concret."
         ],
         "table": {
-          "headers": ["Étape", "À préciser dans votre demande"],
+          "headers": [
+            "Étape",
+            "À préciser dans votre demande"
+          ],
           "rows": [
-            ["Débarras", "Objets à enlever et à conserver, volume estimé, nature des éléments et accès."],
-            ["Évacuation", "Transport, destinations adaptées et frais éventuels à intégrer au devis."],
-            ["Nettoyage", "Pièces, sols et autres surfaces à traiter après libération des espaces."],
-            ["Réception", "Résultat attendu, photos et points à vérifier ensemble."]
+            [
+              "Débarras",
+              "Objets à enlever et à conserver, volume estimé, nature des éléments et accès."
+            ],
+            [
+              "Évacuation",
+              "Transport, destinations adaptées et frais éventuels à intégrer au devis."
+            ],
+            [
+              "Nettoyage",
+              "Pièces, sols et autres surfaces à traiter après libération des espaces."
+            ],
+            [
+              "Réception",
+              "Résultat attendu, photos et points à vérifier ensemble."
+            ]
           ]
         }
       },
@@ -262,11 +304,26 @@
       }
     ],
     "related": [
-      {"href": "/debarras-maison-appartement-77/", "label": "Débarras de maison et d’appartement en Seine-et-Marne"},
-      {"href": "/nettoyage-logement-inoccupe-77/", "label": "Grand nettoyage de logement inhabité"},
-      {"href": "/realisations/debarras-exterieur-pontault-combault-77340/", "label": "Voir le débarras extérieur à Pontault-Combault"},
-      {"href": "/realisations/grand-nettoyage-chatres-77610/", "label": "Voir le grand nettoyage à Châtres, avec les meubles conservés"},
-      {"href": "/conseils/nettoyer-logement-inhabite-depuis-longtemps/", "label": "Préparer le nettoyage après une longue inoccupation"}
+      {
+        "href": "/debarras-maison-appartement-77/",
+        "label": "Débarras de maison et d’appartement en Seine-et-Marne"
+      },
+      {
+        "href": "/nettoyage-logement-inoccupe-77/",
+        "label": "Grand nettoyage de logement inhabité"
+      },
+      {
+        "href": "/realisations/debarras-exterieur-pontault-combault-77340/",
+        "label": "Voir le débarras extérieur à Pontault-Combault"
+      },
+      {
+        "href": "/realisations/grand-nettoyage-chatres-77610/",
+        "label": "Voir le grand nettoyage à Châtres, avec les meubles conservés"
+      },
+      {
+        "href": "/conseils/nettoyer-logement-inhabite-depuis-longtemps/",
+        "label": "Préparer le nettoyage après une longue inoccupation"
+      }
     ],
     "sources": [
       {

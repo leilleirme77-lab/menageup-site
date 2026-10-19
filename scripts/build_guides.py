@@ -155,7 +155,7 @@ def guide_filters(count_label):
 
 
 def hub_page(guides):
-    title = 'Conseils nettoyage, débarras et chantier dans le 77 | MénageUp'
+    title = 'Conseils nettoyage et débarras dans le 77 | MénageUp'
     description = 'Préparez votre nettoyage ou débarras en Seine-et-Marne : logement inhabité, remise en état après travaux et entretien des bases vie de chantier.'
     crumbs = [('Accueil', '/'), ('Conseils', HUB)]
     cards = []

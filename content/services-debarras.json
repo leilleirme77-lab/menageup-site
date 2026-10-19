@@ -195,7 +195,15 @@
         "href": "/nettoyage-moissy-cramayel/",
         "label": "Moissy-Cramayel"
       }
-    ]
+    ],
+    "headings": {
+      "perimetre": "Ce qu’un débarras de chantier emporte",
+      "deroule": "Comment se déroule un débarras de chantier",
+      "suivi": "Un chantier dégagé, étape par étape",
+      "devis": "Votre chantier à débarrasser, en quelques questions",
+      "secteur": "Nos débarras de chantier en Seine-et-Marne",
+      "liens": "Autour du débarras de chantier"
+    }
   },
   {
     "slug": "debarras-maison-appartement-77",
@@ -393,17 +401,25 @@
         "href": "/nettoyage-coulommiers/",
         "label": "Coulommiers"
       }
-    ]
+    ],
+    "headings": {
+      "perimetre": "Les pièces et les volumes à débarrasser",
+      "deroule": "Comment se déroule le débarras d’un logement",
+      "suivi": "Un logement vidé, pièce après pièce",
+      "devis": "Votre logement à débarrasser, en quelques questions",
+      "secteur": "Nos débarras de maison et d’appartement dans le 77",
+      "liens": "Autour du débarras de logement"
+    }
   },
   {
     "slug": "nettoyage-logement-inoccupe-77",
     "service_code": "grandnettoyage",
     "audience": "part",
-    "title": "Grand nettoyage de logement très sale ou inhabité 77 | MénageUp",
+    "title": "Nettoyage de logement inoccupé ou très sale 77 | MénageUp",
     "description": "Grand nettoyage de logements très sales, inhabités ou fermés depuis des années en Seine-et-Marne. Remise en propreté, débarras et photos avant/après sur devis.",
     "eyebrow": "Maisons et appartements · Avant une nouvelle occupation",
-    "h1": "Grand nettoyage de logements très sales ou inhabités dans le 77",
-    "intro": "Une maison ou un appartement resté inhabité pendant des années peut demander un grand nettoyage. MénageUp prend en charge les logements très sales, fermés ou encombrés en Seine-et-Marne, avec un périmètre adapté à l’état constaté. Le nettoyage s’organise autour du mobilier conservé et peut être associé au débarras des objets à enlever. Présentez-nous votre situation : nous étudions chaque demande de devis.",
+    "h1": "Nettoyage de logement inoccupé ou très sale en Seine-et-Marne",
+    "intro": "Une maison ou un appartement inoccupé depuis des mois, voire inhabité depuis des années, peut demander un grand nettoyage. MénageUp prend en charge les logements très sales, fermés ou encombrés en Seine-et-Marne, avec un périmètre adapté à l’état constaté. Le nettoyage s’organise autour du mobilier conservé et peut être associé au débarras des objets à enlever. Présentez-nous votre situation : nous étudions chaque demande de devis.",
     "image": "assets/images/grand-nettoyage-menageup-tenue.webp",
     "image_alt": "Illustration du grand nettoyage d'une pièce de logement avant sa réoccupation",
     "image_caption": "Visuel d'illustration de la prestation.",
@@ -582,6 +598,14 @@
         "href": "/nettoyage-brie-comte-robert/",
         "label": "Brie-Comte-Robert"
       }
-    ]
+    ],
+    "headings": {
+      "perimetre": "Ce que couvre le nettoyage d’un logement inoccupé",
+      "deroule": "Comment se déroule un grand nettoyage",
+      "suivi": "Un logement inoccupé remis en état, pièce par pièce",
+      "devis": "Votre logement à remettre en état, en quelques questions",
+      "secteur": "Nos grands nettoyages en Seine-et-Marne",
+      "liens": "Autour du grand nettoyage"
+    }
   }
 ]

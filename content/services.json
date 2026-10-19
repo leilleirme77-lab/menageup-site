@@ -171,7 +171,15 @@
         "href": "/nettoyage-moissy-cramayel/",
         "label": "Moissy-Cramayel"
       }
-    ]
+    ],
+    "headings": {
+      "perimetre": "Ce que couvre le nettoyage d’une base vie",
+      "deroule": "Comment se déroule l’entretien d’une base vie de chantier",
+      "suivi": "Un suivi qui tient toute la durée du chantier",
+      "devis": "Votre base vie, en quelques questions",
+      "secteur": "Les bases vie que nous suivons en Seine-et-Marne",
+      "liens": "Autour de l’entretien de chantier"
+    }
   },
   {
     "slug": "nettoyage-vitres-77",
@@ -332,7 +340,15 @@
         "href": "/nettoyage-melun/",
         "label": "Melun"
       }
-    ]
+    ],
+    "headings": {
+      "perimetre": "Les vitres et vitrines que nous prenons en charge",
+      "deroule": "Comment se déroule un nettoyage de vitres",
+      "suivi": "Des vitrines qui restent nettes entre deux passages",
+      "devis": "Vos vitres, en quelques questions",
+      "secteur": "Le nettoyage de vitres près de chez vous dans le 77",
+      "liens": "Autour du nettoyage de vitres"
+    }
   },
   {
     "slug": "nettoyage-commerces-77",
@@ -341,7 +357,7 @@
     "description": "Entretien de commerces, boutiques et magasins en Seine-et-Marne : sols, surfaces accessibles, sanitaires et vitrines selon vos besoins. Devis personnalisé.",
     "eyebrow": "Professionnels · Commerces et boutiques",
     "h1": "Nettoyage de commerces et boutiques en Seine-et-Marne",
-    "intro": "Un magasin propre se prépare selon son activité, ses horaires et ses surfaces. MénageUp accompagne votre demande d’entretien de commerce dans le 77 : espace de vente, cabines, réserves accessibles, sanitaires et vitrines, avec un périmètre défini dans le devis.",
+    "intro": "Un magasin propre se prépare selon son activité, ses horaires et ses surfaces. MénageUp prend en charge le nettoyage de votre commerce dans le 77 : espace de vente, cabines, réserves accessibles, sanitaires et vitrines, avec un périmètre défini dans le devis.",
     "image": "assets/images/commerce-boutique-menageup-tenue.webp",
     "image_alt": "Illustration d’une boutique propre avec une surface de vente dégagée et une vitrine lumineuse",
     "image_caption": "Visuel d’illustration de la prestation.",
@@ -520,6 +536,14 @@
         "href": "/nettoyage-melun/",
         "label": "Melun"
       }
-    ]
+    ],
+    "headings": {
+      "perimetre": "Les espaces d’un commerce à entretenir",
+      "deroule": "Comment se déroule le nettoyage d’un commerce",
+      "suivi": "Une boutique prête à l’ouverture, chaque matin",
+      "devis": "Votre commerce, en quelques questions",
+      "secteur": "Les commerces et boutiques que nous entretenons dans le 77",
+      "liens": "Autour du nettoyage de commerces"
+    }
   }
 ]

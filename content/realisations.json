@@ -3,7 +3,28 @@
     "title": "Nos réalisations en Seine-et-Marne | MénageUp",
     "description": "Photos de réalisations MénageUp dans le 77 : nettoyage d'une habitation inhabitée six ans à Châtres et débarras extérieur à Pontault-Combault.",
     "h1": "Nos interventions, en images.",
-    "intro": "Grand nettoyage, remise en ordre, débarras : découvrez des réalisations MénageUp en Seine-et-Marne. À Châtres, une habitation était restée inhabitée six ans ; à Pontault-Combault, un espace extérieur devait être dégagé. Les photos présentent ces interventions sur place."
+    "intro": "Grand nettoyage, remise en ordre, débarras : découvrez des réalisations MénageUp en Seine-et-Marne. À Châtres, une habitation était restée inhabitée six ans ; à Pontault-Combault, un espace extérieur devait être dégagé. Les photos présentent ces interventions sur place.",
+    "sections": [
+      {
+        "eyebrow": "Comment lire ces pages",
+        "title": "Chaque réalisation suit l’ordre de l’intervention.",
+        "intro": "Vous trouvez le contexte avant les photos, puis les photos dans l’ordre du chantier.",
+        "points": [
+          {
+            "title": "Le contexte, d’abord",
+            "text": "L’état des lieux au départ, l’objectif de l’intervention et ce que montrent exactement les photos. Vous savez ce que vous regardez avant de le regarder."
+          },
+          {
+            "title": "Les photos, dans l’ordre",
+            "text": "L’état initial, l’intervention quand elle a été photographiée, puis le résultat. Les vues ne sont pas toujours prises depuis le même point : c’est précisé sous chaque photo."
+          },
+          {
+            "title": "Les chiffres, quand nous les avons",
+            "text": "Durée, intervenants mobilisés, ancienneté de la situation. Ce qui n’a pas été relevé pendant le chantier n’est pas affiché plutôt qu’estimé."
+          }
+        ]
+      }
+    ]
   },
   "cases": [
     {
@@ -17,17 +38,35 @@
       "intro": "Cette habitation à Châtres était restée inhabitée pendant six ans. L'encrassement était important ; des souris, des rats, des oiseaux et des déjections de rongeurs avaient été retrouvés sur place. MénageUp a réalisé un grand nettoyage et une remise en ordre, avec les meubles et équipements conservés.",
       "card_text": "Une habitation restée inhabitée six ans, avec un encrassement important. Les photos montrent le séjour et la cuisine avant et après l'intervention.",
       "stats": [
-        {"value": "6 ans", "label": "d'inoccupation"},
-        {"value": "9 h", "label": "d'intervention"},
-        {"value": "3", "label": "intervenants mobilisés"}
+        {
+          "value": "6 ans",
+          "label": "d'inoccupation"
+        },
+        {
+          "value": "9 h",
+          "label": "d'intervention"
+        },
+        {
+          "value": "3",
+          "label": "intervenants mobilisés"
+        }
       ],
       "context": {
         "title": "Une remise en propreté après six ans d'inoccupation.",
         "intro": "Le grand nettoyage répondait à l'état de cette habitation très sale, après une longue période sans occupation. Le périmètre devait tenir compte des pièces et du mobilier conservé.",
         "points": [
-          {"title": "L'état initial", "text": "Une habitation inhabitée depuis six ans, avec un encrassement important et des traces de présence d'animaux retrouvées sur place."},
-          {"title": "L'objectif de l'intervention", "text": "Un grand nettoyage et une remise en ordre des espaces, en conservant les meubles et équipements présents."},
-          {"title": "Les photos présentées", "text": "Le séjour avant et après, trois détails de cuisine avant l'intervention et une vue générale de la cuisine après."}
+          {
+            "title": "L'état initial",
+            "text": "Une habitation inhabitée depuis six ans, avec un encrassement important et des traces de présence d'animaux retrouvées sur place."
+          },
+          {
+            "title": "L'objectif de l'intervention",
+            "text": "Un grand nettoyage et une remise en ordre des espaces, en conservant les meubles et équipements présents."
+          },
+          {
+            "title": "Les photos présentées",
+            "text": "Le séjour avant et après, trois détails de cuisine avant l'intervention et une vue générale de la cuisine après."
+          }
         ]
       },
       "service_code": "grandnettoyage",
@@ -102,9 +141,18 @@
       "quote_title": "Logement très sale, inhabité ou situation particulière ?",
       "quote_text": "Décrivez votre besoin : nous étudions chaque demande de devis. Précisez l'état des pièces, les accès et les éléments à conserver ou à enlever pour définir une intervention adaptée.",
       "related": [
-        {"href": "/nettoyage-logement-inoccupe-77/", "label": "Notre service de grand nettoyage"},
-        {"href": "/debarras-maison-appartement-77/", "label": "Débarras de maison et d'appartement"},
-        {"href": "/realisations/debarras-exterieur-pontault-combault-77340/", "label": "Voir notre débarras extérieur à Pontault-Combault"}
+        {
+          "href": "/nettoyage-logement-inoccupe-77/",
+          "label": "Notre service de grand nettoyage"
+        },
+        {
+          "href": "/debarras-maison-appartement-77/",
+          "label": "Débarras de maison et d'appartement"
+        },
+        {
+          "href": "/realisations/debarras-exterieur-pontault-combault-77340/",
+          "label": "Voir notre débarras extérieur à Pontault-Combault"
+        }
       ]
     },
     {
@@ -112,7 +160,7 @@
       "city": "Pontault-Combault",
       "postal_code": "77340",
       "category": "Débarras extérieur",
-      "title": "Débarras extérieur à Pontault-Combault : réalisation | MénageUp",
+      "title": "Débarras extérieur à Pontault-Combault 77 | MénageUp",
       "description": "Débarras extérieur réalisé par MénageUp à Pontault-Combault (77340). Photos avant, pendant l'intervention et après, avec le passage dégagé.",
       "h1": "Débarras extérieur à Pontault-Combault",
       "intro": "Cette réalisation MénageUp à Pontault-Combault présente le débarras d'un espace extérieur encombré. Les trois photographies suivent l'état initial, l'intervention et le passage dégagé après la prise en charge des éléments concernés.",
@@ -160,10 +208,37 @@
         "text": "Nous échangeons avec vous sur le périmètre avant de préparer le devis et vous tenons informé pendant la prestation. Des photos avant/après vous sont transmises, avec un point sur le résultat. Nous restons disponibles pour vos questions."
       },
       "related": [
-        {"href": "/debarras-maison-appartement-77/", "label": "Débarras et enlèvement d'encombrants"},
-        {"href": "/nettoyage-pontault-combault/", "label": "Nos prestations à Pontault-Combault"},
-        {"href": "/realisations/grand-nettoyage-chatres-77610/", "label": "Voir notre grand nettoyage à Châtres"}
-      ]
+        {
+          "href": "/debarras-maison-appartement-77/",
+          "label": "Débarras et enlèvement d'encombrants"
+        },
+        {
+          "href": "/nettoyage-pontault-combault/",
+          "label": "Nos prestations à Pontault-Combault"
+        },
+        {
+          "href": "/realisations/grand-nettoyage-chatres-77610/",
+          "label": "Voir notre grand nettoyage à Châtres"
+        }
+      ],
+      "context": {
+        "title": "Un passage extérieur à rendre praticable.",
+        "intro": "Le débarras portait sur un espace extérieur encombré de matériaux et d’objets, devant un passage devenu inutilisable.",
+        "points": [
+          {
+            "title": "L’état initial",
+            "text": "Un espace extérieur encombré de bois, de grillage et d’éléments métalliques, qui bloquait le passage."
+          },
+          {
+            "title": "L’objectif de l’intervention",
+            "text": "Dégager le passage en prenant en charge les éléments à enlever, sans toucher à ce qui devait rester sur place."
+          },
+          {
+            "title": "Les photos présentées",
+            "text": "L’état initial, la prise en charge des éléments pendant l’intervention, puis le passage dégagé. Un grand élément métallique reste visible sur la dernière photo : il ne faisait pas partie du débarras."
+          }
+        ]
+      }
     }
   ]
 }

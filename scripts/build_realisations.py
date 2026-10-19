@@ -108,7 +108,11 @@ def document(title, description, path, og_image, primary_image, crumbs, body, qu
         ]
     }
     ldjson = json.dumps(graph, ensure_ascii=False, indent=2).replace('</', '<\\/')
-    details_style = '<style>' + PROJECT_DETAILS_CSS + '</style>' if 'project-followup' in body or 'project-stats' in body else ''
+    # « context-grid » ajoute a la liste : le sommaire des realisations reutilise
+    # cette grille, et sans cette condition il la recevrait sans sa feuille de
+    # style — trois colonnes qui retombent les unes sous les autres.
+    details_style = '<style>' + PROJECT_DETAILS_CSS + '</style>' if any(
+        marque in body for marque in ('project-followup', 'project-stats', 'context-grid')) else ''
     return f'''<!DOCTYPE html>
 <html lang="fr" data-theme="light">
 <head>
@@ -195,6 +199,26 @@ def case_page(case):
     return document(case['title'], case['description'], path, case['og_image'], case['primary_image'], crumbs, body, quote)
 
 
+def hub_sections(hub):
+    """Les sections libres du sommaire, decrites dans le contenu.
+
+    Le sommaire n'avait que son titre, sa phrase d'introduction et les vignettes :
+    195 mots. Un visiteur qui arrive sur « nos realisations » sans savoir ce qu'il
+    va y trouver repart avant de cliquer. Ces sections repondent a la question
+    avant le clic — elles ne sont pas la pour allonger la page.
+    """
+    blocs = []
+    for section in hub.get('sections', []):
+        points = ''.join(
+            f'<article><h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p></article>'
+            for item in section['points'])
+        blocs.append(
+            f'''<section class="section project-context"><div class="wrap"><div class="section-head">'''
+            f'''<div><p class="eyebrow">{esc(section['eyebrow'])}</p><h2>{esc(section['title'])}</h2></div>'''
+            f'''<p>{esc(section['intro'])}</p></div><div class="context-grid">{points}</div></div></section>''')
+    return ''.join(blocs)
+
+
 def hub_page(data):
     hub = data['hub']
     cards = []
@@ -203,7 +227,7 @@ def hub_page(data):
         cards.append(f'''<a class="project-card" href="{HUB_PATH}{esc(case['slug'])}/"><div class="project-card-image">{image}<span class="photo-stage">{esc(case['hero_stage'])}</span></div><div class="project-card-copy"><div class="case-meta"><span>{esc(case['city'])} · {esc(case['postal_code'])}</span></div><h2>{esc(case['category'])}</h2><p>{esc(case['card_text'])}</p><span class="card-link">Voir la réalisation ↗</span></div></a>''')
     quote = quote_link(HUB_PATH)
     crumbs = [('Accueil', '/'), ('Réalisations', HUB_PATH)]
-    body = breadcrumbs(crumbs) + f'''<main id="contenu"><div class="wrap"><section class="hub-hero"><p class="eyebrow">Réalisations MénageUp · Seine-et-Marne</p><h1>{esc(hub['h1'])}</h1><p class="intro">{esc(hub['intro'])}</p></section></div>{proof_note(hub=True)}<section class="wrap projects-grid" aria-label="Nos réalisations">{''.join(cards)}</section><section class="project-cta"><div class="wrap project-cta-grid"><div><h2>Parlons de vos espaces.</h2><p>Indiquez la commune, l'état des lieux et les tâches à prévoir. Nous préparons avec vous le périmètre de la prestation et votre devis.</p></div><a class="btn" href="{esc(quote)}">Demander un devis gratuit ↗</a></div></section></main>'''
+    body = breadcrumbs(crumbs) + f'''<main id="contenu"><div class="wrap"><section class="hub-hero"><p class="eyebrow">Réalisations MénageUp · Seine-et-Marne</p><h1>{esc(hub['h1'])}</h1><p class="intro">{esc(hub['intro'])}</p></section></div>{proof_note(hub=True)}<section class="wrap projects-grid" aria-label="Nos réalisations">{''.join(cards)}</section>{hub_sections(hub)}<section class="project-cta"><div class="wrap project-cta-grid"><div><h2>Parlons de vos espaces.</h2><p>Indiquez la commune, l'état des lieux et les tâches à prévoir. Nous préparons avec vous le périmètre de la prestation et votre devis.</p></div><a class="btn" href="{esc(quote)}">Demander un devis gratuit ↗</a></div></section></main>'''
     first = data['cases'][0]
     return document(hub['title'], hub['description'], HUB_PATH, first['og_image'], first['primary_image'], crumbs, body, quote)
 
