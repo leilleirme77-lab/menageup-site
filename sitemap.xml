@@ -416,4 +416,20 @@
       <image:loc>https://menageup.fr/assets/realisations/chatres-77610/sejour-apres.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://menageup.fr/ils-nous-font-confiance/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/partenaires/construdem.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/partenaires/dreams-pizza.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/partenaires/arthurimmo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/partenaires/cabinet-la-parisienne.png</image:loc>
+    </image:image>
+  </url>
 </urlset>

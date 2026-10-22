@@ -47,14 +47,32 @@ def company_identity(html):
 def with_sector_navigation(html, path):
     html = company_identity(html)
     path = '/' + path.strip('/')
-    if 'data-seo-zone-link' not in html and '</footer>' in html:
+    trust_path = '/ils-nous-font-confiance/'
+
+    def partner_navigation(match):
+        content = match.group(2)
+        if trust_path not in content:
+            active = ' aria-current="page"' if path == trust_path.rstrip('/') else ''
+            link = '<a href="' + trust_path + '"' + active + '>Ils nous font confiance</a>'
+            advice = re.search(r'<a\b[^>]*href=["\']/conseils/["\'][^>]*>', content)
+            content = content[:advice.start()] + link + content[advice.start():] if advice else content + link
+        return match.group(1) + content + match.group(3)
+
+    html = re.sub(r'(<nav\b(?=[^>]*\bclass=["\'][^"\']*\b(?:mainnav|desktop-nav|mobile-links|navpanel)\b[^"\']*["\'])[^>]*>)(.*?)(</nav>)', partner_navigation, html, flags=re.S)
+    if '</footer>' in html:
         links = []
         if path != '/nettoyage-tournan-en-brie':
             links.append('<a href="/nettoyage-tournan-en-brie/">Nettoyage à Tournan-en-Brie</a>')
         if path != '/zones-intervention-seine-et-marne-77':
             links.append('<a href="/zones-intervention-seine-et-marne-77/">Nos secteurs en Seine-et-Marne</a>')
+        if path != trust_path.rstrip('/'):
+            links.append('<a href="' + trust_path + '">Ils nous font confiance</a>')
         if links:
-            html = html.replace('</footer>', '<div class="site-area-link" data-seo-zone-link>' + ' · '.join(links) + '</div></footer>', 1)
+            group = '<div class="site-area-link" data-seo-zone-link>' + ' · '.join(links) + '</div>'
+            if 'data-seo-zone-link' in html:
+                html = re.sub(r'<div\b[^>]*data-seo-zone-link[^>]*>.*?</div>', lambda _: group, html, count=1, flags=re.S)
+            else:
+                html = html.replace('</footer>', group + '</footer>', 1)
     if '/assets/local-seo.css' not in html:
         html = html.replace('</head>', '<link rel="stylesheet" href="/assets/local-seo.css">\n</head>', 1)
     return html

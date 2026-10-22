@@ -50,3 +50,13 @@ la fiche Google ni fabriquer des agences dans les communes desservies.
 
 Les photographies de Châtres et Pontault-Combault conservent leur vraie commune,
 y compris lorsqu’une page de secteur voisin les présente comme exemples.
+
+## Partenaires — demande du 22 octobre 2026
+
+Présenter les quatre logos fournis tels quels : CONSTRU’DEM, Dream’s Pizza,
+Arthurimmo.com et Cabinet La Parisienne Immobilier. Le carrousel de l’accueil
+montre les visuels ; les explications sont sur /ils-nous-font-confiance/.
+Ne pas inventer de site partenaire, d’agence précise, de témoignage, de prestation
+effectuée pour une enseigne ou de partenariat à l’échelle d’un réseau national.
+Les nouvelles entrées se gèrent dans content/partners.json et build_partners.py.
+Prévoir toucher, clavier, pause du défilement et préférence de mouvement réduit.

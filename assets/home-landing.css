@@ -1,0 +1,10 @@
+/* Keep the requested mobile order, with deliberate spacing between its elements. */
+@media(max-width:900px){
+  .hero .hgrid{row-gap:0;padding:34px 0 40px}
+  .hero .hcopy .hero-eyebrow{margin:0 0 22px}
+  .hero .hcopy h1,.hero .hcopy .htitle{margin:0;font-size:clamp(32px,7.7vw,44px);line-height:1.13}
+  .hero .hcopy .tagline{margin:20px 0 0}
+  .hero .hcopy .sub{margin:23px auto 0;max-width:38ch}
+  .hero .hcopy .switch{margin:28px 0 24px}
+  .hero .hcopy .chips{margin-top:24px}
+}

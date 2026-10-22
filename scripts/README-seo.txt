@@ -59,6 +59,7 @@ après la dernière génération, y compris accueil, guides et réalisations.
 LOT LOCAL DU 22 OCTOBRE 2026
 Après les trois générateurs ci-dessus, exécuter en série :
   python scripts/build_local_pages.py
+  python scripts/build_partners.py
   python scripts/enrich_seo_navigation.py
 Le premier construit la page relue de Tournan et le répertoire des communes du 77.
 Le second ajoute leurs accès depuis les pages du sitemap et conserve leurs dates
@@ -80,6 +81,15 @@ consécutives sous le même filtre. Les sommes du tableau Pages sont distinguée
 des totaux de propriété ; les requêtes nommées ne couvrent pas tous les clics.
 Ce script n’accède à aucun compte Google et ne prouve pas une indexation actuelle.
 Le contrôle d’une page dans Search Console reste une opération distincte.
+Les partenaires confirmés se gèrent dans content/partners.json : nom, secteur,
+logo fourni et fond d’affichage. Ne pas ajouter de témoignage, d’agence ou de
+lien externe sans information confirmée. build_partners.py actualise le carrousel
+de l’accueil, /ils-nous-font-confiance/ et leur entrée au sitemap. Il conserve les
+dates quand le contenu ne change pas. Contrôler le toucher, le clavier, la pause,
+le mode sans JavaScript et la préférence de réduction des mouvements.
+Par défaut, un nouveau logo est affiché en entier avec object-fit:contain.
+display_fit=background-crop est réservé aux marges des trois carrés actuels,
+dont le cadrage a été contrôlé. Ne pas l’ajouter à un nouveau logo sans revue.
 Pour dater un lot de contenu relu, définir MENAGEUP_CONTENT_DATE au format ISO
 avant la génération, par exemple dans PowerShell :
   $env:MENAGEUP_CONTENT_DATE = '2026-10-14'

@@ -1,0 +1,6 @@
+[
+  {"id":"construdem","name":"CONSTRU’DEM","sector":"Bâtiment","logo":"assets/partenaires/construdem.png","background":"light","display_fit":"background-crop"},
+  {"id":"dreams-pizza","name":"Dream’s Pizza","sector":"Restauration","logo":"assets/partenaires/dreams-pizza.png","background":"light","display_fit":"background-crop"},
+  {"id":"arthurimmo","name":"Arthurimmo.com","sector":"Immobilier","logo":"assets/partenaires/arthurimmo.png","background":"dark","display_fit":"background-crop"},
+  {"id":"cabinet-la-parisienne","name":"Cabinet La Parisienne Immobilier","sector":"Immobilier","logo":"assets/partenaires/cabinet-la-parisienne.png","background":"light"}
+]
