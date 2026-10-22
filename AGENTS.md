@@ -16,6 +16,11 @@ Appliquer les règles globales de C:/Users/ez/AGENTS.md.
   intégrée à la charte du site. Vérifier le menu ouvert sur ordinateur et mobile,
   son focus clavier et ses interactions ; éviter la liste native Windows pour
   ces composants. Correction explicite d’Enzo du 14 octobre 2026.
+- Vérifier visuellement les comparaisons avant/après à leur emplacement réel,
+  sur ordinateur et mobile. Une image chargée ne garantit pas un cadrage correct.
+  Recadrer l’affichage des captures contenant des bandes de fond, sans modifier
+  le contenu photographié, et conserver l’accès à l’original. Les deux vues d’une
+  comparaison doivent avoir des cadres cohérents. Correction du 22 octobre 2026.
 
 ## Publication
 
