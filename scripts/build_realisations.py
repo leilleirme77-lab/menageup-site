@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from html import escape
 import json
+from seo_shared import with_sector_navigation
 import os
 import re
 import xml.etree.ElementTree as ET
@@ -281,6 +282,7 @@ def main():
         if not re.search(r'\b' + re.escape(case['service_code']) + r"\s*:", service_script):
             raise ValueError('Unknown quote service')
         outputs[ROOT / 'realisations' / case['slug'] / 'index.html'] = case_page(case)
+    outputs = {file: with_sector_navigation(html, '/' + file.parent.relative_to(ROOT).as_posix() + '/') for file, html in outputs.items()}
     changed = {DOMAIN + '/' + file.parent.relative_to(ROOT).as_posix() + '/'
                for file, html in outputs.items()
                if not file.exists() or file.read_text(encoding='utf-8') != html}

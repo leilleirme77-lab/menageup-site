@@ -55,6 +55,31 @@ Exécuter les générateurs en série, jamais simultanément :
 Puis lancer l'audit du site et les contrôles visuels sur l'ensemble produit.
 Les trois générateurs partagent le sitemap : vérifier les liens et leurs cibles
 après la dernière génération, y compris accueil, guides et réalisations.
+
+LOT LOCAL DU 22 OCTOBRE 2026
+Après les trois générateurs ci-dessus, exécuter en série :
+  python scripts/build_local_pages.py
+  python scripts/enrich_seo_navigation.py
+Le premier construit la page relue de Tournan et le répertoire des communes du 77.
+Le second ajoute leurs accès depuis les pages du sitemap et conserve leurs dates
+si aucun HTML ne change. Le répertoire utilise content/communes-77.json, extrait
+de l’API administrative officielle le 22 octobre 2026. Il ne crée pas de pages de
+ville automatiques et ne certifie pas la disponibilité commerciale d’un créneau.
+Les nouveaux guides relus sont dans content/guides-logistique.json.
+L’identité d’entreprise et son siège confirmé sont dans company-location.json.
+seo_shared.py produit une Organization avec son siège visible : ce modèle ne
+déclare pas d’agence locale ni d’adresse d’accueil du public à Tournan. L’adresse
+de la fiche Google reste distincte ; aucune modification du compte n’est faite.
+L’audit contrôle aussi la concordance entre ce siège balisé et le texte visible.
+
+MESURE RÉELLE ET CONFIDENTIALITÉ
+  python scripts/measure_gsc.py --input C:/dossier-prive/gsc --output C:/dossier-prive/bilan.json
+Fournir les CSV officiels, avec Graphique.csv et Filtres.csv. Le script refuse un
+rapport privé dans le site public et une comparaison à 28 jours sans 56 journées
+consécutives sous le même filtre. Les sommes du tableau Pages sont distinguées
+des totaux de propriété ; les requêtes nommées ne couvrent pas tous les clics.
+Ce script n’accède à aucun compte Google et ne prouve pas une indexation actuelle.
+Le contrôle d’une page dans Search Console reste une opération distincte.
 Pour dater un lot de contenu relu, définir MENAGEUP_CONTENT_DATE au format ISO
 avant la génération, par exemple dans PowerShell :
   $env:MENAGEUP_CONTENT_DATE = '2026-10-14'

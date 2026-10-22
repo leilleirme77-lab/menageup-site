@@ -7,11 +7,12 @@ import json
 import re
 import xml.etree.ElementTree as ET
 from PIL import Image
+from seo_shared import with_sector_navigation
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = 'https://menageup.fr'
 HUB = '/conseils/'
-FILES = ['content/guides-logement.json', 'content/guides-chantier.json']
+FILES = ['content/guides-logement.json', 'content/guides-chantier.json', 'content/guides-logistique.json']
 
 
 def esc(value):
@@ -188,6 +189,7 @@ def main():
                 raise ValueError('Uneven table')
     outputs = {ROOT / 'conseils/index.html': hub_page(guides)}
     outputs.update({ROOT / 'conseils' / g['slug'] / 'index.html': guide_page(g) for g in guides})
+    outputs = {file: with_sector_navigation(html, '/' + file.parent.relative_to(ROOT).as_posix() + '/') for file, html in outputs.items()}
     changed = {file for file, html in outputs.items() if not file.exists() or file.read_text(encoding='utf-8') != html}
     ns, ins = 'http://www.sitemaps.org/schemas/sitemap/0.9', 'http://www.google.com/schemas/sitemap-image/1.1'
     ET.register_namespace('', ns)

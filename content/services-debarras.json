@@ -171,10 +171,18 @@
       {
         "href": "/nettoyage-etat-des-lieux-77/",
         "label": "Nettoyage avant état des lieux"
+      },
+      {
+        "href": "/conseils/mise-en-dechetterie-apres-debarras-77/",
+        "label": "Débarras et mise en déchèterie : préparer la destination"
       }
     ],
     "area_intro": "Indiquez la commune de votre chantier en Seine-et-Marne, ainsi que l'emplacement des déchets et les accès. La préparation de l'intervention tient compte du déplacement, des conditions de manutention et de la destination des matériaux.",
     "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
       {
         "href": "/nettoyage-pontault-combault/",
         "label": "Pontault-Combault"
@@ -377,10 +385,18 @@
       {
         "href": "/menage-a-domicile-77/",
         "label": "Entretien courant après la remise en propreté"
+      },
+      {
+        "href": "/conseils/mise-en-dechetterie-apres-debarras-77/",
+        "label": "Débarras et mise en déchèterie : préparer la destination"
       }
     ],
     "area_intro": "Votre maison ou votre appartement se trouve en Seine-et-Marne ? Indiquez la commune et les accès, y compris pour une cave ou un garage. Les déplacements, la manutention et la destination des déchets sont pris en compte dans l'étude de votre demande.",
     "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
       {
         "href": "/nettoyage-pontault-combault/",
         "label": "Pontault-Combault"
@@ -578,6 +594,10 @@
     ],
     "area_intro": "Vous préparez la réoccupation d'un logement en Seine-et-Marne ? Indiquez sa commune, son état et les accès. Le périmètre, le déplacement et les conditions pratiques sont définis pendant l'étude de votre demande.",
     "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
       {
         "href": "/nettoyage-pontault-combault/",
         "label": "Pontault-Combault"

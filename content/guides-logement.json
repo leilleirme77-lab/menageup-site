@@ -13,7 +13,7 @@
     "image_caption": "Séjour après le grand nettoyage et la remise en ordre d’une habitation à Châtres (77610). Photographie de cette réalisation MénageUp.",
     "service_code": "grandnettoyage",
     "audience": "part",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-22",
     "published_at": "2026-10-14",
     "sections": [
       {
@@ -157,6 +157,10 @@
       {
         "href": "/conseils/debarras-puis-nettoyage-logement/",
         "label": "Débarras puis nettoyage : organiser les deux étapes"
+      },
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Présenter un besoin de nettoyage à Tournan-en-Brie"
       }
     ],
     "sources": [
@@ -181,7 +185,7 @@
     "image_caption": "Débarras extérieur à Pontault-Combault (77340) : le passage est dégagé et un grand élément métallique reste présent. Cette réalisation illustre le débarras, sans présenter un nettoyage intérieur de logement.",
     "service_code": "debarras",
     "audience": "part",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-22",
     "published_at": "2026-10-14",
     "sections": [
       {
@@ -323,6 +327,10 @@
       {
         "href": "/conseils/nettoyer-logement-inhabite-depuis-longtemps/",
         "label": "Préparer le nettoyage après une longue inoccupation"
+      },
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Présenter un besoin de nettoyage à Tournan-en-Brie"
       }
     ],
     "sources": [

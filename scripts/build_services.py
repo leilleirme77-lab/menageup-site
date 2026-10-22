@@ -4,6 +4,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlencode
 from xml.etree import ElementTree as ET
+from seo_shared import with_sector_navigation
 
 ROOT=Path(__file__).resolve().parents[1]
 DOMAIN='https://menageup.fr'
@@ -99,7 +100,7 @@ def build():
     if len({s['slug'] for s in services})!=len(services):raise ValueError('Duplicate service slug')
     changed=set()
     for s in services:
-        out=ROOT/s['slug']/'index.html';out.parent.mkdir(exist_ok=True);result=render(s)
+        out=ROOT/s['slug']/'index.html';out.parent.mkdir(exist_ok=True);result=with_sector_navigation(render(s), '/'+s['slug']+'/')
         if not out.exists() or out.read_text(encoding='utf-8')!=result:
             changed.add(DOMAIN+'/'+s['slug']+'/')
             out.write_text(result,encoding='utf-8',newline='\n')

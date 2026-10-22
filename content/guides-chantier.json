@@ -13,7 +13,7 @@
     "image_caption": "Visuel d’illustration de la prestation ; il ne montre pas un chantier client.",
     "service_code": "chantier",
     "audience": "ent",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-22",
     "published_at": "2026-10-14",
     "sections": [
       {
@@ -148,6 +148,10 @@
       {
         "href": "/conseils/",
         "label": "Retrouver les conseils de préparation d’une intervention"
+      },
+      {
+        "href": "/conseils/restitution-base-vie-chantier-nettoyage/",
+        "label": "Organiser le nettoyage avant restitution de la base vie"
       }
     ],
     "sources": [
@@ -187,7 +191,7 @@
     "image_caption": "Visuel d’illustration d’une base vie ; il ne montre pas un chantier client.",
     "service_code": "basevie",
     "audience": "ent",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-22",
     "published_at": "2026-10-14",
     "quote_fields": [
       "Commune du chantier et contact responsable de la base vie.",
@@ -339,6 +343,10 @@
       {
         "href": "/conseils/",
         "label": "Consulter les guides de préparation des prestations"
+      },
+      {
+        "href": "/conseils/restitution-base-vie-chantier-nettoyage/",
+        "label": "Organiser le nettoyage avant restitution de la base vie"
       }
     ],
     "sources": [

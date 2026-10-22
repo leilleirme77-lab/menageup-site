@@ -147,10 +147,18 @@
       {
         "href": "/debarras-chantier-77/",
         "label": "Débarras et évacuation après travaux"
+      },
+      {
+        "href": "/conseils/restitution-base-vie-chantier-nettoyage/",
+        "label": "Préparer le nettoyage des bungalows avant restitution"
       }
     ],
     "area_intro": "Votre chantier se situe en Seine-et-Marne ? Indiquez sa commune et ses contraintes d’accès. La zone et la fréquence d’intervention sont confirmées lors de l’étude du besoin.",
     "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
       {
         "href": "/nettoyage-pontault-combault/",
         "label": "Pontault-Combault"
@@ -320,6 +328,10 @@
     ],
     "area_intro": "Décrivez votre besoin de vitrerie en Seine-et-Marne. La commune, la quantité de vitrages et les accès permettent d’étudier un passage ponctuel ou une fréquence adaptée.",
     "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
       {
         "href": "/nettoyage-pontault-combault/",
         "label": "Pontault-Combault"
@@ -516,6 +528,10 @@
     ],
     "area_intro": "Votre boutique se trouve dans le 77 ? Précisez sa commune et les créneaux disponibles. Les conditions d’intervention sont étudiées selon le local et le rythme demandé.",
     "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
       {
         "href": "/nettoyage-pontault-combault/",
         "label": "Pontault-Combault"

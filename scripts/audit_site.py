@@ -318,6 +318,15 @@ def main():
                         address = node.get('address', {})
                         if not isinstance(address, dict) or not address.get('streetAddress') or not address.get('addressLocality'):
                             issue('warning', 'business_address_unverified_incomplete', url, 'Do not invent physical location; rich-result eligibility not established.')
+                    if 'Organization' in types and node.get('@id') == 'https://menageup.fr/#business':
+                        address = node.get('address', {})
+                        required = ('streetAddress', 'postalCode', 'addressLocality', 'addressCountry')
+                        if not isinstance(address, dict) or not all(address.get(key) for key in required):
+                            issue('error', 'organization_headquarters_incomplete', url, 'Company headquarters must have a complete address.')
+                        else:
+                            visible_address = soup.select_one('[data-registered-office]')
+                            if not visible_address or not all(str(address[key]) in visible_address.get_text(' ', strip=True) for key in required[:3]):
+                                issue('error', 'organization_headquarters_not_visible', url, 'Registered office must match the visible company address, distinct from service areas.')
                     if 'BreadcrumbList' in types:
                         items = node.get('itemListElement', [])
                         if not isinstance(items, list) or not items or not all(isinstance(i, dict) for i in items):

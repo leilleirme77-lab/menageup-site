@@ -30,3 +30,18 @@ les avis consultables à leur source ; ne jamais inventer de preuve sociale.
 
 Préparer l’aperçu et tester le parcours réel avant de demander l’accord de publication.
 Ne pas publier automatiquement les pages ou pousser sur le dépôt distant sans cet accord.
+
+## SEO local — précision du 22 octobre 2026
+
+Mener les contrôles et les corrections jusqu’à un résultat examinable. Une page
+accessible ou présente dans le sitemap ne prouve ni son indexation ni sa position.
+Vérifier les rapports actuels lorsque l’accès Google est réellement disponible;
+ne pas présenter les exports du 4 octobre comme des performances actuelles.
+
+Conserver distincts le siège confirmé à La Houssaye-en-Brie et l’adresse affichée
+par la fiche Google de Tournan-en-Brie. Enzo demande de garder les deux distincts;
+cette consigne ne confirme pas une adresse d’accueil du public. Ne pas modifier
+la fiche Google ni fabriquer des agences dans les communes desservies.
+
+Les photographies de Châtres et Pontault-Combault conservent leur vraie commune,
+y compris lorsqu’une page de secteur voisin les présente comme exemples.
