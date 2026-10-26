@@ -87,12 +87,13 @@ def main():
     home = home_file.read_text(encoding='utf-8')
     if (START in home) != (END in home):
         raise ValueError('Incomplete home partner placement markers')
-    # Preserve the existing homepage. Partners follow the real customer results,
-    # immediately before advice; rebuilding must not return them to the hero.
+    # Partners follow the real customer results, before client reviews. Advice
+    # belongs on dedicated SEO pages, so placement must not depend on that block.
     updated = re.sub(re.escape(START) + r'.*?' + re.escape(END) + r'\n?', '', home, count=1, flags=re.S)
-    updated, placements = re.subn(r'(?=<section\b[^>]*\bid=["\']conseils["\'])', lambda _: home_section(partners) + '\n', updated, count=1)
+    anchor = re.escape('<!-- REVIEWS:START -->') if '<!-- REVIEWS:START -->' in updated else r'<section\b[^>]*\bid=["\']avis["\']'
+    updated, placements = re.subn(r'(?=' + anchor + r')', lambda _: home_section(partners) + '\n', updated, count=1)
     if placements != 1:
-        raise ValueError('Expected homepage advice section after realisations')
+        raise ValueError('Expected homepage review section after realisations')
     for asset in ['<link rel="stylesheet" href="/assets/partners.css">', '<script defer src="/assets/partners.js"></script>']:
         if asset not in updated:
             updated = updated.replace('</head>', asset + '\n</head>', 1)

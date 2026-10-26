@@ -61,9 +61,12 @@ effectuée pour une enseigne ou de partenariat à l’échelle d’un réseau na
 Les nouvelles entrées se gèrent dans content/partners.json et build_partners.py.
 Prévoir toucher, clavier, pause du défilement et préférence de mouvement réduit.
 Conserver l’accueil déjà publié : textes, visuels, mise en page et ordre des
-sections et navigation d’en-tête sur ordinateur. Le carrousel partenaires s’insère après les réalisations et avant
-les conseils ; il ne doit pas être placé en haut de page. Ne pas réintroduire
-la grille de neuf besoins refusée. Correction d’Enzo du 26 octobre 2026.
+sections et navigation d’en-tête sur ordinateur, sauf les modifications demandées
+ci-dessous. Le carrousel partenaires s’insère après les réalisations et avant
+les avis ; il ne doit pas être placé en haut de page. Ne pas réintroduire
+la grille de neuf besoins refusée ni le bloc « Des repères avant de se lancer ».
+Les conseils restent sur /conseils/ et leurs pages dédiées, accessibles depuis
+les prestations concernées. Corrections d’Enzo du 26 octobre 2026.
 La section #avis reprend le carrousel historique avec les sept vrais avis Google
 transmis le 26 octobre. Conserver les textes visibles et les noms ; aucune suite
 inventée pour un avis tronqué, aucun montant ni date relative non actualisable.
