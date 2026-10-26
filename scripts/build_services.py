@@ -4,6 +4,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlencode
 from xml.etree import ElementTree as ET
+from PIL import Image
 from seo_shared import with_sector_navigation
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -13,16 +14,28 @@ def esc(value): return html.escape(str(value),quote=True)
 def render(service):
     s=service;slug=s['slug'];canonical=DOMAIN+'/'+slug+'/'
     if not re.fullmatch(r'[a-z0-9-]+',slug):raise ValueError('Invalid service slug')
-    image='/'+s['image'].lstrip('/');stem=image.removesuffix('.webp')
+    image='/'+s['image'].lstrip('/');stem=str(Path(image).with_suffix('')).replace('\\','/')
     if not (ROOT/image.lstrip('/')).is_file():raise ValueError(f'Missing image {image}')
-    label={'basevie':'Bases vie de chantier','vitres':'Vitres et vitrines','commerce':'Commerces et boutiques','debarraschantier':'Débarras de chantier','debarras':'Débarras de logement','grandnettoyage':'Grand nettoyage'}[s['service_code']]
-    short={'basevie':'Bases vie','vitres':'Vitres & vitrines','commerce':'Commerces','debarraschantier':'Débarras de chantier','debarras':'Débarras de logement','grandnettoyage':'Grand nettoyage'}[s['service_code']]
+    with Image.open(ROOT/image.lstrip('/')) as source_image:
+        image_width,image_height=source_image.size
+    variants=[]
+    for suffix in ['-480.webp','-640.webp','-768.webp','-960.webp']:
+        candidate=ROOT/(stem+suffix).lstrip('/')
+        if candidate.is_file():
+            with Image.open(candidate) as variant: variants.append(f'{stem+suffix} {variant.width}w')
+    variants.append(f'{image} {image_width}w')
+    image_srcset=f' srcset="{esc(", ".join(variants))}" sizes="(max-width:700px) calc(100vw - 36px), (max-width:1224px) 48vw, 550px"' if len(variants)>1 else ''
+    image_position=s.get('image_position','')
+    if image_position and not re.fullmatch(r'\d{1,3}% \d{1,3}%',image_position):raise ValueError('Invalid image position')
+    image_style=f' style="object-position:{image_position}"' if image_position else ''
+    label=s.get('label') or {'basevie':'Bases vie de chantier','vitres':'Vitres et vitrines','commerce':'Commerces et boutiques','edl':'État des lieux et déménagement','debarraschantier':'Débarras de chantier','debarras':'Débarras de logement','grandnettoyage':'Grand nettoyage'}[s['service_code']]
+    short=s.get('short_label') or {'basevie':'Bases vie','vitres':'Vitres & vitrines','commerce':'Commerces','edl':'État des lieux','debarraschantier':'Débarras de chantier','debarras':'Débarras de logement','grandnettoyage':'Grand nettoyage'}[s['service_code']]
     audience=s.get('audience','ent')
     if audience not in ['part','ent','copro']:raise ValueError('Invalid audience')
     query=urlencode({'service':s['service_code'],'audience':audience,'source':'/'+slug+'/'})
     direct='/?'+query+'#devis'
     schema={'@context':'https://schema.org','@graph':[
-      {'@type':'WebPage','@id':canonical+'#page','url':canonical,'name':s['title'],'description':s['description'],'inLanguage':'fr-FR','isPartOf':{'@id':DOMAIN+'/#website'},'mainEntity':{'@id':canonical+'#service'},'primaryImageOfPage':{'@type':'ImageObject','url':DOMAIN+image,'width':1536,'height':1024}},
+      {'@type':'WebPage','@id':canonical+'#page','url':canonical,'name':s['title'],'description':s['description'],'inLanguage':'fr-FR','isPartOf':{'@id':DOMAIN+'/#website'},'mainEntity':{'@id':canonical+'#service'},'primaryImageOfPage':{'@type':'ImageObject','url':DOMAIN+image,'width':image_width,'height':image_height}},
       {'@type':'Service','@id':canonical+'#service','name':s['h1'],'url':canonical,'provider':{'@id':DOMAIN+'/#business'},'areaServed':{'@type':'AdministrativeArea','name':'Seine-et-Marne'},'image':DOMAIN+image},
       {'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Accueil','item':DOMAIN+'/'},{'@type':'ListItem','position':2,'name':label,'item':canonical}]}
     ]}
@@ -71,7 +84,7 @@ def render(service):
 <html lang="fr" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(s['title'])}</title><meta name="description" content="{esc(s['description'])}"><link rel="canonical" href="{canonical}">
 <meta name="robots" content="index,follow,max-image-preview:large"><meta name="theme-color" content="#14336E">
-<meta property="og:type" content="website"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="MénageUp"><meta property="og:title" content="{esc(s['title'])}"><meta property="og:description" content="{esc(s['description'])}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{DOMAIN+image}"><meta property="og:image:width" content="1536"><meta property="og:image:height" content="1024"><meta property="og:image:alt" content="{esc(s['image_alt'])}">
+<meta property="og:type" content="website"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="MénageUp"><meta property="og:title" content="{esc(s['title'])}"><meta property="og:description" content="{esc(s['description'])}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{DOMAIN+image}"><meta property="og:image:width" content="{image_width}"><meta property="og:image:height" content="{image_height}"><meta property="og:image:alt" content="{esc(s['image_alt'])}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{DOMAIN+image}"><meta name="twitter:image:alt" content="{esc(s['image_alt'])}">
 <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" href="/favicon.png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts.css">
@@ -81,7 +94,7 @@ def render(service):
 <header class="topbar"><div class="wrap topbar-inner"><a class="brand" href="/" aria-label="MénageUp accueil"><img src="/logo-v3.png" alt="MénageUp" width="549" height="160"></a><nav class="desktop-nav" aria-label="Navigation principale"><a href="/#services">Nos prestations</a><a href="/realisations/">Réalisations</a><a href="/conseils/">Conseils</a><a href="#secteur">Votre secteur</a></nav><div class="nav-actions"><a class="phone" href="tel:+33648304965">06 48 30 49 65</a><a class="btn small" href="#preparer-devis">Demander un devis <span aria-hidden="true">↗</span></a>{mobile_nav}</div></div></header>
 <main id="contenu"><div class="wrap"><nav class="breadcrumb" aria-label="Fil d’Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><span>{esc(label)}</span></nav>
 <section class="hero"><div class="hero-grid"><div class="hero-copy"><div class="eyebrow">{esc(s['eyebrow'])}</div><h1>{esc(s['h1'])}</h1><p class="intro">{esc(s['intro'])}</p><div class="hero-actions"><a class="btn" href="#preparer-devis">Parlons de votre besoin <span aria-hidden="true">↗</span></a><a class="btn secondary" href="tel:+33648304965">Nous appeler</a></div><p class="small-note">Une demande précise. Un devis adapté à vos espaces.</p></div>
-<figure class="hero-photo"><img src="{image}" srcset="{stem}-640.webp 640w, {stem}-960.webp 960w, {image} 1536w" sizes="(max-width:700px) calc(100vw - 36px), (max-width:1224px) 48vw, 550px" width="1536" height="1024" fetchpriority="high" alt="{esc(s['image_alt'])}"><div class="photo-label"><strong>{esc(short)}</strong><span>SEINE-ET-MARNE · 77</span></div><figcaption>{esc(s['image_caption'])}</figcaption></figure></div></section>
+<figure class="hero-photo"><img src="{image}"{image_srcset} width="{image_width}" height="{image_height}" fetchpriority="high" alt="{esc(s['image_alt'])}"{image_style}><div class="photo-label"><strong>{esc(short)}</strong><span>SEINE-ET-MARNE · 77</span></div><figcaption>{esc(s['image_caption'])}</figcaption></figure></div></section>
 <div class="benefits">{benefits}</div></div>
 <section class="section" id="prestation"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Le détail de la prestation</div><h2>{h2("perimetre","Les espaces à prendre en charge.")}</h2></div><p>Un entretien utile commence par un périmètre clair. Voici les besoins à préciser pour préparer votre demande.</p></div><div class="scope-grid">{scope}</div><aside class="boundaries"><h3>À préciser ensemble avant l’intervention</h3><ul>{boundaries}</ul></aside></div></section>
 <section class="section process-band"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Comment ça se passe</div><h2>{h2("deroule","Du besoin aux bons gestes.")}</h2></div><p>Votre lieu, vos contraintes et votre rythme guident l’organisation de la prestation.</p></div><div class="process-grid">{process}</div></div></section>
@@ -95,8 +108,9 @@ def render(service):
 
 def build():
     services=json.loads((ROOT/'content/services.json').read_text(encoding='utf-8'))
-    additional=ROOT/'content/services-debarras.json'
-    if additional.exists():services+=json.loads(additional.read_text(encoding='utf-8'))
+    for filename in ['content/services-debarras.json','content/services-logements-locaux.json']:
+        additional=ROOT/filename
+        if additional.exists():services+=json.loads(additional.read_text(encoding='utf-8'))
     if len({s['slug'] for s in services})!=len(services):raise ValueError('Duplicate service slug')
     changed=set()
     for s in services:

@@ -1,0 +1,362 @@
+[
+  {
+    "old": " · Entreprise assurée RC pro",
+    "new": "",
+    "reason": "Assurance RC professionnelle non documentée : retirer la promesse de couverture des lignes de contexte."
+  },
+  {
+    "old": "<details><summary>Êtes-vous assurés ?</summary><p>Oui. Nos interventions sont couvertes par une assurance responsabilité civile professionnelle, dont l'attestation est jointe à chaque devis — pour les particuliers comme pour les syndics et les entreprises.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Que se passe-t-il si mon intervenante est absente ?</summary><p>Le passage a lieu quand même : le remplacement est organisé de notre côté et vous êtes prévenu. Une absence chez nous ne doit jamais devenir votre problème.</p></details>",
+    "new": "<details><summary>Que se passe-t-il si mon intervenante est absente ?</summary><p>La continuité et la connaissance des lieux se préparent avec vous. Si une absence modifie le planning, vous êtes informé des possibilités de remplacement ou de report et du créneau à confirmer.</p></details>",
+    "reason": "Retirer la garantie absolue de personne attitrée et de remplacement sous 24–48 h."
+  },
+  {
+    "old": "<details><summary>Comment fonctionne votre engagement « satisfait ou on refait » ?</summary><p>Si un point de la prestation ne vous convient pas, signalez-le dans les 48 heures : nous revenons le corriger, sans frais et sans justification à fournir. C'est notre façon de garantir le niveau, plutôt que de le promettre.</p></details>",
+    "new": "<details><summary>Comment signaler un point à revoir après le nettoyage ?</summary><p>Contactez votre interlocuteur avec les détails et, si possible, une photo. Nous vérifions avec vous le travail réalisé au regard des tâches prévues au devis et convenons de la suite à donner.</p></details>",
+    "reason": "Retouches gratuites et délai garantis non confirmés : décrire le suivi réel."
+  },
+  {
+    "old": "<details><summary>Peut-on changer de prestataire en cours d'année ?</summary><p>Oui. La plupart des contrats d'entretien se résilient avec un simple préavis (souvent 1 à 3 mois — vérifiez votre contrat actuel). Nous assurons une transition sans interruption de service.</p></details>",
+    "new": "<details><summary>Peut-on changer de prestataire en cours d'année ?</summary><p>Vérifiez les conditions de votre contrat actuel et les dates possibles. Nous étudions avec vous la visite, les tâches à reprendre et le calendrier ; le démarrage et les modalités doivent être confirmés avant la transition.</p></details>",
+    "reason": "Ne pas généraliser les conditions contractuelles ni garantir une reprise sans interruption."
+  },
+  {
+    "old": "<details><summary>Êtes-vous assurés ?</summary><p>Oui : responsabilité civile professionnelle couvrant les interventions dans les parties communes. L'attestation est fournie avec le devis.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Que se passe-t-il si l'intervenante est absente ?</summary><p>Le remplacement est assuré sous 24 à 48 heures et vous êtes prévenu : le passage n'est pas annulé. Et si un détail ne va pas, signalez-le sous 48 heures : nous revenons le corriger, sans frais.</p></details>",
+    "new": "<details><summary>Que se passe-t-il si l'intervenante est absente ?</summary><p>La continuité et la connaissance des lieux se préparent avec vous. Si une absence modifie le planning, vous êtes informé des possibilités de remplacement ou de report et du créneau à confirmer.</p></details>",
+    "reason": "Retirer la garantie absolue de personne attitrée et de remplacement sous 24–48 h."
+  },
+  {
+    "old": "<details><summary>Peut-on changer de prestataire en cours d'année ?</summary><p>Oui. La plupart des contrats de nettoyage se résilient avec un préavis de 1 à 3 mois — vérifiez le vôtre. Nous reprenons l'entretien sans interruption de service.</p></details>",
+    "new": "<details><summary>Peut-on changer de prestataire en cours d'année ?</summary><p>Vérifiez les conditions de votre contrat actuel et les dates possibles. Nous étudions avec vous la visite, les tâches à reprendre et le calendrier ; le démarrage et les modalités doivent être confirmés avant la transition.</p></details>",
+    "reason": "Ne pas généraliser les conditions contractuelles ni garantir une reprise sans interruption."
+  },
+  {
+    "old": "<details><summary>Pouvez-vous reprendre un contrat en cours d'année ?</summary><p>Oui. La plupart des contrats d'entretien se résilient avec un préavis d'un à trois mois. Nous assurons la reprise sans interruption de service, en commençant par une remise à niveau si l'immeuble a été négligé.</p></details>",
+    "new": "<details><summary>Pouvez-vous reprendre un contrat en cours d'année ?</summary><p>Vérifiez les conditions de votre contrat actuel et les dates possibles. Nous étudions avec vous la visite, les tâches à reprendre et le calendrier ; le démarrage et les modalités doivent être confirmés avant la transition.</p></details>",
+    "reason": "Ne pas généraliser les conditions contractuelles ni garantir une reprise sans interruption."
+  },
+  {
+    "old": "<details><summary>Êtes-vous assurés pour intervenir dans les parties communes ?</summary><p>Oui : responsabilité civile professionnelle couvrant les interventions en parties communes. L'attestation est jointe au devis.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Comment se passe le suivi de la prestation ?</summary><p>Vous avez un interlocuteur direct joignable, et nous proposons un point à trois mois pour ajuster ce qui doit l'être. Une remarque formulée est traitée sous 48 heures — c'est notre engagement « satisfait ou on refait ».</p></details>",
+    "new": "<details><summary>Comment se passe le suivi de la prestation ?</summary><p>Vous disposez d’un interlocuteur pour partager vos observations et faire le point sur les passages. Les points à revoir sont examinés au regard des tâches prévues au devis ; les ajustements sont convenus avec vous.</p></details>",
+    "reason": "Retirer un délai de correction et un rendez-vous systématique non confirmés."
+  },
+  {
+    "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Pontault-Combault ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Pontault-Combault. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
+    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+  },
+  {
+    "old": "<details><summary>Peut-on avoir toujours la même intervenante ?</summary><p>Oui, c'est notre fonctionnement par défaut : une intervenante attitrée, présentée avant le premier passage. En cas d'absence, le remplacement est assuré et vous êtes prévenu — le passage n'est pas annulé.</p></details>",
+    "new": "<details><summary>Peut-on avoir toujours la même intervenante ?</summary><p>La continuité et la connaissance des lieux se préparent avec vous. Si une absence modifie le planning, vous êtes informé des possibilités de remplacement ou de report et du créneau à confirmer.</p></details>",
+    "reason": "Retirer la garantie absolue de personne attitrée et de remplacement sous 24–48 h."
+  },
+  {
+    "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Ozoir-la-Ferrière ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Ozoir-la-Ferrière. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
+    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+  },
+  {
+    "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Roissy-en-Brie ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Roissy-en-Brie. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
+    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+  },
+  {
+    "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Torcy ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Torcy. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
+    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+  },
+  {
+    "old": "<details><summary>Intervenez-vous dans tous les quartiers de Chelles ?</summary><p>Oui. Centre-ville et gare, Mont Chalats, Grande Prairie, Chantereine, Foch, les Coudreaux et les secteurs pavillonnaires. Chelles est la commune la plus etendue de notre zone nord : nous organisons les tournees par secteur pour que la meme intervenante garde les memes immeubles, plutot que de traverser la ville entre deux passages.</p></details>",
+    "new": "<details><summary>Intervenez-vous dans tous les quartiers de Chelles ?</summary><p>Votre demande peut concerner le centre-ville et la gare, Mont Chalats, Grande Prairie, Chantereine, Foch, les Coudreaux ou les secteurs pavillonnaires. Précisez l’adresse, les accès et le créneau souhaité pour confirmer l’organisation du passage.</p></details>",
+    "reason": "Corriger les accents et retirer une organisation de tournées et un classement de superficie non démontrés."
+  },
+  {
+    "old": "<details><summary>Travaillez-vous avec les syndics qui gerent des immeubles a Chelles ?</summary><p>Oui, c'est meme notre activite principale sur la commune. Nous repondons aux consultations de syndics et de conseils syndicaux avec un devis detaille ligne par ligne, une visite sur place avant chiffrage, et un interlocuteur unique joignable. Nous intervenons aussi bien sur un seul immeuble que sur un patrimoine de plusieurs residences.</p></details>",
+    "new": "<details><summary>Travaillez-vous avec les syndics qui gèrent des immeubles à Chelles ?</summary><p>Nous étudions les demandes des syndics et conseils syndicaux. Décrivez les parties communes, les accès et les fréquences souhaitées ; une visite peut compléter les informations avant le devis.</p></details>",
+    "reason": "Corriger le français et ne pas présenter une activité principale locale sans preuve."
+  },
+  {
+    "old": "<details><summary>Pouvez-vous intervenir tot le matin, avant l'ouverture de nos locaux ?</summary><p>Oui. Nous intervenons de 6 h a 20 h, sept jours sur sept. Pour les commerces du centre-ville et les bureaux proches de la gare, le creneau le plus demande se situe entre 6 h et 8 h 30, avant l'arrivee des equipes et des clients. Nous nous calons sur vos horaires, pas l'inverse.</p></details>",
+    "new": "<details><summary>Pouvez-vous intervenir tôt le matin, avant l’ouverture de nos locaux ?</summary><p>Indiquez vos horaires d’ouverture et les créneaux possibles. Nous étudions les accès et l’organisation avant de confirmer un passage compatible avec votre activité.</p></details>",
+    "reason": "Corriger les accents et remplacer les horaires et statistiques de demande non prouvés."
+  },
+  {
+    "old": "<details><summary>Quel delai pour un premier passage a Chelles ?</summary><p>Devis sous 48 heures apres la visite, et premier passage generalement dans la semaine qui suit la validation. Pour une remise en etat urgente - fin de chantier, relocation, etat des lieux a tenir - dites-le nous : nous decalons les tournees quand c'est possible.</p></details>",
+    "new": "<details><summary>Quel délai pour un premier passage à Chelles ?</summary><p>Indiquez votre échéance dès la demande. Les tâches et les accès sont précisés avant de confirmer le premier créneau ; pour une fin de chantier, une relocation ou un état des lieux, signalez les contraintes de calendrier.</p></details>",
+    "reason": "Corriger les accents et retirer un démarrage dans la semaine non confirmé."
+  },
+  {
+    "old": "<details><summary>Etes-vous assures pour intervenir dans des parties communes ?</summary><p>Oui, responsabilite civile professionnelle. L'attestation est jointe au devis, sans que vous ayez a la reclamer. Nos intervenants sont declares, leur identite est verifiee, et le meme binome revient sur votre site d'un passage a l'autre.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Est-ce toujours la même personne qui vient chez moi ?</summary><p>Oui, c'est un principe de fonctionnement. La même intervenante revient d'un passage à l'autre : elle connaît vos pièces, vos produits, vos habitudes. En cas d'absence, nous assurons le remplacement sous 24 à 48 heures et vous êtes prévenu — le passage n'est pas annulé.</p></details>",
+    "new": "<details><summary>Est-ce toujours la même personne qui vient chez moi ?</summary><p>La continuité et la connaissance des lieux se préparent avec vous. Si une absence modifie le planning, vous êtes informé des possibilités de remplacement ou de report et du créneau à confirmer.</p></details>",
+    "reason": "Retirer la garantie absolue de personne attitrée et de remplacement sous 24–48 h."
+  },
+  {
+    "old": "<details><summary>Êtes-vous assurés ?</summary><p>Oui, responsabilité civile professionnelle. L'attestation est jointe au devis sans que vous ayez à la réclamer. Nos intervenants sont déclarés et leur identité est vérifiée.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Êtes-vous assurés pour intervenir dans nos locaux ?</summary><p>Oui, responsabilité civile professionnelle, attestation jointe au devis. Pour les contrats dépassant 5 000 € HT, nous fournissons également les attestations de vigilance, comme la loi l'impose au donneur d'ordre.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Que se passe-t-il si votre intervenant est absent ?</summary><p>Le remplacement est assuré sous 24 à 48 heures et vous êtes prévenu. Le passage n'est pas annulé. C'est l'engagement sur lequel nous sommes le plus fermes ici, parce que c'est le reproche que nous entendons le plus souvent sur le secteur.</p></details>",
+    "new": "<details><summary>Que se passe-t-il si votre intervenant est absent ?</summary><p>La continuité et la connaissance des lieux se préparent avec vous. Si une absence modifie le planning, vous êtes informé des possibilités de remplacement ou de report et du créneau à confirmer.</p></details>",
+    "reason": "Retirer la garantie absolue de personne attitrée et de remplacement sous 24–48 h."
+  },
+  {
+    "old": "<details><summary>Vos intervenants sont-ils toujours les mêmes ?</summary><p>Oui, c'est un principe de fonctionnement. Le même intervenant revient sur le même site d'un passage à l'autre : il connaît les codes d'accès, les matériaux, les points sensibles. En cas d'absence, nous assurons le remplacement sous 24 à 48 heures et nous vous prévenons.</p></details>",
+    "new": "<details><summary>Vos intervenants sont-ils toujours les mêmes ?</summary><p>La continuité et la connaissance des lieux se préparent avec vous. Si une absence modifie le planning, vous êtes informé des possibilités de remplacement ou de report et du créneau à confirmer.</p></details>",
+    "reason": "Retirer la garantie absolue de personne attitrée et de remplacement sous 24–48 h."
+  },
+  {
+    "old": "<details><summary>Êtes-vous assurés pour intervenir dans des locaux professionnels ?</summary><p>Oui, responsabilité civile professionnelle. L'attestation est jointe au devis sans que vous ayez à la demander. Si une dégradation survient du fait de notre intervention, elle est couverte — et nous la signalons nous-mêmes, le jour même.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Vos intervenants sont-ils déclarés et assurés ?</summary><p>Oui : personnel déclaré, identité vérifiée, responsabilité civile professionnelle. L'attestation est jointe au devis. Pour les contrats dépassant 5 000 € HT, nous fournissons également les attestations de vigilance, comme la loi l'impose au donneur d'ordre.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<details><summary>Êtes-vous assurés pour intervenir sur un chantier avant réception ?</summary><p>Oui, responsabilité civile professionnelle, attestation jointe au devis. Nos intervenants sont déclarés et équipés pour intervenir en fin de chantier. Nous signalons immédiatement toute dégradation constatée avant notre passage, afin qu'elle ne nous soit pas imputée.</p></details>",
+    "new": "<details><summary>Comment vérifier les documents nécessaires à la prestation ?</summary><p>Indiquez les justificatifs attendus lors de votre demande. Leur disponibilité et le périmètre de l’intervention doivent être vérifiés avant votre accord.</p></details>",
+    "reason": "Remplacer une affirmation de couverture RC professionnelle non étayée ; corriger les accents le cas échéant."
+  },
+  {
+    "old": "<p>Un point ne vous convient pas ? Signalez-le : nous revenons le corriger, sans frais et sans justification à fournir.</p>",
+    "new": "<p>Signalez-nous tout point à revoir, avec une photo si possible. Nous faisons le point avec vous sur les tâches prévues et le travail réalisé.</p>",
+    "reason": "Suivi client sans garantie inconditionnelle de reprise gratuite."
+  },
+  {
+    "old": "<p>Nos interventions sont couvertes par une responsabilité civile professionnelle, dont l'attestation est jointe au devis.</p>",
+    "new": "<p>Les tâches, les accès et les documents nécessaires sont précisés avant votre accord. Indiquez les justificatifs attendus lors de votre demande.</p>",
+    "reason": "Couverture RC professionnelle et attestation systématique non vérifiées."
+  },
+  {
+    "old": "<p><strong>Un remplacement toujours assuré.</strong> L'agent d'entretien est absent ? Le passage a lieu quand même — c'est notre problème, jamais le vôtre.</p>",
+    "new": "<p><strong>Un planning suivi.</strong> En cas d’absence, nous vous informons des possibilités de remplacement ou de report et du passage à confirmer.</p>",
+    "reason": "Aucun remplacement permanent garanti sans preuve."
+  },
+  {
+    "old": "<p><strong>Une entreprise assurée et transparente.</strong> Responsabilité civile professionnelle, devis détaillé ligne par ligne, facturation claire — et un contrat souple, sans reconduction piégeuse.</p>",
+    "new": "<p><strong>Un périmètre transparent.</strong> Les tâches, la fréquence, les conditions d’accès et les modalités du contrat sont détaillées avant votre accord.</p>",
+    "reason": "Assurance et conditions contractuelles non confirmées."
+  },
+  {
+    "old": "<p>Chez nous, la même intervenante revient à chaque passage. Elle est sélectionnée, son identité est vérifiée, elle est déclarée et couverte par une responsabilité civile professionnelle. <strong>Elle vous est présentée avant le premier passage</strong>, avant que vous ne confiiez vos clés. En cas d'absence, le remplacement est assuré sous 24 à 48&nbsp;heures et vous êtes prévenu — le passage n'est pas annulé.</p>",
+    "new": "<p>Nous préparons avec vous les accès, les habitudes et les tâches à réaliser. Si une absence modifie le planning, vous êtes informé des possibilités de remplacement ou de report et du créneau à confirmer.</p>",
+    "reason": "Sélection, personne attitrée et remplacement sous 24–48 h non vérifiés."
+  },
+  {
+    "old": "<p><strong>Un passage n'est jamais annulé.</strong> En cas d'absence de l'intervenante, le remplacement est assuré : c'est notre engagement, pas votre problème.</p>",
+    "new": "<p><strong>Un planning suivi.</strong> Si une absence affecte un passage, nous faisons le point avec vous sur les possibilités de remplacement ou de report.</p>",
+    "reason": "Retirer l’assurance d’un passage jamais annulé."
+  },
+  {
+    "old": "<p><strong>La confiance se prouve.</strong> Intervenants sélectionnés et formés, gestion rigoureuse des clés et codes d'alarme, assurance responsabilité civile professionnelle — l'attestation est fournie avec le devis.</p>",
+    "new": "<p><strong>Des modalités préparées ensemble.</strong> Les consignes d’accès, la remise des clés et le fonctionnement de l’alarme sont précisés avant les premiers passages.</p>",
+    "reason": "Ne pas affirmer formation et assurance non documentées."
+  },
+  {
+    "old": "<p><strong>Un passage n'est jamais annulé.</strong> En cas d'absence, le remplacement est organisé de notre côté et vous êtes prévenu.</p>",
+    "new": "<p><strong>Un planning suivi.</strong> Si une absence affecte un passage, nous faisons le point avec vous sur les possibilités de remplacement ou de report.</p>",
+    "reason": "Retirer l’assurance d’un passage jamais annulé."
+  },
+  {
+    "old": "<p><strong>Satisfait ou on refait sous 48 heures.</strong> Un point ne convient pas ? Nous revenons le corriger, sans frais.</p>",
+    "new": "<p><strong>Un point après le passage.</strong> Signalez les éléments à revoir : nous les examinons avec vous au regard des tâches prévues au devis.</p>",
+    "reason": "Retouches gratuites sous 48 heures non confirmées."
+  },
+  {
+    "old": "<p><strong>La quasi-totalité de nos passages en bureaux ont lieu avant 8 h ou après 18 h.</strong> Vos équipes arrivent dans des locaux propres sans jamais avoir vu le ménage se faire. Le créneau est fixé au contrat, pas laissé au hasard du planning.</p>",
+    "new": "<p><strong>Des horaires à convenir selon votre activité.</strong> Indiquez les créneaux pendant lesquels les locaux sont disponibles, les accès et les consignes d’alarme. Le planning est étudié puis confirmé avec vous.</p>",
+    "reason": "Statistique de clientèle et horaires habituels non prouvés."
+  },
+  {
+    "old": "<p>Côté professionnels, la commune compte des commerces de centre-ville et des locaux d'activité aux besoins opposés : <strong>une boutique veut un passage très tôt le matin</strong>, avant l'ouverture, quand <strong>un bureau préfère une intervention après 18 h</strong>. Les deux sont possibles, et le créneau est fixé au contrat — pas laissé au hasard du planning.</p>",
+    "new": "<p>Pour les commerces et les bureaux, les créneaux dépendent de l’activité, de la présence du public et des accès. Indiquez les horaires possibles afin de convenir d’un passage et de le préciser au devis.</p>",
+    "reason": "Ne pas inventer de préférences horaires de clientèle locale."
+  },
+  {
+    "old": "<p><strong>Des intervenantes sélectionnées et assurées.</strong> Personnel vérifié, formé et couvert par une responsabilité civile professionnelle, dont l'attestation est jointe au devis.</p>",
+    "new": "<p><strong>Une intervention préparée avec vous.</strong> Les tâches, les accès et les documents nécessaires sont précisés avant le démarrage. Vous disposez d’un contact pour le suivi.</p>",
+    "reason": "Sélection, formation et assurance non documentées."
+  },
+  {
+    "old": "<p><strong>Satisfait ou on refait.</strong> Un point ne vous convient pas ? Signalez-le sous 48&nbsp;h : nous revenons le corriger, sans frais.</p>",
+    "new": "<p><strong>Un point après le passage.</strong> Signalez les éléments à revoir : nous les examinons avec vous au regard des tâches prévues au devis.</p>",
+    "reason": "Retouches gratuites et échéance de réclamation non confirmées."
+  },
+  {
+    "old": "<p><strong>Sur ce secteur, le nettoyage est une affaire de discrétion autant que de propreté.</strong> Dans des bureaux occupés par des dizaines de personnes, personne ne doit croiser un aspirateur en pleine journée. Nos interventions se font avant 8 h ou après 18 h, avec un accès et une procédure d'alarme définis par écrit avec vous.</p>",
+    "new": "<p><strong>Des passages compatibles avec vos locaux.</strong> L’occupation des bureaux, les accès et les consignes d’alarme permettent de définir les horaires. Le créneau est confirmé avec vous avant l’intervention.</p>",
+    "reason": "Retirer des horaires systématiques et une contrainte absolue non démontrés."
+  },
+  {
+    "old": "<p>Oui. Sur le secteur de Marne-la-Vallée, la majorité de nos interventions en entreprise ont lieu avant 8 h ou après 18 h, afin que vos équipes trouvent des locaux propres sans jamais croiser le ménage.</p>",
+    "new": "<p>Indiquez les horaires possibles et la présence de vos équipes. Nous étudions le créneau avec vous et le confirmons avant les passages.</p>",
+    "reason": "Statistique des passages locaux non prouvée."
+  },
+  {
+    "old": "<p>Nous intervenons <strong>de 6&nbsp;h à 20&nbsp;h, sept jours sur sept</strong>. Pour un commerce, le créneau le plus demandé est avant l'ouverture ; pour des bureaux, après le départ des équipes. Vous gardez le même interlocuteur, et le même intervenant revient d'une semaine sur l'autre — c'est ce qui permet de connaître un local, ses matériaux et ses points sensibles, au lieu de repartir de zéro à chaque passage.</p>",
+    "new": "<p>Indiquez vos horaires d’ouverture, les créneaux disponibles et les consignes d’accès. Les tâches, la fréquence et le planning sont étudiés puis confirmés avec vous.</p>",
+    "reason": "Retirer des horaires garantis et une préférence clientèle non prouvés."
+  },
+  {
+    "old": "<p>Nous intervenons de 6 h à 20 h, sept jours sur sept, avant l'arrivée des équipes ou après leur départ. Un interlocuteur unique, le même intervenant d'une semaine sur l'autre, et un devis détaillé poste par poste — sanitaires, sols, bureaux, zones communes, vitrerie — avec la fréquence de chacun.</p>",
+    "new": "<p>Les passages se préparent selon l’occupation des locaux et les accès possibles. Les espaces à traiter, la fréquence et les horaires sont détaillés au devis, puis confirmés avec vous.</p>",
+    "reason": "Pas d’horaires 6 h–20 h garantis ni de personne attitrée non confirmée."
+  },
+  {
+    "old": "<p>Oui, de 6 h à 20 h, sept jours sur sept. Pour les bureaux et les locaux d'activité des parcs, le créneau le plus demandé se situe avant 8 h. Nous nous calons sur votre exploitation, pas l'inverse.</p>",
+    "new": "<p>Indiquez vos plages disponibles et les contraintes d’accès. Un passage avant l’arrivée des équipes peut être étudié ; le créneau doit être confirmé avec vous.</p>",
+    "reason": "Horaire garanti et créneau prétendument le plus demandé non prouvés."
+  },
+  {
+    "old": "<p>Pour les commerces de proximité et les cabinets, le passage court et quotidien avant l'ouverture rend beaucoup mieux qu'un long passage hebdomadaire. Nous intervenons de 6 h à 20 h, sept jours sur sept, et nous préférons vous proposer la bonne fréquence plutôt que la plus grosse facture.</p>",
+    "new": "<p>La fréquence d’entretien dépend de l’usage des locaux, du passage, des revêtements et de l’état initial. Nous étudions les tâches et les créneaux avec vous avant de confirmer l’organisation.</p>",
+    "reason": "Ne pas imposer une fréquence quotidienne ni des horaires garantis."
+  },
+  {
+    "old": "<p>Oui. Devis détaillé ligne par ligne après visite, interlocuteur unique joignable, attestation de responsabilité civile professionnelle jointe sans que vous ayez à la demander. Nous pouvons reprendre un contrat en cours d'exercice, sans interruption de service.</p>",
+    "new": "<p>Décrivez les locaux, les tâches et les dates possibles. Une visite peut compléter les informations avant le devis. La transition avec votre organisation actuelle et le démarrage sont à convenir ensemble.</p>",
+    "reason": "Attestation systématique et reprise sans interruption non confirmées."
+  },
+  {
+    "old": "<p>De 6 h à 20 h, sept jours sur sept. Pour les commerces, le créneau avant ouverture est le plus demandé ; pour les particuliers, nous nous calons sur vos disponibilités, y compris le samedi.</p>",
+    "new": "<p>Les horaires sont étudiés selon vos disponibilités et l’activité des lieux. Indiquez vos créneaux possibles pour confirmer l’organisation du passage.</p>",
+    "reason": "Retirer des horaires garantis et une préférence clientèle inventée."
+  },
+  {
+    "old": "<p>Nous intervenons de 6 h à 20 h, sept jours sur sept. Pour un commerce, le créneau le plus demandé se situe entre 6 h et 8 h 30. Vitrines, sols et sanitaires en priorité, avec le même intervenant d'une semaine sur l'autre — c'est ce qui permet de connaître un local plutôt que de repartir de zéro à chaque passage.</p>",
+    "new": "<p>Pour un commerce, les horaires, l’accès aux vitrines et la présence du public guident l’organisation. Sols, sanitaires et vitrages sont distingués au devis avec la fréquence et le créneau à confirmer.</p>",
+    "reason": "Horaires, préférence locale et personne attitrée non vérifiés."
+  },
+  {
+    "old": "<p>Oui. Nous intervenons de 6 h à 20 h, sept jours sur sept. Pour les commerces du centre, le créneau le plus demandé est entre 6 h et 8 h 30, avant l'arrivée des clients.</p>",
+    "new": "<p>Un passage avant l’ouverture peut être étudié. Précisez vos horaires, l’accès aux locaux et les tâches souhaitées pour confirmer un créneau compatible avec votre activité.</p>",
+    "reason": "Horaires garantis et demande locale statistique non vérifiés."
+  },
+  {
+    "old": "<p>Pour les locaux d'activité en périphérie, nous intervenons hors présence, de 6 h à 20 h, sept jours sur sept, avec un interlocuteur unique et un devis détaillé par poste. Le même intervenant revient d'une semaine sur l'autre : sur un local technique ou un atelier, connaître les lieux évite les erreurs.</p>",
+    "new": "<p>Pour les locaux d’activité, précisez les horaires disponibles et les zones accessibles. Les consignes propres aux ateliers et locaux techniques sont partagées avant de convenir des tâches et des passages.</p>",
+    "reason": "Pas d’horaires 6 h–20 h ni de même intervenant systématique sans preuve."
+  },
+  {
+    "old": "<p>Oui. Nous regroupons les interventions par secteur et par demi-journée, ce qui nous permet de couvrir toute la commune sans facturer le temps de route. C'est un peu moins souple sur le choix des créneaux, mais c'est ce qui garantit un prix juste.</p>",
+    "new": "<p>Décrivez la commune, les accès et les créneaux possibles. L’organisation et les conditions de déplacement sont précisées avant votre accord.</p>",
+    "reason": "Tournées et absence de frais de trajet non confirmées."
+  },
+  {
+    "old": "<p>Nous intervenons de 6 h à 20 h, sept jours sur sept, ce qui couvre les prises de poste matinales comme les fins de journée. Le même intervenant revient d'une semaine sur l'autre : sur un site avec des consignes de sécurité et des zones d'accès, changer de personne chaque semaine est un problème pour tout le monde.</p>",
+    "new": "<p>Les horaires de vos équipes et les consignes d’accès sont précisés avant le démarrage. Nous étudions les créneaux et les zones disponibles pour confirmer des passages compatibles avec votre site.</p>",
+    "reason": "Horaires garantis et personne identique systématique non vérifiés."
+  },
+  {
+    "old": "<p>Nous intervenons de 6 h à 20 h, sept jours sur sept, ce qui couvre ces créneaux. Ménage régulier avec la même intervenante, repassage, et remise en état ponctuelle quand c'est nécessaire.</p>",
+    "new": "<p>Ménage régulier, repassage ou remise en état ponctuelle : indiquez votre besoin et vos disponibilités. Les tâches et le créneau sont à convenir avant le passage.</p>",
+    "reason": "Aucune plage horaire ou personne attitrée garantie."
+  },
+  {
+    "old": "<p>Chez nous, le prix dépend de la surface, du nombre de niveaux et de la fréquence : les créneaux très matinaux ou en journée, que nous couvrons de 6 h à 20 h, ne coûtent pas plus cher. Nous ne donnons pas de prix ferme au téléphone — une visite de quinze minutes permet de chiffrer juste, et le devis est gratuit.</p>",
+    "new": "<p>Le devis tient compte des surfaces, de l’état initial, des tâches, de la fréquence et des contraintes d’accès. Décrivez les créneaux souhaités ; une visite peut compléter les informations avant de confirmer la prestation.</p>",
+    "reason": "Retirer des horaires et une absence de majoration non vérifiés, sans ajouter de tarif."
+  },
+  {
+    "old": "<p>Oui. Nous intervenons dès 6 h, sept jours sur sept. Sur un site d'activité, c'est souvent le seul créneau qui ne gêne personne, et c'est celui que nous proposons par défaut.</p>",
+    "new": "<p>Un créneau matinal peut être étudié selon votre activité et les accès. Indiquez vos contraintes pour convenir du planning avant le démarrage.</p>",
+    "reason": "Horaire garanti et créneau par défaut non prouvés."
+  },
+  {
+    "old": "<p>C'est précisément là que nous nous engageons sur deux points concrets. <strong>Le remplacement est garanti sous 24 à 48 heures</strong> en cas d'absence de l'intervenant, et vous êtes prévenu : le passage n'est pas annulé. Et nous regroupons nos interventions sur le secteur par demi-journée, pour que le déplacement ne soit jamais un prétexte à repousser une prestation.</p>",
+    "new": "<p><strong>Les changements de planning sont à suivre ensemble.</strong> En cas d’absence, vous êtes informé des possibilités de remplacement ou de report. Les créneaux sont confirmés avec vous selon l’organisation disponible.</p>",
+    "reason": "Garantie de remplacement 24–48 h et tournées regroupées non prouvées."
+  },
+  {
+    "old": "<p>Nous intervenons de 6 h à 20 h, sept jours sur sept, avant l'arrivée du public ou après la fermeture. Pour un cabinet, la régularité et la discrétion comptent autant que le résultat : le même intervenant revient d'une semaine sur l'autre, il connaît les lieux, les surfaces à traiter en priorité et les zones à ne pas déplacer.</p>",
+    "new": "<p>Pour les cabinets et les locaux recevant du public, précisez les horaires, les accès et les zones à traiter. Les consignes de discrétion et les tâches attendues permettent de convenir du passage.</p>",
+    "reason": "Horaires garantis et personne identique systématique non prouvés."
+  },
+  {
+    "old": "<p>C'est pour ça que nous nous engageons sur deux points ici. Le remplacement est assuré sous 24 à 48 heures en cas d'absence, et vous êtes prévenu — le passage n'est pas annulé. Et nous regroupons nos interventions du secteur par demi-journée, pour que le déplacement ne serve jamais d'excuse. Ménage régulier ou ponctuel, repassage, grand nettoyage saisonnier.</p>",
+    "new": "<p>Ménage régulier ou ponctuel, repassage ou grand nettoyage : décrivez les tâches et vos disponibilités. En cas d’absence, nous vous informons des possibilités de remplacement ou de report et du créneau à confirmer.</p>",
+    "reason": "Garantie 24–48 h et organisation locale non vérifiées."
+  },
+  {
+    "old": "<p>Oui, et régulièrement. Nous regroupons les interventions du secteur par demi-journée, ce qui rend le déplacement viable et le prix juste. C'est un peu moins souple sur le choix des créneaux, mais c'est ce qui garantit que la prestation est tenue et pas repoussée.</p>",
+    "new": "<p>Présentez votre besoin et les accès à votre logement. L’organisation, les disponibilités et les conditions de déplacement sont précisées avant votre accord.</p>",
+    "reason": "Fréquence de clientèle et regroupement des tournées non prouvés."
+  },
+  {
+    "old": "<p>Oui, en dehors des heures d'ouverture, avec des intervenants déclarés dont l'identité est vérifiée et une responsabilité civile professionnelle. Le même intervenant revient d'une semaine sur l'autre, ce qui compte particulièrement dans un cabinet où la discrétion est essentielle.</p>",
+    "new": "<p>Décrivez l’activité du cabinet, les surfaces et les horaires possibles. Les consignes de discrétion, les accès et les documents attendus sont à préciser avant de confirmer l’intervention.</p>",
+    "reason": "Assurance, personne attitrée et horaires automatiques non documentés."
+  },
+  {
+    "old": "<p>Pour les locaux recevant du public, la contrainte n'est pas la surface, c'est la fenêtre horaire. Un accueil de préfecture, une étude ou un cabinet médical ne peuvent pas être nettoyés pendant l'ouverture. Nous intervenons de 6 h à 20 h, sept jours sur sept, et nous calons le passage avant l'arrivée du public.</p>",
+    "new": "<p>Dans les locaux recevant du public, l’occupation des espaces et les accès comptent dans l’organisation. Indiquez les horaires et les contraintes de l’accueil ou du cabinet pour convenir des tâches et du créneau.</p>",
+    "reason": "Retirer une règle absolue sur les ERP et une plage horaire garantie."
+  },
+  {
+    "old": "<p>Oui. Nous intervenons dans des locaux recevant du public, en dehors des heures d'ouverture, avec des intervenants déclarés dont l'identité est vérifiée. Nous fournissons l'attestation de responsabilité civile professionnelle avec le devis, et nous pouvons établir un relevé de passages si votre organisation l'exige.</p>",
+    "new": "<p>Décrivez votre activité, les accès et les documents attendus lors de la demande. Le périmètre, les consignes et les modalités de suivi sont à préciser avant de confirmer la prestation.</p>",
+    "reason": "Assurance et relevé systématique non documentés."
+  },
+  {
+    "old": "<p>Nous intervenons sur ce créneau avec un délai court : logement vidé nettoyé de fond en comble, sols, sanitaires détartrés, cuisine dégraissée, intérieur des placards, vitres et traces sur les murs. C'est ce qui permet à un propriétaire ou à une agence de relouer sans perdre de semaines, et à un locataire sortant de récupérer son dépôt de garantie.</p>",
+    "new": "<p>Précisez la date de libération du logement et votre échéance. Sols, sanitaires, cuisine, rangements et vitres sont distingués au devis selon les tâches retenues. Le nettoyage ne garantit pas la restitution d’un dépôt de garantie ni la date de remise en location.</p>",
+    "reason": "Retirer la garantie de résultat locatif et de délai court."
+  },
+  {
+    "old": "<p>Nous intervenons de 6 h à 20 h, sept jours sur sept, ce qui couvre aussi bien le créneau d'avant ouverture que celui d'après fermeture. Et le même intervenant revient d'une semaine sur l'autre : sur un site où l'accès est contrôlé, changer de personne chaque semaine est un problème pour tout le monde.</p>",
+    "new": "<p>Précisez les créneaux avant ouverture ou après fermeture, les accès et les consignes du site. Les tâches et le planning sont étudiés puis confirmés avec vous.</p>",
+    "reason": "Horaires garantis et personne identique non vérifiés."
+  },
+  {
+    "old": "<p>Nous intervenons avant l'arrivée des équipes ou après leur départ, de 6 h à 20 h, sept jours sur sept, avec un interlocuteur unique et le même intervenant d'une semaine sur l'autre. Sur des locaux à forte valeur patrimoniale, la régularité de la personne compte autant que la qualité du produit.</p>",
+    "new": "<p>L’occupation des locaux, les revêtements et les accès permettent de définir le passage. Précisez les horaires disponibles et les points sensibles ; les tâches et le planning sont confirmés avec vous.</p>",
+    "reason": "Horaires garantis et personne identique non documentés."
+  },
+  {
+    "old": "<p>Pour les commerces et les bureaux, nous intervenons de 6 h à 20 h, sept jours sur sept, avant l'ouverture ou après la fermeture. Un interlocuteur unique, le même intervenant d'une semaine sur l'autre, et un devis détaillé poste par poste.</p>",
+    "new": "<p>Pour les commerces et les bureaux, les créneaux possibles, les accès et les tâches sont étudiés avec vous. Le devis précise le périmètre et la fréquence avant de confirmer le planning.</p>",
+    "reason": "Horaires garantis et personne attitrée non documentés."
+  },
+  {
+    "old": "<p><strong>Les assurances et la conformité.</strong> Attestation de responsabilité civile professionnelle à jour, personnel déclaré, produits conformes : demandez les documents plutôt que les promesses.</p>",
+    "new": "<p><strong>Les documents à vérifier.</strong> Indiquez les justificatifs attendus et vérifiez leur disponibilité avant votre accord. Les tâches, les accès et les modalités du contrat doivent être précisés.</p>",
+    "reason": "Ne pas présenter des attestations ou une conformité comme acquises."
+  },
+  {
+    "old": "<p class=\"lead\">Poussière fine, traces de plâtre, vitres marquées : MénageUp remet votre chantier en état de livraison — prêt pour la remise des clés, la visite ou l'emménagement. Devis sous 48&nbsp;h, intervention possible 7j/7.</p>",
+    "new": "<p class=\"lead\">Poussière fine, traces de plâtre, vitres marquées : décrivez l’état du chantier et votre échéance. MénageUp étudie les surfaces à nettoyer et le planning avec vous, sur devis.</p>",
+    "reason": "Retirer une disponibilité 7j/7 non confirmée et un état de livraison promis sans périmètre."
+  },
+  {
+    "old": "<p><strong>Les attestations jointes.</strong> Responsabilité civile professionnelle à jour et régularité sociale de l'entreprise : ce sont des documents, pas des promesses. Ils doivent accompagner le devis.</p>",
+    "new": "<p><strong>Les documents attendus.</strong> Précisez les justificatifs nécessaires à votre consultation pour que leur disponibilité soit vérifiée avant votre accord.</p>",
+    "reason": "Ne pas inventer une obligation générale de joindre des attestations à chaque devis."
+  }
+]

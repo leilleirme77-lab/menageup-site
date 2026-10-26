@@ -12,7 +12,7 @@ from seo_shared import with_sector_navigation
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = 'https://menageup.fr'
 HUB = '/conseils/'
-FILES = ['content/guides-logement.json', 'content/guides-chantier.json', 'content/guides-logistique.json']
+FILES = ['content/guides-logement.json', 'content/guides-chantier.json', 'content/guides-logistique.json', 'content/guides-demenagement.json']
 
 
 def esc(value):
@@ -124,7 +124,7 @@ def category(guide):
 def guide_page(g):
     path = HUB + g['slug'] + '/'
     cta = quote(path, g)
-    crumbs = [('Accueil', '/'), ('Conseils', HUB), (g['title'], path)]
+    crumbs = [('Accueil', '/'), ('Conseils', HUB), (g.get('breadcrumb_label', g['title']), path)]
     words = len(re.findall(r'\S+', ' '.join(g['intro']) + json.dumps(g['sections'], ensure_ascii=False) + json.dumps(g['faq'], ensure_ascii=False)))
     minutes = max(1, round(words / 200))
     d = date.fromisoformat(g['updated_at'])

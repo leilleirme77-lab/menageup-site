@@ -1,0 +1,89 @@
+[
+  {
+    "slug":"nettoyage-demenagement-etat-des-lieux-checklist",
+    "title":"Nettoyage déménagement : checklist état des lieux | MénageUp",
+    "description":"Avant de rendre les clés ou d’emménager, organisez le nettoyage du logement : pièces, équipements, planning et informations utiles au devis dans le 77.",
+    "h1":"Nettoyage après déménagement : que prévoir avant l’état des lieux ?",
+    "breadcrumb_label":"Checklist déménagement",
+    "intro":[
+      "Le camion est réservé, les cartons sont prêts, mais quand nettoyer le logement ? Pour préparer un état des lieux ou une entrée dans les lieux, le plus utile est de fixer ce qui doit être vide, ce qui reste à nettoyer et le moment où les accès seront disponibles.",
+      "Voici une checklist pour décrire votre besoin à MénageUp en Seine-et-Marne. Elle aide à organiser une intervention ; elle ne permet pas de garantir le résultat d’un état des lieux ni la restitution d’un dépôt de garantie."
+    ],
+    "image":"assets/images/etat-des-lieux-logement-vide-optimise.webp",
+    "image_alt":"Illustration du nettoyage d’un logement vide avant remise des clés",
+    "image_caption":"Illustration de la prestation. Le logement et l’intervention présentés ici ne sont pas une réalisation cliente.",
+    "service_code":"edl",
+    "audience":"part",
+    "updated_at":"2026-10-26",
+    "sections":[
+      {
+        "id":"choisir-le-moment",
+        "title":"1. Placer le nettoyage au bon moment",
+        "paragraphs":[
+          "Après la sortie des meubles, les sols et les plinthes deviennent plus accessibles. Prévoyez si possible le nettoyage après le dernier transport et avant la remise des clés, avec une marge pour vérifier les pièces. Un nouveau passage de déménageurs peut laisser des traces sur un sol déjà nettoyé.",
+          "Pour une entrée dans les lieux, précisez si vous souhaitez faire nettoyer le logement avant la livraison des meubles. Si de la peinture, du ponçage ou d’autres travaux continuent, signalez-le : un nettoyage de fin de chantier ne s’organise pas comme l’entretien courant d’un logement. Le créneau est confirmé avec vous selon les accès et les disponibilités."
+        ],
+        "checklist":["Commune et type de logement", "Date de départ des meubles ou d’arrivée du mobilier", "Date souhaitée pour le nettoyage et rendez-vous de remise des clés", "Travaux terminés ou encore prévus après le nettoyage"]
+      },
+      {
+        "id":"piece-par-piece",
+        "title":"2. Décrire les pièces et les équipements",
+        "paragraphs":["Dire « ménage complet » ne suffit pas à définir une prestation. Le nombre de pièces, l’état des surfaces et les équipements laissés sur place peuvent changer le travail attendu. Les tâches ci-dessous sont à sélectionner et à faire confirmer dans le devis."],
+        "table":{
+          "headers":["Espace", "Éléments à signaler", "Préparation utile"],
+          "rows":[
+            ["Cuisine", "Graisse, évier, crédence, façades, électroménager restant", "Préciser si le four, la hotte ou le réfrigérateur sont à traiter"],
+            ["Salle de bains et WC", "Douche, baignoire, robinetterie, traces de calcaire, sanitaires", "Indiquer l’état des surfaces et les matériaux fragiles"],
+            ["Pièces de vie et chambres", "Sols, plinthes accessibles, portes et traces de contact", "Signaler les meubles encore présents et les pièces déjà vidées"],
+            ["Rangements", "Placards, étagères et tiroirs à nettoyer à l’intérieur", "Les vider si leur intérieur fait partie de la demande"],
+            ["Fenêtres et baies", "Nombre, faces, dimensions et hauteur d’accès", "Préciser si les encadrements et rails sont aussi concernés"],
+            ["Annexes", "Balcon, cave, garage ou terrasse", "Les identifier séparément avec leurs accès et leur état"]
+          ]
+        }
+      },
+      {
+        "id":"vider-nettoyer-reparer",
+        "title":"3. Séparer débarras, nettoyage et réparations",
+        "paragraphs":[
+          "Des meubles à enlever, des sacs, des gravats ou une cave encombrée demandent un débarras à organiser avant de pouvoir accéder aux surfaces. Préparez une liste des objets à conserver et de ceux à évacuer. Un enlèvement ne se déduit pas automatiquement d’une demande de nettoyage.",
+          "Le nettoyage vise les salissures sur les surfaces convenues. Une peinture dégradée, un joint à remplacer, une fuite ou un revêtement abîmé demandent une autre opération. Signalez les défauts déjà présents : des photos de détail permettent de distinguer ce qui relève de la propreté et ce qui nécessite un examen ou une réparation.",
+          "Si le logement est resté inhabité longtemps ou présente des salissures importantes, indiquez-le dès le premier échange. Cela permet d’étudier un grand nettoyage adapté à son état, plutôt qu’un simple passage de fin de bail."
+        ]
+      },
+      {
+        "id":"acces-et-cles",
+        "title":"4. Préparer les accès et la remise des clés",
+        "paragraphs":[
+          "Indiquez l’étage, la présence d’un ascenseur, les possibilités de stationnement et la distance entre le véhicule et le logement. Vérifiez que l’eau et l’électricité seront disponibles au créneau prévu. Précisez aussi qui ouvre les lieux, récupère les clés et reste joignable pendant le passage.",
+          "En cas d’absence, convenez du mode de suivi avant l’intervention. Chez MénageUp, les échanges et les photos avant/après permettent de faire le point sur les opérations réalisées. Cette transmission documente le travail ; elle ne remplace pas l’état des lieux entre les personnes concernées."
+        ],
+        "checklist":["Surface approximative, nombre de pièces et état général", "Étage, ascenseur, accès et stationnement", "Disponibilité de l’eau, de l’électricité et des clés", "Équipements à nettoyer et éléments encore sur place", "Photos d’ensemble et détails des salissures", "Contact joignable et organisation du bilan après intervention"]
+      },
+      {
+        "id":"verifier-avant-de-rendre",
+        "title":"5. Faire un dernier point avant la remise des lieux",
+        "paragraphs":[
+          "Reprenez le périmètre convenu : les pièces, équipements et accès traités doivent correspondre à votre demande. Vérifiez avec votre interlocuteur les éventuelles limites rencontrées, notamment une surface inaccessible, un objet non déplacé ou une trace qui n’a pas pu être retirée.",
+          "Le nettoyage contribue à présenter les lieux propres. L’état des lieux porte aussi sur l’état du logement et de ses équipements ; aucune entreprise de nettoyage ne peut garantir à elle seule la décision concernant un dépôt de garantie. Pour les règles relatives à la location, consultez les ressources officielles ci-dessous."
+        ]
+      }
+    ],
+    "quote_fields":["Commune, surface et nombre de pièces", "Logement vide ou meublé et équipements à traiter", "Dates du déménagement, du nettoyage et de la remise des clés", "Débarras ou travaux encore nécessaires", "Étage, accès, clés, eau et électricité", "Photos de l’état actuel et contact pour le suivi"],
+    "faq":[
+      {"question":"Faut-il attendre que le logement soit vide ?", "answer":"C’est généralement plus pratique pour accéder aux sols et aux rangements. Si des meubles restent, indiquez lesquels afin de préciser les zones accessibles et les tâches à convenir."},
+      {"question":"Le four et le réfrigérateur sont-ils compris ?", "answer":"Ils doivent être indiqués dans votre demande puis dans le périmètre convenu. Précisez l’état, l’intérieur à traiter et les conditions de préparation de chaque appareil."},
+      {"question":"Peut-on demander le nettoyage avant d’emménager ?", "answer":"Oui. Transmettez la date d’entrée, l’état actuel du logement et le créneau avant l’arrivée des meubles. La prestation et sa disponibilité sont confirmées lors de l’échange."},
+      {"question":"Le nettoyage garantit-il la récupération de la caution ?", "answer":"Non. Il porte sur les tâches de propreté prévues. Le dépôt de garantie et l’état des lieux dépendent aussi de l’état du logement, des équipements et des règles applicables à la location."}
+    ],
+    "related":[
+      {"href":"/nettoyage-etat-des-lieux-77/", "label":"Notre prestation de nettoyage avant état des lieux"},
+      {"href":"/conseils/debarras-puis-nettoyage-logement/", "label":"Organiser un débarras avant le nettoyage"},
+      {"href":"/nettoyage-logement-inoccupe-77/", "label":"Nettoyage d’un logement très sale ou inoccupé"},
+      {"href":"/nettoyage-fin-de-chantier-77/", "label":"Nettoyage après des travaux"}
+    ],
+    "sources":[
+      {"url":"https://www.service-public.gouv.fr/particuliers/vosdroits/F33671", "label":"Service-Public — État des lieux de sortie", "context":"Repères officiels pour distinguer la préparation du nettoyage et le constat de l’état du logement."},
+      {"url":"https://www.service-public.gouv.fr/particuliers/vosdroits/F31269", "label":"Service-Public — Dépôt de garantie dans un bail d’habitation", "context":"Règles relatives au dépôt de garantie ; la prestation de nettoyage n’en garantit pas la restitution."}
+    ]
+  }
+]

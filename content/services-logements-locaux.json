@@ -1,0 +1,366 @@
+[
+  {
+    "slug": "nettoyage-etat-des-lieux-77",
+    "service_code": "edl",
+    "audience": "part",
+    "title": "Nettoyage après déménagement et état des lieux 77 | MénageUp",
+    "description": "Vous déménagez ou préparez un état des lieux dans le 77 ? Cuisine, sanitaires, sols et vitrages : définissons le nettoyage et le planning de votre logement.",
+    "eyebrow": "Logement · Déménagement · État des lieux",
+    "h1": "Nettoyage avant état des lieux ou après déménagement dans le 77",
+    "intro": "Vous rendez un appartement, préparez une maison avant d’emménager ou remettez un bien en location ? MénageUp organise le nettoyage des pièces et des équipements convenus avec vous. Précisez l’état du logement, ce qui reste sur place et la date à laquelle les lieux doivent être disponibles.",
+    "image": "assets/images/etat-des-lieux-logement-vide-optimise.webp",
+    "image_alt": "Illustration d’un nettoyage des plinthes dans un logement vide, avec les clés au premier plan",
+    "image_caption": "Illustration de la prestation ; ce visuel ne présente pas un chantier client.",
+    "image_position": "50% 85%",
+    "benefits": [
+      {
+        "title": "Un passage au bon moment",
+        "text": "Le passage se cale avec le départ des meubles, l’accès aux clés et votre rendez-vous. Le créneau est confirmé avec vous avant l’intervention."
+      },
+      {
+        "title": "Les tâches détaillées",
+        "text": "Les pièces et les équipements sont distingués au devis : le nettoyage d’un four ou de l’intérieur des placards ne se déduit pas de la seule surface du logement."
+      },
+      {
+        "title": "Un résultat documenté",
+        "text": "Vous êtes tenu informé, puis recevez les photos avant/après et un point sur le travail effectué."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Cuisine et équipements",
+        "text": "Surfaces accessibles, évier, crédence et façades de meubles. Four, réfrigérateur, hotte et intérieur des placards sont à signaler pour préciser leur nettoyage, leur état et les accès."
+      },
+      {
+        "title": "Salle de bain et WC",
+        "text": "Nettoyage des sanitaires, lavabos, robinetteries, miroirs et surfaces accessibles. Précisez les dépôts de calcaire et les zones très encrassées ; un joint détérioré peut nécessiter une réparation distincte."
+      },
+      {
+        "title": "Sols et points de contact",
+        "text": "Aspiration ou lavage adaptés aux revêtements, plinthes et surfaces accessibles, portes, poignées et interrupteurs selon les tâches retenues. Les traces d’usure du matériau sont distinguées des salissures."
+      },
+      {
+        "title": "Vitres et encadrements",
+        "text": "Fenêtres et portes vitrées accessibles, avec nombre de faces et accès précisés. Rails, volets, adhésifs ou traces de peinture demandent une description avant de les intégrer au devis."
+      },
+      {
+        "title": "Rangements libérés",
+        "text": "Les placards et penderies peuvent être nettoyés lorsqu’ils sont accessibles et vidés. Les effets personnels, cartons ou meubles à déplacer sont signalés avant le passage."
+      },
+      {
+        "title": "Balcon, cave ou garage",
+        "text": "Ces espaces ne sont pas ajoutés automatiquement au nettoyage du logement. Indiquez leur état, les marches et les encombrants éventuels pour distinguer nettoyage et débarras."
+      }
+    ],
+    "boundaries": [
+      "Le nettoyage ne répare pas un revêtement, une fuite, une peinture ou un équipement dégradé. Les éléments à réparer sont identifiés séparément.",
+      "Une prestation de propreté ne garantit ni l’issue d’un état des lieux ni la restitution d’un dépôt de garantie. Le devis décrit le travail de nettoyage retenu.",
+      "Précisez l’accès à l’eau et à l’électricité, la remise des clés, le stationnement et les objets encore présents. Les produits, le matériel et les tâches sont convenus au devis."
+    ],
+    "process": [
+      {
+        "title": "Décrire le logement",
+        "text": "Indiquez la commune, les pièces, la surface approximative et l’échéance souhaitée. Ajoutez des vues générales et les détails des zones encrassées pour préparer l’échange."
+      },
+      {
+        "title": "Organiser le passage",
+        "text": "Nous précisons les équipements à traiter, les accès et la disponibilité des lieux. Une visite peut compléter les photos avant de confirmer les tâches et le planning."
+      },
+      {
+        "title": "Faire le point ensemble",
+        "text": "Après le nettoyage, nous vous transmettons les photos et le bilan. Si un point semble incomplet, nous le vérifions avec vous au regard du travail prévu au devis."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Faut-il réserver avant ou après le déménagement ?",
+        "answer": "Décrivez votre planning dès la demande. Un logement libéré de ses meubles facilite l’accès aux sols et rangements. Le passage est organisé après la sortie des volumes concernés et avant votre prochaine occupation ou votre rendez-vous, selon les disponibilités confirmées."
+      },
+      {
+        "question": "Le logement doit-il être entièrement vide ?",
+        "answer": "Ce n’est pas systématique. Signalez les meubles, les cartons et les objets à conserver. Les surfaces à nettoyer et les éventuels déplacements sont précisés avec vous ; les effets personnels ne sont pas enlevés sans accord."
+      },
+      {
+        "question": "Le four et les placards sont-ils compris ?",
+        "answer": "Ils peuvent être intégrés. Précisez les appareils, leur état et l’intérieur des rangements à nettoyer pour qu’ils figurent explicitement dans le devis. La surface en mètres carrés ne suffit pas à définir ces tâches."
+      },
+      {
+        "question": "Peut-on prévoir un débarras et le nettoyage ensemble ?",
+        "answer": "Oui, présentez les deux besoins. Nous distinguons les objets à sortir, leur accès et leur destination, puis les surfaces à nettoyer une fois dégagées. Le calendrier et les moyens sont organisés dans cet ordre."
+      },
+      {
+        "question": "Intervenez-vous avant un emménagement dans le 77 ?",
+        "answer": "Nous étudions aussi le nettoyage avant votre installation ou avant la prochaine location. Indiquez la commune et la date d’accès au logement pour convenir des modalités et du créneau."
+      }
+    ],
+    "quote_intro": "Votre logement, son état et l’échéance souhaitée permettent de préparer un devis. Ajoutez les appareils, les rangements et les accès particuliers lors de notre échange.",
+    "fields": [
+      {
+        "name": "surface",
+        "label": "Surface approximative en m²",
+        "type": "number"
+      },
+      {
+        "name": "vitres",
+        "label": "Vitres à prévoir",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À définir ensemble"
+          },
+          {
+            "value": "oui",
+            "label": "Oui"
+          },
+          {
+            "value": "non",
+            "label": "Non"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/conseils/nettoyage-demenagement-etat-des-lieux-checklist/",
+        "label": "La checklist du nettoyage avant remise des clés"
+      },
+      {
+        "href": "/nettoyage-logement-inoccupe-77/",
+        "label": "Grand nettoyage d’un logement très sale"
+      },
+      {
+        "href": "/debarras-maison-appartement-77/",
+        "label": "Débarras avant de nettoyer le logement"
+      },
+      {
+        "href": "/nettoyage-vitres-77/",
+        "label": "Nettoyage des fenêtres et baies vitrées"
+      },
+      {
+        "href": "/conseils/debarras-puis-nettoyage-logement/",
+        "label": "Organiser débarras puis nettoyage"
+      },
+      {
+        "href": "/zones-intervention-seine-et-marne-77/",
+        "label": "Trouver votre commune du 77"
+      }
+    ],
+    "area_intro": "Votre départ ou votre installation se prépare en Seine-et-Marne ? La commune, les accès et les tâches attendues permettent de convenir d’un passage adapté à votre logement.",
+    "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-ozoir-la-ferriere/",
+        "label": "Ozoir-la-Ferrière"
+      },
+      {
+        "href": "/nettoyage-torcy/",
+        "label": "Torcy"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      }
+    ],
+    "headings": {
+      "perimetre": "Les pièces et équipements à préparer",
+      "deroule": "Du déménagement au nettoyage du logement",
+      "suivi": "Les photos et un bilan après le passage",
+      "devis": "Votre logement avant l’état des lieux",
+      "secteur": "Le nettoyage de votre logement dans le 77",
+      "liens": "Selon l’état et les besoins du logement"
+    }
+  },
+  {
+    "slug": "nettoyage-bureaux-commerces-77",
+    "service_code": "commerce",
+    "audience": "ent",
+    "label": "Bureaux et locaux professionnels",
+    "short_label": "Bureaux & commerces",
+    "title": "Nettoyage de bureaux et locaux professionnels 77 | MénageUp",
+    "description": "Bureaux, locaux professionnels et commerces dans le 77 : des tâches définies, des passages organisés et un suivi client. Préparez votre demande de devis MénageUp.",
+    "eyebrow": "Professionnels · Bureaux et commerces",
+    "h1": "Nettoyage de bureaux et locaux professionnels en Seine-et-Marne",
+    "intro": "Vous cherchez un entretien régulier ou un passage ponctuel pour vos bureaux, votre commerce ou vos espaces d’accueil ? MénageUp étudie les tâches, l’utilisation des lieux et les créneaux possibles avec vous. Le devis précise les espaces concernés et l’organisation des passages.",
+    "image": "assets/images/nettoyage-commerce-boutique-optimise.webp",
+    "image_alt": "Illustration d’une intervenante nettoyant le sol d’une boutique avec un balai à plat",
+    "image_caption": "Illustration d’un entretien de locaux ; ce visuel ne constitue pas une référence client.",
+    "image_position": "50% 70%",
+    "benefits": [
+      {
+        "title": "Des tâches identifiées",
+        "text": "Sol, sanitaires, bureaux ou espace de vente : les opérations et les limites sont définies pour clarifier le travail attendu à chaque passage."
+      },
+      {
+        "title": "Un planning convenu",
+        "text": "Les horaires, les accès et les consignes de fermeture tiennent compte de votre activité. La fréquence se définit selon l’usage des locaux."
+      },
+      {
+        "title": "Un contact pour le suivi",
+        "text": "Vous disposez d’un interlocuteur MénageUp pour faire le point sur les passages, les observations et l’évolution des besoins."
+      }
+    ],
+    "scope": [
+      {
+        "title": "Espaces de travail",
+        "text": "Dépoussiérage des surfaces dégagées, points de contact, espaces d’accueil et salles de réunion selon les tâches convenues. Les documents et équipements personnels ne sont pas déplacés sans accord."
+      },
+      {
+        "title": "Sols et circulations",
+        "text": "Aspiration, balayage ou lavage selon le revêtement et l’utilisation des espaces. Signalez les traces de chantier, les matériaux fragiles et les zones qui restent occupées."
+      },
+      {
+        "title": "Sanitaires",
+        "text": "Nettoyage des équipements, lavabos, robinetteries, miroirs et sols accessibles. La fourniture ou le réassort de savon, papier et sacs est précisé séparément."
+      },
+      {
+        "title": "Espace de pause",
+        "text": "Tables, évier et plans de travail accessibles. Intérieur des appareils, vaisselle ou rangements demandent une définition explicite des opérations attendues."
+      },
+      {
+        "title": "Vitrages et espace de vente",
+        "text": "Vitrines, portes vitrées et surfaces accessibles peuvent être intégrées. Précisez l’exposition de produits, la présence de clients et les plages disponibles avant ou après l’ouverture."
+      },
+      {
+        "title": "Corbeilles et points de collecte",
+        "text": "Le vidage et le transport interne vers les points de collecte désignés se définissent avec vos consignes de tri. Les déchets particuliers et les volumes exceptionnels nécessitent une étude séparée."
+      }
+    ],
+    "boundaries": [
+      "Une fréquence ne se déduit pas uniquement de la surface : occupation, passage, sanitaires, activité et état des lieux sont examinés ensemble.",
+      "Un entretien courant ne constitue pas un protocole médical, une dépollution ou un traitement spécialisé. Décrivez les contraintes particulières pour évaluer les tâches adaptées.",
+      "Produits, matériel, consommables, accès aux clés ou à l’alarme et conditions de modification du planning sont précisés avant votre accord."
+    ],
+    "process": [
+      {
+        "title": "Décrire vos locaux",
+        "text": "Commune, surface, espaces utilisés, effectif, créneaux et fréquence souhaitée : ces informations donnent une base concrète à notre échange."
+      },
+      {
+        "title": "Définir les passages",
+        "text": "Nous faisons le point sur les tâches, les revêtements et les consignes d’accès. Une visite peut compléter les informations avant de préparer le devis et le planning."
+      },
+      {
+        "title": "Suivre et ajuster",
+        "text": "Les observations sont partagées avec votre contact. Si l’activité, l’occupation ou les besoins changent, nous réexaminons avec vous les tâches et les modalités."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Pouvez-vous intervenir en dehors des heures d’ouverture ?",
+        "answer": "Signalez les créneaux disponibles et les contraintes de votre activité. Les horaires sont étudiés et confirmés au devis et au planning ; un passage tôt, tard ou le week-end doit être convenu explicitement."
+      },
+      {
+        "question": "Quelle fréquence choisir pour des bureaux ?",
+        "answer": "Le nombre d’occupants, l’usage des sanitaires, les circulations, les revêtements et le niveau d’entretien attendu guident le choix. Nous définissons les passages avec vous au lieu d’appliquer un rythme identique à tous les locaux."
+      },
+      {
+        "question": "L’entretien de ma boutique est-il possible ?",
+        "answer": "Oui, présentez les surfaces accessibles, l’espace de vente, les vitrines et les horaires. Notre page consacrée aux commerces détaille les informations à préparer pour un devis adapté à une boutique."
+      },
+      {
+        "question": "Qui fournit les produits et consommables ?",
+        "answer": "Le matériel, les produits et les éventuels consommables sont précisés au devis. Indiquez ce qui est disponible sur place et vos contraintes liées aux surfaces ou à l’activité."
+      },
+      {
+        "question": "Comment sont organisés les accès et le suivi ?",
+        "answer": "Nous convenons des clés, badges, codes, consignes d’alarme et du contact sur place avant le démarrage. Vous êtes informé du travail effectué et pouvez faire le point sur les observations ou les besoins de la prochaine intervention."
+      }
+    ],
+    "quote_intro": "Décrivez vos locaux, leur occupation et les horaires possibles. Nous préparons avec vous les tâches, la fréquence et les conditions d’accès.",
+    "fields": [
+      {
+        "name": "surface",
+        "label": "Surface approximative en m²",
+        "type": "number"
+      },
+      {
+        "name": "frequence",
+        "label": "Rythme souhaité",
+        "type": "select",
+        "options": [
+          {
+            "value": "a-definir",
+            "label": "À définir ensemble"
+          },
+          {
+            "value": "ponctuel",
+            "label": "Un passage ponctuel"
+          },
+          {
+            "value": "hebdomadaire",
+            "label": "Une fois par semaine"
+          },
+          {
+            "value": "plusieurs-fois-semaine",
+            "label": "Plusieurs fois par semaine"
+          },
+          {
+            "value": "quotidien",
+            "label": "Chaque jour — à étudier"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/nettoyage-commerces-77/",
+        "label": "Le nettoyage des commerces et boutiques"
+      },
+      {
+        "href": "/nettoyage-vitres-77/",
+        "label": "Fenêtres et vitrines professionnelles"
+      },
+      {
+        "href": "/nettoyage-copropriete-77/",
+        "label": "Entretien des parties communes d’un immeuble"
+      },
+      {
+        "href": "/nettoyage-base-vie-chantier-77/",
+        "label": "Entretien de locaux de base vie"
+      },
+      {
+        "href": "/zones-intervention-seine-et-marne-77/",
+        "label": "Les secteurs du 77"
+      }
+    ],
+    "area_intro": "Vos bureaux ou vos locaux sont situés en Seine-et-Marne ? Indiquez la commune, les accès et le rythme souhaité pour convenir de l’organisation possible.",
+    "local_links": [
+      {
+        "href": "/nettoyage-tournan-en-brie/",
+        "label": "Tournan-en-Brie"
+      },
+      {
+        "href": "/nettoyage-torcy/",
+        "label": "Torcy"
+      },
+      {
+        "href": "/nettoyage-pontault-combault/",
+        "label": "Pontault-Combault"
+      },
+      {
+        "href": "/nettoyage-bussy-saint-georges/",
+        "label": "Bussy-Saint-Georges"
+      },
+      {
+        "href": "/nettoyage-melun/",
+        "label": "Melun"
+      }
+    ],
+    "headings": {
+      "perimetre": "Les espaces professionnels à prendre en charge",
+      "deroule": "Préparer l’entretien de vos bureaux",
+      "suivi": "Un suivi adapté à votre activité",
+      "devis": "Les informations utiles pour vos locaux",
+      "secteur": "Vos locaux et nos secteurs dans le 77",
+      "liens": "Selon votre activité et vos espaces"
+    }
+  }
+]

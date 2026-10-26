@@ -3,8 +3,47 @@ import json
 import re
 from pathlib import Path
 from html import escape
+from html import unescape
 
 IDENTITY = json.loads((Path(__file__).resolve().parents[1] / 'content/company-location.json').read_text(encoding='utf-8'))
+ROOT = Path(__file__).resolve().parents[1]
+SHOP_PAGES = {
+    '/nettoyage-bureaux-torcy', '/nettoyage-pontault-combault',
+    '/nettoyage-ozoir-la-ferriere', '/nettoyage-roissy-en-brie', '/nettoyage-torcy',
+    '/nettoyage-chelles', '/nettoyage-savigny-le-temple', '/nettoyage-combs-la-ville',
+    '/nettoyage-lagny-sur-marne', '/nettoyage-brie-comte-robert',
+    '/nettoyage-coulommiers', '/nettoyage-melun', '/nettoyage-montevrain',
+}
+
+
+def reviewed_copy(html):
+    """Apply reviewed exact copy corrections also when older pages are regenerated."""
+    source = ROOT / 'content/legacy-copy-corrections.json'
+    if source.is_file():
+        for item in json.loads(source.read_text(encoding='utf-8')):
+            html = html.replace(item['old'], item['new'])
+    return html
+
+
+def shop_context_link(html, path):
+    """Add one link in the existing shop discussion, outside enclosing anchors."""
+    if path not in SHOP_PAGES or 'href="/nettoyage-commerces-77/"' in html:
+        return html
+    start = html.find('<body')
+    end = html.find('<footer', start)
+    for match in re.finditer(r'<p\b[^>]*>(.*?)</p>', html[start:end], flags=re.S):
+        left = start + match.start()
+        right = start + match.end()
+        prefix = html[:left]
+        if prefix.rfind('<a ') > prefix.rfind('</a>'):
+            continue
+        content = match.group(1)
+        text = unescape(re.sub('<[^>]+>', '', content)).lower()
+        if len(text) < 50 or not re.search(r'\b(?:commerces|boutiques|espace de vente)\b', text):
+            continue
+        link = ' Pour votre espace de vente, consultez le détail du <a href="/nettoyage-commerces-77/">nettoyage de commerces et boutiques dans le 77</a>.'
+        return html[:right - 4] + link + html[right - 4:]
+    raise ValueError('Missing reviewed shop discussion on ' + path)
 
 
 def company_identity(html):
@@ -45,8 +84,10 @@ def company_identity(html):
 
 
 def with_sector_navigation(html, path):
-    html = company_identity(html)
     path = '/' + path.strip('/')
+    html = reviewed_copy(html)
+    html = shop_context_link(html, path)
+    html = company_identity(html)
     trust_path = '/ils-nous-font-confiance/'
 
     def partner_navigation(match):
