@@ -60,3 +60,7 @@ Ne pas inventer de site partenaire, d’agence précise, de témoignage, de pres
 effectuée pour une enseigne ou de partenariat à l’échelle d’un réseau national.
 Les nouvelles entrées se gèrent dans content/partners.json et build_partners.py.
 Prévoir toucher, clavier, pause du défilement et préférence de mouvement réduit.
+Conserver l’accueil déjà publié : textes, visuels, mise en page et ordre des
+sections et navigation d’en-tête sur ordinateur. Le carrousel partenaires s’insère après les réalisations et avant
+les conseils ; il ne doit pas être placé en haut de page. Ne pas réintroduire
+la grille de neuf besoins refusée. Correction d’Enzo du 26 octobre 2026.

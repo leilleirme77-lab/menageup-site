@@ -92,6 +92,11 @@ def with_sector_navigation(html, path):
 
     def partner_navigation(match):
         content = match.group(2)
+        if path == '/' and re.search(r'\bclass=["\'][^"\']*\bmainnav\b', match.group(1)):
+            # Keep the existing desktop homepage header intact. The partner page
+            # remains linked from its carousel, the mobile menu and the footer.
+            content = re.sub(r'<a\b[^>]*href=["\']' + re.escape(trust_path) + r'["\'][^>]*>.*?</a>', '', content, flags=re.S)
+            return match.group(1) + content + match.group(3)
         if trust_path not in content:
             active = ' aria-current="page"' if path == trust_path.rstrip('/') else ''
             link = '<a href="' + trust_path + '"' + active + '>Ils nous font confiance</a>'
