@@ -60,6 +60,7 @@ LOT LOCAL DU 22 OCTOBRE 2026
 Après les trois générateurs ci-dessus, exécuter en série :
   python scripts/build_local_pages.py
   python scripts/build_partners.py
+  python scripts/build_reviews.py
   python scripts/enrich_seo_navigation.py
 Le premier construit la page relue de Tournan et le répertoire des communes du 77.
 Le second ajoute leurs accès depuis les pages du sitemap et conserve leurs dates
@@ -113,3 +114,13 @@ Sans JavaScript, textes, sommaires, tableaux et trames restent accessibles.
 Après publication, relever indexation, requêtes/pages et demandes qualifiées
 avec leur page source. Le compteur de pages ou le score local de l'audit ne
 mesurent ni les positions Google ni les ventes ; comparer à période égale.
+
+AVIS GOOGLE — CONTENU FOURNI LE 26 OCTOBRE 2026
+content/google-reviews.json contient les sept avis transmis par Enzo, retranscrits
+sans montants ni dates relatives. Yaya est un extrait visible dans la capture.
+build_reviews.py remplace uniquement #avis, ajoute ses deux assets et actualise
+le lastmod de l’accueil si le contenu change. Il ne consulte pas de compte Google,
+ne prétend pas être un flux en direct et n’ajoute pas d’AggregateRating.
+Les clones de boucle sont créés par le navigateur, masqués à l’accessibilité
+et inertes. Les sept avis d’origine restent lisibles sans JavaScript.
+Contrôler la jonction de boucle, la pause, le clavier, le toucher et le lien source.

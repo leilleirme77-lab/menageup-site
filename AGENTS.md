@@ -64,3 +64,9 @@ Conserver l’accueil déjà publié : textes, visuels, mise en page et ordre de
 sections et navigation d’en-tête sur ordinateur. Le carrousel partenaires s’insère après les réalisations et avant
 les conseils ; il ne doit pas être placé en haut de page. Ne pas réintroduire
 la grille de neuf besoins refusée. Correction d’Enzo du 26 octobre 2026.
+La section #avis reprend le carrousel historique avec les sept vrais avis Google
+transmis le 26 octobre. Conserver les textes visibles et les noms ; aucune suite
+inventée pour un avis tronqué, aucun montant ni date relative non actualisable.
+L’avis de Yaya reste indiqué comme extrait. Les avis se gèrent dans
+content/google-reviews.json et build_reviews.py ; préserver la pause, le toucher,
+le clavier et la réduction des mouvements. Le reste de l’accueil est conservé.
