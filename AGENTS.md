@@ -26,6 +26,11 @@ Appliquer les règles globales de C:/Users/ez/AGENTS.md.
 
 Ne pas afficher de tarifs, de prix d'exemple ou de montants de prestations sur le
 site. Préférence explicite d'Enzo du 13 octobre 2026 : chaque demande passe par un devis.
+Le 27 octobre 2026, Enzo confirme que le dispositif donnant droit au crédit
+d’impôt est en place. Afficher les 50 % pour le ménage et le repassage à domicile
+éligibles, sous conditions et plafonds. Cette confirmation ne fournit pas de
+numéro de déclaration SAP et ne confirme pas l’activation de l’avance immédiate
+Urssaf : ne pas inventer ces précisions ni promettre une déduction immédiate.
 Les durées et effectifs des réalisations peuvent être utilisés seulement lorsqu'ils
 sont confirmés. Distinguer le résultat photographié et les faits expliqués par le client.
 

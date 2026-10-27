@@ -49,12 +49,23 @@ def shop_context_link(html, path):
 def company_identity(html):
     """Describe the company and its registered office, not fabricated city branches."""
     office = IDENTITY['registered_office']
+    fiscal_faq = None
+    for item in re.finditer(r'<details\b[^>]*>\s*<summary\b[^>]*>((?:(?!</summary>).)*)</summary>\s*<p\b[^>]*>((?:(?!</p>).)*)</p>', html, flags=re.S):
+        question = unescape(re.sub('<[^>]+>', '', item.group(1))).strip()
+        if 'crédit' in question.lower() and 'impôt' in question.lower():
+            answer = unescape(re.sub('<[^>]+>', '', item.group(2))).strip()
+            fiscal_faq = (question, answer)
+            break
 
     def enrich(value):
         if isinstance(value, list):
             for item in value:
                 enrich(item)
         elif isinstance(value, dict):
+            # Keep existing fiscal FAQ markup faithful to the visible conditions.
+            if fiscal_faq and value.get('@type') == 'Question' and 'impôt' in value.get('name', '').lower():
+                value['name'] = fiscal_faq[0]
+                value['acceptedAnswer'] = {'@type': 'Answer', 'text': fiscal_faq[1]}
             kinds = value.get('@type', [])
             kinds = [kinds] if isinstance(kinds, str) else kinds
             if value.get('@id') == 'https://menageup.fr/#business' and kinds:

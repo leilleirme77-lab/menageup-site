@@ -56,8 +56,8 @@
   },
   {
     "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Pontault-Combault ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Pontault-Combault. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
-    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
-    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non, il concerne le ménage et le repassage à domicile éligibles, dans les conditions et plafonds légaux. Le crédit d’impôt correspond à 50 % des dépenses restant à votre charge. Les copropriétés, les locaux professionnels et le débarras sont hors de cette offre. L’avance immédiate Urssaf est un service distinct, soumis à des conditions d’accès et à son activation.</p></details>",
+    "reason": "Confirmation Enzo du 27 octobre : crédit d’impôt de 50 % proposé pour les prestations à domicile éligibles ; avance immédiate distincte."
   },
   {
     "old": "<details><summary>Peut-on avoir toujours la même intervenante ?</summary><p>Oui, c'est notre fonctionnement par défaut : une intervenante attitrée, présentée avant le premier passage. En cas d'absence, le remplacement est assuré et vous êtes prévenu — le passage n'est pas annulé.</p></details>",
@@ -66,18 +66,18 @@
   },
   {
     "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Ozoir-la-Ferrière ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Ozoir-la-Ferrière. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
-    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
-    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non, il concerne le ménage et le repassage à domicile éligibles, dans les conditions et plafonds légaux. Le crédit d’impôt correspond à 50 % des dépenses restant à votre charge. Les copropriétés, les locaux professionnels et le débarras sont hors de cette offre. L’avance immédiate Urssaf est un service distinct, soumis à des conditions d’accès et à son activation.</p></details>",
+    "reason": "Confirmation Enzo du 27 octobre : crédit d’impôt de 50 % proposé pour les prestations à domicile éligibles ; avance immédiate distincte."
   },
   {
     "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Roissy-en-Brie ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Roissy-en-Brie. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
-    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
-    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non, il concerne le ménage et le repassage à domicile éligibles, dans les conditions et plafonds légaux. Le crédit d’impôt correspond à 50 % des dépenses restant à votre charge. Les copropriétés, les locaux professionnels et le débarras sont hors de cette offre. L’avance immédiate Urssaf est un service distinct, soumis à des conditions d’accès et à son activation.</p></details>",
+    "reason": "Confirmation Enzo du 27 octobre : crédit d’impôt de 50 % proposé pour les prestations à domicile éligibles ; avance immédiate distincte."
   },
   {
     "old": "<details><summary>Le crédit d'impôt de 50 % s'applique-t-il à Torcy ?</summary><p>Il s'applique aux prestations réalisées au domicile des particuliers, partout en France — donc également à Torcy. Les prestations pour les copropriétés, bureaux et commerces sont facturées hors dispositif.</p></details>",
-    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.</p></details>",
-    "reason": "SAP et avance immédiate non confirmés : ne pas annoncer une éligibilité fiscale acquise."
+    "new": "<details><summary>Le crédit d’impôt est-il automatiquement applicable ?</summary><p>Non, il concerne le ménage et le repassage à domicile éligibles, dans les conditions et plafonds légaux. Le crédit d’impôt correspond à 50 % des dépenses restant à votre charge. Les copropriétés, les locaux professionnels et le débarras sont hors de cette offre. L’avance immédiate Urssaf est un service distinct, soumis à des conditions d’accès et à son activation.</p></details>",
+    "reason": "Confirmation Enzo du 27 octobre : crédit d’impôt de 50 % proposé pour les prestations à domicile éligibles ; avance immédiate distincte."
   },
   {
     "old": "<details><summary>Intervenez-vous dans tous les quartiers de Chelles ?</summary><p>Oui. Centre-ville et gare, Mont Chalats, Grande Prairie, Chantereine, Foch, les Coudreaux et les secteurs pavillonnaires. Chelles est la commune la plus etendue de notre zone nord : nous organisons les tournees par secteur pour que la meme intervenante garde les memes immeubles, plutot que de traverser la ville entre deux passages.</p></details>",
@@ -358,5 +358,30 @@
     "old": "<p><strong>Les attestations jointes.</strong> Responsabilité civile professionnelle à jour et régularité sociale de l'entreprise : ce sont des documents, pas des promesses. Ils doivent accompagner le devis.</p>",
     "new": "<p><strong>Les documents attendus.</strong> Précisez les justificatifs nécessaires à votre consultation pour que leur disponibilité soit vérifiée avant votre accord.</p>",
     "reason": "Ne pas inventer une obligation générale de joindre des attestations à chaque devis."
+  },
+  {
+    "old": "Certaines prestations au domicile des particuliers peuvent ouvrir droit à un crédit d’impôt, si le prestataire est déclaré services à la personne et si les conditions et plafonds sont respectés. L’éligibilité des prestations MénageUp reste à confirmer. L’avance immédiate nécessite un organisme habilité, un client éligible et l’activation du service.",
+    "new": "Le ménage et le repassage à domicile éligibles ouvrent droit à un crédit d’impôt de 50 % des dépenses restant à votre charge, dans les conditions et plafonds légaux. Les prestations concernées et les modalités applicables sont précisées avec vous avant votre accord. L’avance immédiate est un service distinct de l’Urssaf, soumis à des conditions d’accès et à son activation.",
+    "reason": "Actualisation de la présentation fiscale après confirmation d’Enzo du 27 octobre 2026."
+  },
+  {
+    "old": "Non. La déclaration services à la personne et l’avance immédiate de MénageUp ne sont pas confirmées. Aucun avantage fiscal n’est annoncé comme acquis ; les conditions applicables doivent être vérifiées avant de retenir une prestation.",
+    "new": "Non, il concerne le ménage et le repassage à domicile éligibles, dans les conditions et plafonds légaux. Le crédit d’impôt correspond à 50 % des dépenses restant à votre charge. Les copropriétés, les locaux professionnels et le débarras sont hors de cette offre. L’avance immédiate Urssaf est un service distinct, soumis à des conditions d’accès et à son activation.",
+    "reason": "Actualisation de la présentation fiscale après confirmation d’Enzo du 27 octobre 2026."
+  },
+  {
+    "old": "Non. Il dépend de la prestation, de votre situation et des conditions du dispositif. La déclaration SAP et l’avance immédiate de MénageUp ne sont pas confirmées : aucun avantage fiscal n’est annoncé comme acquis. Le débarras et le nettoyage de locaux professionnels ne doivent pas être assimilés au ménage à domicile pour ce dispositif.",
+    "new": "Non, il concerne le ménage et le repassage à domicile éligibles, dans les conditions et plafonds légaux. Le crédit d’impôt correspond à 50 % des dépenses restant à votre charge. Les copropriétés, les locaux professionnels et le débarras sont hors de cette offre. L’avance immédiate Urssaf est un service distinct, soumis à des conditions d’accès et à son activation.",
+    "reason": "Actualisation de la présentation fiscale après confirmation d’Enzo du 27 octobre 2026."
+  },
+  {
+    "old": "Ces informations ne valent pas confirmation d’éligibilité d’un devis MénageUp. Les prestations de copropriété, de locaux professionnels, de chantier et de débarras ne sont pas présentées comme ouvrant droit à cet avantage.",
+    "new": "Le crédit d’impôt est un avantage fiscal : il ne constitue pas une remise automatique sur le montant facturé. Les prestations de copropriété, de locaux professionnels, de chantier et de débarras sont exclues de cette offre fiscale.",
+    "reason": "Actualisation de la présentation fiscale après confirmation d’Enzo du 27 octobre 2026."
+  },
+  {
+    "old": "Les informations fiscales dépendent des conditions du dispositif et ne confirment pas l’éligibilité des prestations MénageUp.",
+    "new": "Crédit d’impôt de 50 % pour les prestations à domicile éligibles, sous conditions et plafonds légaux. Hors prestations professionnelles et débarras.",
+    "reason": "Actualisation de la présentation fiscale après confirmation d’Enzo du 27 octobre 2026."
   }
 ]
