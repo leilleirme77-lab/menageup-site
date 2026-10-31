@@ -161,42 +161,38 @@
       "postal_code": "77340",
       "category": "Débarras extérieur",
       "title": "Débarras extérieur à Pontault-Combault 77 | MénageUp",
-      "description": "Débarras extérieur réalisé par MénageUp à Pontault-Combault (77340). Photos avant, pendant l'intervention et après, avec le passage dégagé.",
+      "description": "Débarras extérieur réalisé par MénageUp à Pontault-Combault (77340). Photos avant et après : enlèvement des encombrants et passage dégagé.",
       "h1": "Débarras extérieur à Pontault-Combault",
-      "intro": "Cette réalisation MénageUp à Pontault-Combault présente le débarras d'un espace extérieur encombré. Les trois photographies suivent l'état initial, l'intervention et le passage dégagé après la prise en charge des éléments concernés.",
-      "card_text": "Un espace extérieur documenté en trois étapes : avant, pendant l'intervention et après le dégagement du passage.",
+      "intro": "Cette réalisation MénageUp à Pontault-Combault présente le débarras d'un passage extérieur encombré. Les photographies avant et après montrent les objets et matériaux présents au départ, puis le passage libéré.",
+      "card_text": "Du bois, du grillage et des objets encombrants retirés pour retrouver un passage dégagé. Découvrez les photos avant et après.",
       "service_code": "debarras",
       "audience": "part",
-      "hero": "assets/realisations/debarras-exterieur/avant.webp",
+      "hero": "assets/realisations/debarras-exterieur/avant-chantier.jpg",
       "hero_alt": "L'espace extérieur avant le débarras MénageUp à Pontault-Combault",
       "hero_stage": "Avant intervention",
-      "primary_image": "assets/realisations/debarras-exterieur/apres.webp",
-      "og_image": "assets/realisations/debarras-exterieur/avant.webp",
+      "primary_image": "assets/realisations/debarras-exterieur/apres-chantier.jpg",
+      "og_image": "assets/realisations/debarras-exterieur/avant-chantier.jpg",
       "sections": [
         {
           "id": "etapes",
-          "eyebrow": "Les étapes en photos",
-          "title": "Avant, pendant, après.",
-          "intro": "Les photos montrent les éléments présents, leur prise en charge et l'espace de circulation après l'intervention. Un grand élément métallique reste visible sur la vue finale.",
-          "layout": "sequence",
+          "eyebrow": "Le résultat en photos",
+          "title": "Avant et après le débarras.",
+          "intro": "Le même passage avant et après l'enlèvement des encombrants. Les photos montrent le dégagement de l'espace extérieur.",
+          "layout": "pair",
           "photos": [
             {
-              "file": "assets/realisations/debarras-exterieur/avant.webp",
+              "file": "assets/realisations/debarras-exterieur/avant-chantier.jpg",
               "stage": "Avant",
               "alt": "Espace extérieur encombré avant le débarras à Pontault-Combault, avec du bois, du grillage et des éléments métalliques",
-              "caption": "L'état initial de l'espace extérieur."
+              "caption": "L'état initial de l'espace extérieur.",
+              "fit": "portrait"
             },
             {
-              "file": "assets/realisations/debarras-exterieur/intervention.webp",
-              "stage": "Intervention",
-              "alt": "La prise en charge des éléments à enlever pendant le débarras extérieur à Pontault-Combault",
-              "caption": "Une étape de l'intervention de débarras."
-            },
-            {
-              "file": "assets/realisations/debarras-exterieur/apres.webp",
+              "file": "assets/realisations/debarras-exterieur/apres-chantier.jpg",
               "stage": "Après",
-              "alt": "Le passage dégagé après le débarras extérieur à Pontault-Combault ; un grand élément métallique reste présent",
-              "caption": "Le passage dégagé après l'intervention."
+              "alt": "Le passage extérieur dégagé après le débarras à Pontault-Combault, avec un accès libre au portail",
+              "caption": "Le passage dégagé après l'intervention.",
+              "fit": "portrait"
             }
           ]
         }
@@ -235,7 +231,7 @@
           },
           {
             "title": "Les photos présentées",
-            "text": "L’état initial, la prise en charge des éléments pendant l’intervention, puis le passage dégagé. Un grand élément métallique reste visible sur la dernière photo : il ne faisait pas partie du débarras."
+            "text": "Deux vues du même passage : les objets et matériaux avant le débarras, puis l'accès au portail dégagé après leur enlèvement."
           }
         ]
       }

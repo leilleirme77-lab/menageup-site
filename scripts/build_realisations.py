@@ -148,6 +148,8 @@ def proof_note(hub=False):
 def photo(item, layout):
     original_width, _ = dimensions(item['file'])
     frame_class = 'photo-frame' + (' low-resolution' if original_width < 640 and item.get('fit') != 'center-crop' else '')
+    if item.get('fit') == 'portrait':
+        frame_class += ' portrait'
     classes = 'proof-photo' + (' wide' if item.get('wide') else '')
     if item.get('wide'):
         sizes = '(max-width:700px) calc(100vw - 36px), (max-width:1040px) calc(100vw - 64px), 980px'
