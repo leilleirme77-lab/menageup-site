@@ -539,7 +539,7 @@ section.band{padding:106px 0}
 
 /* services — rangées éditoriales */
 .svc-rows{display:flex;flex-direction:column;gap:96px;margin-top:8px}
-.service-focus{margin-top:68px}
+.service-focus{margin-top:0}
 .service-focus>h3{font-size:1.3rem;margin:0 0 22px}
 .service-focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .service-focus-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .2s,border-color .2s}
@@ -550,7 +550,7 @@ section.band{padding:106px 0}
 .service-focus-copy h4{font-family:"Bricolage Grotesque",sans-serif;font-size:1.2rem;line-height:1.2;margin:0 0 12px}
 .service-focus-copy p{font-size:.97rem;color:var(--muted);line-height:1.55;margin:0 0 20px}
 .service-focus-link{font-weight:700;color:var(--blue-text);margin-top:auto;font-size:.94rem}
-@media(max-width:760px){.service-focus{margin-top:42px}.service-focus-grid{grid-template-columns:1fr;gap:20px}.service-focus-copy{padding:22px}.service-focus-card img{aspect-ratio:16/9}}
+@media(max-width:760px){.service-focus{margin-top:0}.service-focus-grid{grid-template-columns:1fr;gap:20px}.service-focus-copy{padding:22px}.service-focus-card img{aspect-ratio:16/9}}
 @media(prefers-reduced-motion:reduce){.service-focus-card{transition:none}.service-focus-card:hover{transform:none}}
 .svc-row{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
 .svc-row.flip .s-img{order:2}
@@ -984,25 +984,7 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
   <!-- SERVICES GALLERY -->
   <section class="band" id="services">
     <div class="wrap">
-      <div class="svc-rows">
-        <div class="svc-row" id="pros">
-          <div class="s-img"><picture><source type="image/webp" srcset="/assets/images/nettoyage-commerce-boutique-optimise-480.webp 480w, /assets/images/nettoyage-commerce-boutique-optimise-768.webp 768w, /assets/images/nettoyage-commerce-boutique-optimise.webp 1080w" sizes="(max-width:700px) calc(100vw - 36px), 550px"><img src="nettoyage-commerce-boutique.jpg" alt="Nettoyage de commerce et boutique" loading="lazy" width="1080" height="1350"></picture></div>
-          <div class="s-txt">
-            <span class="eyebrow">Entreprises &amp; commerces</span>
-            <h3>Un espace qui rassure vos clients.</h3>
-            <p>Boutiques, bureaux, salles de réception : interventions discrètes avant ou après ouverture, un interlocuteur dédié, une facturation claire.</p>
-            <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Avant ou après vos horaires d'ouverture</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Sols, sanitaires, vitrines</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Événementiel : mariage, baptême, soirée, séminaire</li>
-            </ul>
-            <p style="margin:-6px 0 18px"><a href="/nettoyage-bureaux-commerces-77/" style="color:var(--blue-text);font-weight:600;text-decoration:underline;text-underline-offset:3px">Tout savoir sur notre nettoyage de bureaux et commerces (77)</a></p>
-            <a class="btn btn-primary" href="/?service=commerce&amp;source=%2F#devis">Demander un devis pro</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="service-focus">
+      <div class="service-focus" id="pros">
         <h3>Une prestation adaptée à chaque espace.</h3>
         <div class="service-focus-grid">
           <a class="service-focus-card" href="/nettoyage-base-vie-chantier-77/">
