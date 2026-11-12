@@ -541,16 +541,23 @@ section.band{padding:106px 0}
 .svc-rows{display:flex;flex-direction:column;gap:96px;margin-top:8px}
 .service-focus{margin-top:0}
 .service-focus>h3{font-size:1.3rem;margin:0 0 22px}
-.service-focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.service-focus-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .2s,border-color .2s}
-.service-focus-card:hover{transform:translateY(-3px);border-color:var(--blue)}
-.service-focus-card:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
-.service-focus-card img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
-.service-focus-copy{padding:24px;display:flex;flex-direction:column;flex:1}
-.service-focus-copy h4{font-family:"Bricolage Grotesque",sans-serif;font-size:1.2rem;line-height:1.2;margin:0 0 12px}
-.service-focus-copy p{font-size:.97rem;color:var(--muted);line-height:1.55;margin:0 0 20px}
-.service-focus-link{font-weight:700;color:var(--blue-text);margin-top:auto;font-size:.94rem}
-@media(max-width:760px){.service-focus{margin-top:0}.service-focus-grid{grid-template-columns:1fr;gap:20px}.service-focus-copy{padding:22px}.service-focus-card img{aspect-ratio:16/9}}
+.service-focus-marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);padding:4px 0 10px}
+.service-focus-grid{display:flex;width:max-content}
+.service-focus-marquee.is-running .service-focus-grid{animation:service-defile 40s linear infinite}
+.service-focus-marquee:hover .service-focus-grid,.service-focus-marquee:focus-within .service-focus-grid{animation-play-state:paused}
+@keyframes service-defile{to{transform:translateX(-33.3333%)}}
+@media(prefers-reduced-motion:reduce){.service-focus-marquee.is-running .service-focus-grid{animation:none}.service-focus-marquee{overflow-x:auto}}
+.service-focus-card{position:relative;flex:0 0 auto;width:230px;aspect-ratio:3/4;margin-right:18px;border-radius:20px;overflow:hidden;color:#fff;text-decoration:none;background:var(--navy)}
+.service-focus-card:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.service-focus-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.service-focus-copy{position:absolute;left:0;right:0;bottom:0;padding:60px 16px 16px;background:linear-gradient(180deg,rgba(14,36,80,0) 0%,rgba(14,36,80,.88) 70%)}
+.service-focus-copy h4{font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;line-height:1.25;margin:0;color:#fff}
+.service-focus-copy p{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.service-focus-link{display:block;font-weight:700;font-size:.88rem;color:#CFE4FA;max-height:0;opacity:0;overflow:hidden;transition:max-height .35s ease,opacity .35s ease,margin .35s ease}
+.service-focus-card:hover img{transform:scale(1.08)}
+.service-focus-card:hover .service-focus-link,.service-focus-card:focus-visible .service-focus-link{max-height:30px;opacity:1;margin-top:8px}
+@media(hover:none){.service-focus-link{max-height:30px;opacity:1;margin-top:8px}}
+@media(max-width:600px){.service-focus-card{width:190px;margin-right:14px}}
 @media(prefers-reduced-motion:reduce){.service-focus-card{transition:none}.service-focus-card:hover{transform:none}}
 .svc-row{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
 .svc-row.flip .s-img{order:2}
@@ -986,32 +993,32 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
     <div class="wrap">
       <div class="service-focus" id="pros">
         <h3>Une prestation adaptée à chaque espace.</h3>
-        <div class="service-focus-grid">
+        <div class="service-focus-marquee" data-service-marquee><div class="service-focus-grid">
           <a class="service-focus-card" href="/nettoyage-base-vie-chantier-77/">
-            <img src="/assets/images/base-vie-chantier-menageup.webp" srcset="/assets/images/base-vie-chantier-menageup-640.webp 640w, /assets/images/base-vie-chantier-menageup-960.webp 960w, /assets/images/base-vie-chantier-menageup.webp 1536w" sizes="(max-width:760px) 93vw, (max-width:1280px) 30vw, 380px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration de l'entretien d'un réfectoire de base vie de chantier">
+            <img src="/assets/images/base-vie-chantier-menageup.webp" srcset="/assets/images/base-vie-chantier-menageup-640.webp 640w, /assets/images/base-vie-chantier-menageup-960.webp 960w, /assets/images/base-vie-chantier-menageup.webp 1536w" sizes="(max-width:600px) 190px, 230px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration de l'entretien d'un réfectoire de base vie de chantier">
             <div class="service-focus-copy"><h4>Bases vie de chantier</h4><p>Sanitaires, vestiaires, réfectoires et bungalows : préparez l'entretien des espaces utilisés par vos équipes.</p><span class="service-focus-link">Découvrir le service →</span></div>
           </a>
           <a class="service-focus-card" href="/nettoyage-commerces-77/">
-            <img src="/assets/images/commerce-boutique-menageup-tenue.webp" srcset="/assets/images/commerce-boutique-menageup-tenue-640.webp 640w, /assets/images/commerce-boutique-menageup-tenue-960.webp 960w, /assets/images/commerce-boutique-menageup-tenue.webp 1536w" sizes="(max-width:760px) 93vw, (max-width:1280px) 30vw, 380px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du nettoyage de l'espace de vente d'une boutique">
+            <img src="/assets/images/commerce-boutique-menageup-tenue.webp" srcset="/assets/images/commerce-boutique-menageup-tenue-640.webp 640w, /assets/images/commerce-boutique-menageup-tenue-960.webp 960w, /assets/images/commerce-boutique-menageup-tenue.webp 1536w" sizes="(max-width:600px) 190px, 230px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du nettoyage de l'espace de vente d'une boutique">
             <div class="service-focus-copy"><h4>Commerces et boutiques</h4><p>Espace de vente, sols, sanitaires et vitrines : précisez vos besoins et vos horaires d'ouverture.</p><span class="service-focus-link">Découvrir le service →</span></div>
           </a>
           <a class="service-focus-card" href="/nettoyage-vitres-77/">
-            <img src="/assets/images/vitres-professionnelles-menageup-tenue.webp" srcset="/assets/images/vitres-professionnelles-menageup-tenue-640.webp 640w, /assets/images/vitres-professionnelles-menageup-tenue-960.webp 960w, /assets/images/vitres-professionnelles-menageup-tenue.webp 1536w" sizes="(max-width:760px) 93vw, (max-width:1280px) 30vw, 380px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du nettoyage d'une surface vitrée accessible">
+            <img src="/assets/images/vitres-professionnelles-menageup-tenue.webp" srcset="/assets/images/vitres-professionnelles-menageup-tenue-640.webp 640w, /assets/images/vitres-professionnelles-menageup-tenue-960.webp 960w, /assets/images/vitres-professionnelles-menageup-tenue.webp 1536w" sizes="(max-width:600px) 190px, 230px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du nettoyage d'une surface vitrée accessible">
             <div class="service-focus-copy"><h4>Vitres et vitrines</h4><p>Fenêtres, baies vitrées et portes vitrées accessibles, chez vous, en copropriété ou dans vos locaux.</p><span class="service-focus-link">Découvrir le service →</span></div>
           </a>
           <a class="service-focus-card" href="/debarras-chantier-77/">
-            <img src="/assets/images/debarras-chantier-menageup-tenue.webp" srcset="/assets/images/debarras-chantier-menageup-tenue-640.webp 640w, /assets/images/debarras-chantier-menageup-tenue-960.webp 960w, /assets/images/debarras-chantier-menageup-tenue.webp 1536w" sizes="(max-width:760px) 93vw, (max-width:1280px) 30vw, 380px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du tri et de l'enlèvement de déchets après travaux">
+            <img src="/assets/images/debarras-chantier-menageup-tenue.webp" srcset="/assets/images/debarras-chantier-menageup-tenue-640.webp 640w, /assets/images/debarras-chantier-menageup-tenue-960.webp 960w, /assets/images/debarras-chantier-menageup-tenue.webp 1536w" sizes="(max-width:600px) 190px, 230px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du tri et de l'enlèvement de déchets après travaux">
             <div class="service-focus-copy"><h4>Débarras de chantier</h4><p>Matériaux, gravats et encombrants : un enlèvement préparé selon les déchets, les accès et la destination adaptée.</p><span class="service-focus-link">Découvrir le service →</span></div>
           </a>
           <a class="service-focus-card" href="/debarras-maison-appartement-77/">
-            <img src="/assets/images/debarras-logement-menageup-tenue.webp" srcset="/assets/images/debarras-logement-menageup-tenue-640.webp 640w, /assets/images/debarras-logement-menageup-tenue-960.webp 960w, /assets/images/debarras-logement-menageup-tenue.webp 1536w" sizes="(max-width:760px) 93vw, (max-width:1280px) 30vw, 380px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du débarras de mobilier dans un logement">
+            <img src="/assets/images/debarras-logement-menageup-tenue.webp" srcset="/assets/images/debarras-logement-menageup-tenue-640.webp 640w, /assets/images/debarras-logement-menageup-tenue-960.webp 960w, /assets/images/debarras-logement-menageup-tenue.webp 1536w" sizes="(max-width:600px) 190px, 230px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du débarras de mobilier dans un logement">
             <div class="service-focus-copy"><h4>Débarras de logement</h4><p>Une pièce ou plusieurs espaces à libérer : mobilier, encombrants et nettoyage des surfaces dégagées selon votre besoin.</p><span class="service-focus-link">Découvrir le service →</span></div>
           </a>
           <a class="service-focus-card" href="/nettoyage-logement-inoccupe-77/">
-            <img src="/assets/images/grand-nettoyage-menageup-tenue.webp" srcset="/assets/images/grand-nettoyage-menageup-tenue-640.webp 640w, /assets/images/grand-nettoyage-menageup-tenue-960.webp 960w, /assets/images/grand-nettoyage-menageup-tenue.webp 1536w" sizes="(max-width:760px) 93vw, (max-width:1280px) 30vw, 380px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du grand nettoyage d'un logement avant réoccupation">
+            <img src="/assets/images/grand-nettoyage-menageup-tenue.webp" srcset="/assets/images/grand-nettoyage-menageup-tenue-640.webp 640w, /assets/images/grand-nettoyage-menageup-tenue-960.webp 960w, /assets/images/grand-nettoyage-menageup-tenue.webp 1536w" sizes="(max-width:600px) 190px, 230px" width="1536" height="1024" loading="lazy" decoding="async" alt="Illustration du grand nettoyage d'un logement avant réoccupation">
             <div class="service-focus-copy"><h4>Grand nettoyage</h4><p>Un logement resté fermé, vide ou encore meublé : préparez sa remise en propreté avant une nouvelle occupation.</p><span class="service-focus-link">Découvrir le service →</span></div>
           </a>
-        </div>
+        </div></div>
       </div>
     </div>
   </section>
@@ -1289,6 +1296,14 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
   document.addEventListener('keydown',function(e){
     if(e.key==='Escape')d.removeAttribute('open');
   });
+})();
+</script>
+<script>
+(function(){
+  var m=document.querySelector('[data-service-marquee]');if(!m)return;
+  var g=m.querySelector('.service-focus-grid'),cards=[].slice.call(g.children);
+  for(var k=0;k<2;k++)cards.forEach(function(c){var n=c.cloneNode(true);n.setAttribute('aria-hidden','true');n.setAttribute('tabindex','-1');g.appendChild(n);});
+  m.classList.add('is-running');
 })();
 </script>
 <script src="/assets/devis-context.js" defer></script>
