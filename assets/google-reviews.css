@@ -39,3 +39,8 @@
 @media(max-width:360px){.reviews-toolbar{align-items:flex-start;flex-direction:column;gap:12px}.reviews-controls{align-self:flex-end}.reviews-hint{max-width:none}}
 @media(prefers-reduced-motion:reduce){.reviews-carousel .marq{scroll-behavior:auto}}
 @media(hover:none){.reviews-hint-touch{display:inline}.reviews-hint-desktop{display:none}}
+/* Cartes de largeur adaptee au texte, defilement automatique sans boutons. */
+.reviews-carousel .rev{width:var(--rev-w,340px)}
+.reviews-carousel .rev blockquote{margin-bottom:18px}
+.reviews-toolbar{display:none!important}
+@media(max-width:700px){.reviews-carousel .review-group{align-items:flex-start}.reviews-carousel .rev{width:min(var(--rev-w,340px),calc(100vw - 52px))}}

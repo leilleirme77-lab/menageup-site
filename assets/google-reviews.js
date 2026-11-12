@@ -11,6 +11,11 @@
     const status = carousel.querySelector('[data-review-status]');
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (cards.length < 2) return;
+    // Largeur selon la longueur de l'avis : les cartes gardent une hauteur proche, sans grand vide.
+    cards.forEach(card => {
+      const length = (card.querySelector('blockquote') || card).textContent.trim().length;
+      card.style.setProperty('--rev-w', Math.round(Math.min(540, Math.max(280, 220 + length * 0.95))) + 'px');
+    });
     let paused = reduced.matches;
     let requestedPlay = false;
     let hovered = false;

@@ -83,3 +83,4 @@
 .partner-carousel.is-marquee .partner-logo img{object-fit:contain}
 .partner-carousel.is-marquee .partner-slide--background-crop .partner-logo{padding:6px}
 .partner-carousel.is-marquee .partner-slide--background-crop .partner-logo img{object-fit:cover;transform:scale(.82)}
+.partner-carousel.is-marquee .partner-toolbar{display:none!important}
