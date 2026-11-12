@@ -2,5 +2,10 @@
 .real-proof-followup{border-top:1px solid #dfe6ef;margin-top:30px;padding-top:28px;max-width:900px}.real-proof-followup h3{font-family:'Fraunces',Georgia,serif;font-size:28px;line-height:1.25;color:var(--navy);margin:0 0 14px}.real-proof-followup p{font-size:16px;line-height:1.7;color:var(--muted);margin:0 0 14px}.real-proof-followup a{font-weight:700;font-size:16px;min-height:44px;display:inline-flex;align-items:center;color:var(--blue-text);text-underline-offset:4px}
 @media(max-width:760px){.real-proof-grid{grid-template-columns:1fr;gap:20px}.real-proof-card{padding:18px}.real-proof-card h3{font-size:26px}.real-proof-card p{font-size:16px}.real-proof-pair{gap:8px}.real-proof-foot{align-items:flex-start}.real-proof-followup h3{font-size:26px}}
 
-/* Original exterior photos share the same portrait framing. */
-.real-proof-pair img[src*="/debarras-exterieur/"]{aspect-ratio:3/4}
+/* Cartes harmonisees : meme cadre photo pour les deux realisations, lien aligne en bas. */
+.real-proof-grid{align-items:stretch}
+.real-proof-card{display:flex;flex-direction:column;padding:22px}
+.real-proof-card h3{margin:8px 0 16px}
+.real-proof-pair img{aspect-ratio:4/3}
+.real-proof-card p{margin:16px 0 8px}
+.real-proof-card .proof-link{margin-top:auto}
