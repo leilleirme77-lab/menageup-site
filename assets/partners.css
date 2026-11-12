@@ -81,6 +81,9 @@
 .partner-carousel.is-marquee .partner-toolbar{min-height:0;padding-top:14px}
 @media(max-width:700px){.partner-carousel.is-marquee .partner-track{gap:12px}.partner-carousel.is-marquee .partner-slide{flex-basis:150px;border-radius:14px}.partner-carousel.is-marquee .partner-slide--cabinet-la-parisienne .partner-logo{padding:12px 14px}}
 .partner-carousel.is-marquee .partner-logo img{object-fit:contain}
-.partner-carousel.is-marquee .partner-slide--background-crop .partner-logo{padding:6px}
-.partner-carousel.is-marquee .partner-slide--background-crop .partner-logo img{object-fit:cover;transform:scale(.82)}
+.partner-carousel.is-marquee .partner-slide--background-crop .partner-logo{padding:8px}
+.partner-carousel.is-marquee .partner-slide--background-crop .partner-logo{overflow:hidden}
+.partner-carousel.is-marquee .partner-slide--background-crop .partner-logo img{object-fit:contain;transform:scale(1.15)}
+/* Defilement logo par logo : la fenetre montre un nombre entier de logos, centree, sans logo coupe. */
+.partner-carousel.is-marquee .partner-track{overflow:hidden;-webkit-mask-image:none;mask-image:none;margin-inline:auto;max-width:100%}
 .partner-carousel.is-marquee .partner-toolbar{display:none!important}

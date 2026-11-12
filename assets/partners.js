@@ -1,22 +1,19 @@
-/* Continuous logo strip. Native scrolling remains available when JavaScript or automatic motion is off. */
+/* Logo strip that advances one whole logo at a time. Native scrolling remains available when JavaScript or automatic motion is off. */
 (() => {
   'use strict';
   document.querySelectorAll('[data-partner-carousel]').forEach(carousel => {
     const track = carousel.querySelector('[data-partner-track]');
-    const toolbar = carousel.querySelector('[data-partner-toolbar]');
-    const play = carousel.querySelector('[data-partner-play]');
     const originals = [...track.children];
     if (originals.length < 2) return;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const SPEED = 38; // pixels par seconde
-    let paused = reducedMotion.matches;
+    const DELAY = 2600; // pause entre deux logos, en millisecondes
     let inView = false;
     let hovered = false;
     let focused = false;
     let holdUntil = 0;
-    let pos = 0;
-    let period = 0;
-    let last = 0;
+    let step = 0;
+    let index = 0;
+    let timer;
 
     carousel.classList.add('is-marquee');
 
@@ -28,68 +25,52 @@
       copy.querySelectorAll('img').forEach(img => { img.alt = ''; img.loading = 'eager'; });
       track.append(copy);
     });
+    addSet();
+    addSet();
+
+    // La fenetre prend la largeur exacte d'un nombre entier de logos, pour qu'aucun ne soit coupe.
     const layout = () => {
-      if (!track.querySelector('[data-partner-clone]')) addSet();
-      const firstCopy = track.children[originals.length];
-      period = firstCopy.offsetLeft - originals[0].offsetLeft;
-      while (period > 0 && track.scrollWidth < period + track.clientWidth * 2) addSet();
-      pos = track.scrollLeft;
+      track.style.width = '';
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      const slide = originals[0].getBoundingClientRect().width;
+      step = slide + gap;
+      const room = carousel.getBoundingClientRect().width;
+      const count = Math.max(1, Math.min(originals.length, Math.floor((room + gap) / step)));
+      track.style.width = Math.round(count * step - gap) + 'px';
+      track.scrollLeft = index * step;
     };
-    const wrap = () => {
-      if (period <= 0) return;
-      if (pos >= period) pos -= period;
-      if (pos < 0) pos += period;
-      track.scrollLeft = pos;
-    };
-    const running = () => !paused && inView && !hovered && !focused && !document.hidden && performance.now() > holdUntil;
-    const tick = now => {
-      const dt = last ? Math.min(now - last, 64) / 1000 : 0;
-      last = now;
-      if (running()) {
-        pos += SPEED * dt;
-        wrap();
+    const running = () => !reducedMotion.matches && inView && !hovered && !focused && !document.hidden && Date.now() > holdUntil;
+    const advance = () => {
+      if (running() && step) {
+        index += 1;
+        track.scrollTo({ left: index * step, behavior: 'smooth' });
+        if (index >= originals.length) {
+          // Une fois la premiere serie passee, on revient sans animation au meme visuel.
+          setTimeout(() => { index -= originals.length; track.scrollTo({ left: index * step, behavior: 'instant' }); }, 700);
+        }
       }
-      requestAnimationFrame(tick);
-    };
-    const hold = ms => { holdUntil = performance.now() + ms; };
-    const step = direction => {
-      const slide = originals[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 0);
-      if (direction < 0 && track.scrollLeft < slide && period > 0) { pos = track.scrollLeft + period; track.scrollLeft = pos; }
-      hold(1600);
-      track.scrollBy({ left: direction * slide, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
-    };
-    const renderPlay = () => {
-      play.setAttribute('aria-pressed', String(paused));
-      play.setAttribute('aria-label', paused ? 'Activer le défilement automatique des partenaires' : 'Mettre en pause le défilement automatique des partenaires');
-      play.title = paused ? 'Activer le défilement' : 'Mettre en pause';
+      timer = setTimeout(advance, DELAY);
     };
 
-    carousel.querySelector('[data-partner-prev]').addEventListener('click', () => step(-1));
-    carousel.querySelector('[data-partner-next]').addEventListener('click', () => step(1));
-    play.addEventListener('click', () => { paused = !paused; renderPlay(); });
-    track.addEventListener('keydown', event => {
-      if (event.target !== track) return;
-      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); step(event.key === 'ArrowLeft' ? -1 : 1); }
-      if (event.key === 'Home') { event.preventDefault(); hold(1600); track.scrollTo({ left: 0 }); }
-    });
-    // Toucher ou glisser : on laisse la main a la personne, puis le defilement reprend.
-    track.addEventListener('pointerdown', () => hold(60000), { passive: true });
-    window.addEventListener('pointerup', () => { if (holdUntil - performance.now() > 3000) hold(2500); }, { passive: true });
-    track.addEventListener('wheel', () => hold(2500), { passive: true });
+    // Toucher ou glisser : on laisse la main a la personne, puis le defilement reprend sur un logo entier.
+    track.addEventListener('pointerdown', () => { holdUntil = Date.now() + 60000; }, { passive: true });
+    window.addEventListener('pointerup', () => { if (holdUntil - Date.now() > 3000) holdUntil = Date.now() + 2500; }, { passive: true });
     track.addEventListener('scroll', () => {
-      if (Math.abs(track.scrollLeft - pos) > 2) pos = track.scrollLeft;
+      if (!step || running()) return;
+      clearTimeout(track._snap);
+      track._snap = setTimeout(() => {
+        index = Math.round(track.scrollLeft / step) % originals.length;
+        track.scrollTo({ left: index * step, behavior: 'smooth' });
+      }, 160);
     }, { passive: true });
     carousel.addEventListener('mouseenter', () => { hovered = true; });
     carousel.addEventListener('mouseleave', () => { hovered = false; });
-    carousel.addEventListener('focusin', event => { focused = event.target !== play; });
+    carousel.addEventListener('focusin', () => { focused = true; });
     carousel.addEventListener('focusout', () => { focused = false; });
-    reducedMotion.addEventListener('change', event => { if (event.matches) paused = true; renderPlay(); });
     new IntersectionObserver(entries => { inView = entries[0].isIntersecting; }, { threshold: .2 }).observe(carousel);
-    new ResizeObserver(layout).observe(track);
+    new ResizeObserver(layout).observe(carousel);
 
-    toolbar.hidden = false;
-    renderPlay();
     layout();
-    requestAnimationFrame(tick);
+    timer = setTimeout(advance, DELAY);
   });
 })();
