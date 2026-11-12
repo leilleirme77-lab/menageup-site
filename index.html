@@ -429,6 +429,15 @@ footer .brand img{height:30px}
 .navpanel .mob-call:hover{background:linear-gradient(135deg,#2059AE 0%,#173C81 55%,#122C5E 100%);transform:translateY(-1px);box-shadow:0 2px 4px rgba(10,25,55,.22),0 18px 34px -14px rgba(20,60,130,.7)}
 .navpanel .mob-call:active{transform:translateY(1px);box-shadow:0 1px 3px rgba(10,25,55,.3)}
 .navpanel .mob-call>svg{width:18px;height:18px;flex:0 0 18px;color:#fff;opacity:.95}
+/* ---- Menu trois barres aussi sur ordinateur : liste deroulante sous le bouton ---- */
+@media(min-width:1081px){
+  .navmob{display:block;position:relative}
+  .navpanel{left:auto;right:0;top:calc(100% + 14px);width:330px;border:1px solid var(--line);border-radius:18px;padding:8px 20px 20px;max-height:calc(100vh - 110px);box-shadow:0 26px 50px -22px rgba(12,22,40,.45)}
+  .navpanel a:hover{color:var(--blue-text)}
+  .navmob[open]>.navpanel{animation:navdrop .18s ease-out}
+}
+@keyframes navdrop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.navmob[open]>.navpanel{animation:none}}
 
 /* ---- l'en-tete doit tenir dans la largeur de l'ecran ---- */
 @media(max-width:1080px){.topbar .wrap{gap:10px}.topbar-right{gap:9px}}
