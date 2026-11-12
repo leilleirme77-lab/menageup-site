@@ -1,5 +1,12 @@
 MENAGEUP — PUBLICATION DE PAGES DE PRESTATION
 
+EN-TETE ET BAS DE PAGE COMMUNS
+Apres chaque script de build qui regenere des pages, executer :
+  python scripts/harmonize_site.py
+Il donne a toutes les pages (hors accueil) le meme en-tete que l'accueil (Devis gratuit,
+logo, Appeler, menu) et le meme bas de page (reseaux, siege social, mentions), et fait
+s'ouvrir chaque page en haut. Styles : assets/site-chrome.css.
+
 Les contenus relus sont dans content/services.json. Le script produit du HTML
 statique, les métadonnées, le fil d'Ariane et les images du sitemap. Il ne déploie pas.
 Une même famille de recherches partage une page tant que son besoin reste identique.
