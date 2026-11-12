@@ -10,15 +10,26 @@
 .real-proof-card p{margin:16px 0 8px}
 .real-proof-card .proof-link{margin-top:auto}
 
-/* Apres en grand, avant en vignette (proposition 3). */
-.real-proof-pair--inset{position:relative;display:block;aspect-ratio:4/3;border-radius:14px;overflow:hidden}
-.real-proof-pair--inset figure{position:absolute;margin:0}
-.real-proof-pair--inset figure:first-child{inset:0}
-.real-proof-pair--inset figure:first-child img{width:100%;height:100%;aspect-ratio:auto;border-radius:0;transition:transform .7s ease}
-.real-proof-pair--inset figure:last-child{right:12px;bottom:12px;width:34%;aspect-ratio:4/3;border:3px solid #fff;border-radius:12px;overflow:hidden;box-shadow:0 10px 24px -10px rgba(0,0,0,.55);transition:width .45s ease}
-.real-proof-pair--inset figure:last-child img{width:100%;height:100%;aspect-ratio:auto;border-radius:0}
-.real-proof-pair--inset figcaption{position:absolute;top:10px;left:10px;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.92);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
-.real-proof-pair--inset figure:last-child figcaption{top:6px;left:6px;padding:2px 7px;font-size:10px}
-.real-proof-card:hover .real-proof-pair--inset figure:last-child{width:52%}
-.real-proof-card:hover .real-proof-pair--inset figure:first-child img{transform:scale(1.04)}
-@media(prefers-reduced-motion:reduce){.real-proof-pair--inset figure,.real-proof-pair--inset img{transition:none}}
+/* Carte immersive : la photo apres en plein cadre, l'avant apparait au survol (proposition 5). */
+.real-proof-grid--immersive{align-items:stretch}
+.real-immersive{position:relative;display:block;aspect-ratio:4/3;border-radius:20px;overflow:hidden;color:#fff;text-decoration:none;background:var(--navy)}
+.real-immersive img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s ease,transform .8s ease}
+.real-immersive .real-before{opacity:0}
+.real-immersive:hover .real-before,.real-immersive:focus-visible .real-before{opacity:1}
+.real-immersive:hover img{transform:scale(1.04)}
+.real-immersive:focus-visible{outline:3px solid var(--sky);outline-offset:4px}
+.real-state{position:absolute;top:14px;left:14px;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.real-state .is-before,.real-immersive:hover .real-state .is-after{display:none}
+.real-immersive:hover .real-state .is-before{display:inline}
+.real-overlay{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;gap:6px;padding:80px 22px 20px;background:linear-gradient(180deg,rgba(14,36,80,0) 0%,rgba(14,36,80,.9) 70%)}
+.real-immersive .real-proof-location{color:#CFE4FA}
+.real-title{font-family:'Fraunces',Georgia,serif;font-size:26px;line-height:1.2;letter-spacing:-.02em;font-weight:600;color:#fff}
+.real-desc{font-size:15px;line-height:1.5;color:#E4EDF7}
+.real-hint{font-size:13px;font-weight:700;color:#CFE4FA}
+.real-hint .hint-hover,.real-immersive:hover .real-hint .hint-rest{display:none}
+.real-immersive:hover .real-hint .hint-hover{display:inline}
+/* Sans survol (telephone), l'avant et l'apres alternent tout seuls. */
+@media(hover:none){.real-immersive .real-before{animation:real-alterne 7s ease-in-out infinite}.real-hint,.real-state{display:none}}
+@keyframes real-alterne{0%,40%{opacity:0}50%,90%{opacity:1}100%{opacity:0}}
+@media(max-width:760px){.real-title{font-size:22px}.real-overlay{padding:70px 18px 16px}}
+@media(prefers-reduced-motion:reduce){.real-immersive img{transition:none}.real-immersive .real-before{animation:none}}
