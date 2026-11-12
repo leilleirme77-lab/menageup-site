@@ -21,7 +21,7 @@ PHONE_ICON = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M
 BURGER = ('<svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>'
           '<svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></svg>')
 MENU = [('/', 'Accueil'), ('/#services', 'Nos services'), ('/realisations/', 'Nos réalisations'),
-        ('/conseils/', 'Actualité'), ('/conseils/', 'Conseils'), ('/#faq', 'FAQ'), ('/recrutement/', 'Recrutement')]
+        ('/actualite/', 'Actualité'), ('/conseils/', 'Conseils'), ('/#faq', 'FAQ'), ('/recrutement/', 'Recrutement')]
 
 # Pages opened from a link start at the top; back/forward and #anchors keep the browser's behaviour.
 SCRIPT = ('<script data-mu-chrome>(function(){try{var n=performance.getEntriesByType("navigation")[0];'
