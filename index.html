@@ -670,6 +670,13 @@ section.band{padding:106px 0}
 .zone{display:inline-flex;gap:10px;flex-wrap:wrap;margin-top:18px}
 .zone span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:600;font-size:.92rem}
 .final .btn{margin-top:22px}
+.final-id{display:flex;flex-direction:column;align-items:center;gap:10px;padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid var(--line)}
+.final-id img{height:42px;width:auto;display:block}
+.final .final-tag{margin:0;font-size:.98rem;color:var(--muted)}
+.final-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;margin-top:6px}
+.final-nav a{font-weight:600;font-size:.95rem;color:var(--ink);text-decoration:none}
+.final-nav a:hover{color:var(--blue-text);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:600px){.final-id img{height:34px}.final-nav{gap:6px 16px}}
 footer{background:var(--panel);border-top:1px solid var(--line);padding:28px 0 22px;font-size:.88rem;color:var(--muted)}
 footer .cols{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between}
 footer b{color:var(--ink)}
@@ -1144,6 +1151,11 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
   <!-- FINAL -->
   <section class="band final">
     <div class="wrap">
+      <div class="final-id">
+        <img src="logo-v3.png" alt="MénageUp" width="549" height="160" loading="lazy" decoding="async">
+        <p class="final-tag">Entreprise de nettoyage en Seine&#8209;et&#8209;Marne et Île&#8209;de&#8209;France</p>
+        <nav class="final-nav" aria-label="Pages du site"><a href="/">Accueil</a><a href="#services">Nos services</a><a href="/realisations/">Nos réalisations</a><a href="/conseils/">Actualité</a><a href="/conseils/">Conseils</a><a href="#faq">FAQ</a><a href="/recrutement/">Recrutement</a></nav>
+      </div>
       <p>Devis gratuit sous 48&nbsp;h, sans engagement — particuliers, copropriétés &amp; entreprises.</p>
       <div class="zone"><span>Seine-et-Marne (77)</span><span>Île-de-France</span></div>
       <div><a class="btn btn-primary" href="#devis">Recevoir mon devis gratuit</a></div>
