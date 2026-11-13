@@ -1262,6 +1262,9 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
         form.appendChild(e0);}
       e0.scrollIntoView({behavior:'smooth',block:'center'});
     };
+    // Copie de la demande dans l'espace de gestion (Clients & demandes).
+    // Envoi indépendant : un échec ici ne bloque jamais l'email habituel.
+    try{fetch('https://menageup-espace.netlify.app/api/demandes/site',{method:'POST',mode:'no-cors',keepalive:true,body:new FormData(form)}).catch(function(){});}catch(e){}
     var fd=new FormData(form);
     fd.append('access_key','a42898b5-d51c-4992-bbb2-98cd7ca0085f');
     fd.append('from_name','MenageUp - demande de devis');
