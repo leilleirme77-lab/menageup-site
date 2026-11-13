@@ -914,7 +914,8 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
 
       <!-- LEAD FORM -->
       <div class="formcard" id="devis">
-        <form id="lead" name="devis" method="POST">
+        <form id="lead" name="devis" method="POST" data-email-key="a42898b5-d51c-4992-bbb2-98cd7ca0085f">
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Ne pas remplir<input name="site_web" tabindex="-1" autocomplete="off"></label></div>
           <input type="hidden" name="_subject" value="Nouvelle demande de devis — MénageUp">
           <input type="hidden" name="service_page" value="">
           <input type="hidden" name="source_page" value="">
@@ -950,13 +951,13 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
             </div>
           </div>
           <div class="field-row" style="margin-top:15px">
-            <input type="text" name="prenom" placeholder="Prénom / société" required>
-            <input type="tel" name="tel" placeholder="Téléphone" required>
+            <input type="text" name="prenom" maxlength="120" aria-label="Prénom ou société" placeholder="Prénom / société" required>
+            <input type="tel" name="tel" maxlength="40" aria-label="Téléphone" placeholder="Téléphone" required>
           </div>
           <label class="fl" for="cp">Ville où se situe la prestation</label>
-          <input type="text" id="cp" name="cp" placeholder="Ex : Tournan-en-Brie, Paris, Ozoir…">
+          <input type="text" id="cp" name="cp" maxlength="120" placeholder="Ex : Tournan-en-Brie, Paris, Ozoir…">
           <label class="fl" for="mail">E-mail</label>
-          <input type="email" id="mail" name="mail" placeholder="vous@exemple.fr">
+          <input type="email" id="mail" name="mail" maxlength="160" placeholder="vous@exemple.fr">
           <label class="fl" for="precisions">Précisions sur votre besoin (facultatif)</label>
           <textarea id="precisions" name="precisions" rows="3" maxlength="2000" placeholder="Surface, fréquence, accès ou tâches à prévoir…"></textarea>
           <label class="fl" for="provenance-declaree">Comment nous avez-vous connus ? (facultatif)</label>
@@ -972,7 +973,7 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
           <label class="consent"><input type="checkbox" name="consent"><span>J'accepte d'être recontacté·e au sujet de ma demande.</span></label>
           <div class="form-actions">
             <button class="btn btn-primary btn-block" type="submit">Je veux mon devis</button>
-            <button class="btn btn-ghost btn-block" type="submit" formnovalidate>Être rappelé·e</button>
+            <button class="btn btn-ghost btn-block" type="submit">Être rappelé·e</button>
           </div>
           <p class="fine">Vos coordonnées restent confidentielles. Aucun paiement en ligne.</p>
         </form>
@@ -1248,40 +1249,6 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
       },4000);
     }
   }catch(err){}
-  var form=document.getElementById('lead'),ok=document.getElementById('ok');
-  if(form)form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var btn=form.querySelector('[type=submit]'),lbl=btn?btn.textContent:'';
-    if(btn){btn.disabled=true;btn.textContent='Envoi en cours...';}
-    var reussi=function(){form.style.display='none';ok.classList.add('show');ok.scrollIntoView({behavior:'smooth',block:'center'});};
-    var echoue=function(){
-      if(btn){btn.disabled=false;btn.textContent=lbl;}
-      var e0=document.getElementById('senderr');
-      if(!e0){e0=document.createElement('p');e0.id='senderr';e0.className='senderr';
-        e0.innerHTML='Votre demande n\'a pas pu être transmise. Appelez-nous au <a href="tel:0648304965">06 48 30 49 65</a> ou écrivez à <a href="mailto:menageup@outlook.fr">menageup@outlook.fr</a> — nous répondons tout de suite.';
-        form.appendChild(e0);}
-      e0.scrollIntoView({behavior:'smooth',block:'center'});
-    };
-    // Copie de la demande dans l'espace de gestion (Clients & demandes).
-    // Envoi indépendant : un échec ici ne bloque jamais l'email habituel.
-    try{fetch('https://menageup-espace.netlify.app/api/demandes/site',{method:'POST',mode:'no-cors',keepalive:true,body:new FormData(form)}).catch(function(){});}catch(e){}
-    var fd=new FormData(form);
-    fd.append('access_key','a42898b5-d51c-4992-bbb2-98cd7ca0085f');
-    fd.append('from_name','MenageUp - demande de devis');
-    // canal principal : Web3Forms  /  secours automatique : FormSubmit
-    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:fd})
-      .then(function(r){return r.json();})
-      .then(function(d){
-        if(d && d.success===true){ reussi(); return; }
-        throw new Error('principal indisponible');
-      })
-      .catch(function(){
-        fetch('https://formsubmit.co/ajax/menageup@outlook.fr',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
-          .then(function(r){return r.json();})
-          .then(function(d2){ (d2 && (d2.success===true||d2.success==='true')) ? reussi() : echoue(); })
-          .catch(echoue);
-      });
-  });
   document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length>1){var t=document.querySelector(id);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}}});});
 })();
 </script>
@@ -1310,5 +1277,6 @@ footer .social a.social-hub-link{display:inline;width:auto;height:auto;backgroun
 })();
 </script>
 <script src="/assets/devis-context.js" defer></script>
+<script src="/assets/devis-envoi.js" defer></script>
 </body>
 </html>
