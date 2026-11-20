@@ -47,10 +47,8 @@ def case_comparison(case):
 
 def comparison_card(item, detail_link=True, suffix=''):
     slug, title = item['slug'] + suffix, item['title']
-    retouched = item.get('retouched', True)
     city = item.get('city')
     location = (city + ' · ' + item['postal_code']) if city and item.get('postal_code') else 'Intervention de chantier · lieu non précisé'
-    note = 'Visuels retouchés' if retouched else ''
     images = []
     for side, cls in [('apres', 'mu-after'), ('avant', 'mu-before')]:
         photo = item[side]
@@ -60,16 +58,16 @@ def comparison_card(item, detail_link=True, suffix=''):
         variants = f'{e(photo["small"])} {photo["smallWidth"]}w'
         if photo['small'] != photo['large']:
             variants += f', {e(photo["large"])} {photo["width"]}w'
-        alt = title + ' — ' + ('avant' if side == 'avant' else 'après') + (' (visuel retouché)' if retouched else '')
+        alt = title + ' — ' + ('avant' if side == 'avant' else 'après')
         position = e(item.get('position_' + side, item.get('position', '50% 35%')))
         images.append(f'<img class="{cls}" src="{e(photo["small"])}" srcset="{variants}" sizes="(max-width:760px) 92vw, 580px" width="{photo["width"]}" height="{photo["height"]}" loading="lazy" decoding="async" style="object-position:{position}" alt="{e(alt)}" aria-hidden="{str(side == "avant").lower()}">')
     href = item.get('href') if detail_link else None
     action = 'Voir la réalisation' if href else 'Agrandir les deux photos'
     link_attrs = 'data-dossier' if href else 'data-enlarge'
-    return f'''<article class="mu-comparison" data-comparison data-view="apres" data-title="{e(title)}" data-retouched="{str(retouched).lower()}" data-avant="{e(item['avant']['large'])}" data-apres="{e(item['apres']['large'])}">
+    return f'''<article class="mu-comparison" data-comparison data-view="apres" data-title="{e(title)}" data-avant="{e(item['avant']['large'])}" data-apres="{e(item['apres']['large'])}">
 <div class="mu-comparison-stage" id="photo-{e(slug)}">{''.join(images)}
 <a class="mu-comparison-open" {link_attrs} href="{e(href or item['apres']['large'])}" aria-label="{action} : {e(title)}"></a>
-<span class="mu-comparison-state" data-state aria-hidden="true">Après</span>{f'<span class="mu-comparison-provenance">{note}</span>' if note else ''}
+<span class="mu-comparison-state" data-state aria-hidden="true">Après</span>
 <div class="mu-comparison-overlay"><span class="mu-comparison-location">{e(location)}</span><h3>{e(title)}</h3><p>{e(item.get('description',''))}</p><span class="mu-comparison-hint" data-hint>Survolez pour voir l’avant</span><span class="mu-comparison-action">{action} ↗</span></div>
 <div class="mu-comparison-controls" role="group" aria-label="Vue de {e(title)}" hidden><button type="button" data-side="avant" aria-pressed="false" aria-controls="photo-{e(slug)}">Avant</button><button type="button" data-side="apres" aria-pressed="true" aria-controls="photo-{e(slug)}">Après</button></div>
 </div></article>'''
@@ -83,7 +81,7 @@ def comparisons_section(preview=False):
     section_id = 'comparaisons' if preview else 'interventions-chantier'
     action = '<a class="btn" href="/realisations/#interventions-chantier">Voir les 8 vues de chantier ↗</a>' if preview else ''
     return f'''{START}
-<section class="mu-comparisons" id="{section_id}" data-realisation-section="chantier" aria-labelledby="{section_id}-title"><div class="mu-comparisons-head"><div><span class="eyebrow">Remise en état</span><h2 id="{section_id}-title">Interventions de chantier.</h2><p>Intérieurs, circulations et abords : parcourez les différentes zones en avant / après.</p></div>{action}</div><p class="mu-comparisons-notice">Ces comparaisons comprennent des visuels retouchés. La localisation précise n’est pas renseignée.</p><div class="mu-comparisons-grid">{cards}</div></section>
+<section class="mu-comparisons" id="{section_id}" data-realisation-section="chantier" aria-labelledby="{section_id}-title"><div class="mu-comparisons-head"><div><span class="eyebrow">Remise en état</span><h2 id="{section_id}-title">Interventions de chantier.</h2><p>Intérieurs, circulations et abords : parcourez les différentes zones en avant / après.</p></div>{action}</div><div class="mu-comparisons-grid">{cards}</div></section>
 {END}'''
 
 
@@ -108,10 +106,8 @@ def build_home():
     if START in html:
         begin, end = html.index(START), html.index(END) + len(END)
         html = html[:begin] + html[end:]
-    html = html.replace('Photographies de nos prestations. Les prises de vue peuvent présenter des angles différents.',
-                        'Photos avant / après. Les visuels retouchés sont signalés.')
-    html = html.replace('Avant / après : survolez les photos pour comparer. Les visuels retouchés sont signalés.',
-                        'Photos avant / après. Les visuels retouchés sont signalés.')
+    html = re.sub(r'(<div class="real-proof-foot"><p>).*?(</p>)',
+                  r'\1Avant / après : survolez les photos pour comparer.\2', html, count=1)
     if CSS not in html:
         html = html.replace('</head>', CSS + '\n</head>', 1)
     if JS not in html:

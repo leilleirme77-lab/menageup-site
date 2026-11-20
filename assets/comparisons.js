@@ -21,7 +21,7 @@
       dialog = document.createElement('dialog');
       dialog.className = 'mu-lightbox';
       dialog.setAttribute('aria-labelledby', 'mu-lightbox-title');
-      dialog.innerHTML = '<div class="mu-lightbox-head"><h2 id="mu-lightbox-title"></h2><button class="mu-lightbox-close" type="button" aria-label="Fermer les photos">×</button></div><div class="mu-lightbox-pair"><figure><img alt=""><figcaption>Avant</figcaption></figure><figure><img alt=""><figcaption>Après</figcaption></figure></div><p>Visuels retouchés, présentés à titre d’illustration. Les prises de vue peuvent avoir des angles différents.</p>';
+      dialog.innerHTML = '<div class="mu-lightbox-head"><h2 id="mu-lightbox-title"></h2><button class="mu-lightbox-close" type="button" aria-label="Fermer les photos">×</button></div><div class="mu-lightbox-pair"><figure><img alt=""><figcaption>Avant</figcaption></figure><figure><img alt=""><figcaption>Après</figcaption></figure></div><p>Les prises de vue peuvent avoir des angles différents.</p>';
       document.body.append(dialog);
       dialog.querySelector('button').addEventListener('click', () => dialog.close());
       dialog.addEventListener('click', event => {
@@ -35,11 +35,11 @@
     }
     opener = button;
     dialog.querySelector('h2').textContent = card.dataset.title;
-    dialog.querySelector('p').textContent = (card.dataset.retouched === 'true' ? 'Visuels retouchés. ' : '') + 'Photographies complètes. Les prises de vue peuvent avoir des angles différents.';
+    dialog.querySelector('p').textContent = 'Photographies complètes. Les prises de vue peuvent avoir des angles différents.';
     const imgs = dialog.querySelectorAll('img');
     ['avant', 'apres'].forEach((side, i) => {
       imgs[i].src = card.dataset[side];
-      imgs[i].alt = `${card.dataset.title} — ${side === 'avant' ? 'avant' : 'après'}` + (card.dataset.retouched === 'true' ? ' (visuel retouché)' : '');
+      imgs[i].alt = `${card.dataset.title} — ${side === 'avant' ? 'avant' : 'après'}`;
     });
     previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';

@@ -215,13 +215,13 @@ def comparison_page(item, following):
     pair = []
     for side, label in [('avant', 'Avant'), ('apres', 'Après')]:
         file = item[side]['large'].lstrip('/')
-        img = image_tag(file, title + ' — ' + label.lower() + ' (visuel retouché)', '(max-width:760px) 92vw, 550px')
+        img = image_tag(file, title + ' — ' + label.lower(), '(max-width:760px) 92vw, 550px')
         pair.append(f'''<figure><figcaption><span>{label}</span><a href="/{esc(file)}">Ouvrir la photo ↗</a></figcaption>{img}</figure>''')
     card = comparison_card(item, detail_link=False, suffix='detail')
-    body = breadcrumbs(crumbs) + f'''<main id="contenu"><div class="wrap"><section class="mu-detail-hero"><div><span class="eyebrow">Interventions de chantier · Avant / après</span><h1>{esc(title)}</h1><p class="intro">{esc(item['description'])}</p><p class="mu-detail-note">Comparaison de visuels retouchés. La commune de cette série n’est pas renseignée. Retrouvez les deux vues complètes ci-dessous.</p><a class="btn" href="#photos">Voir les deux photos ↓</a></div>{card}</section><section class="mu-detail-photos" id="photos"><h2>Les deux vues complètes.</h2><p>Avant à gauche, après à droite. Chaque photo conserve son cadre entier ; les prises de vue peuvent présenter des angles différents.</p><div class="mu-detail-pair">{''.join(pair)}</div></section><nav class="mu-detail-related" aria-label="Autres réalisations"><a href="/realisations/#interventions-chantier">← Toutes les vues de chantier</a><a class="btn ghost" href="{esc(following['href'])}">{esc(following['title'])} →</a></nav></div></main>'''
-    html = document(title + ' — Avant / après | MénageUp', item['description'] + ' Comparaison de visuels retouchés.', path,
+    body = breadcrumbs(crumbs) + f'''<main id="contenu"><div class="wrap"><section class="mu-detail-hero"><div><span class="eyebrow">Interventions de chantier · Avant / après</span><h1>{esc(title)}</h1><p class="intro">{esc(item['description'])}</p><p class="mu-detail-note">La commune de cette série n’est pas renseignée. Retrouvez les deux vues complètes ci-dessous.</p><a class="btn" href="#photos">Voir les deux photos ↓</a></div>{card}</section><section class="mu-detail-photos" id="photos"><h2>Les deux vues complètes.</h2><p>Avant à gauche, après à droite. Chaque photo conserve son cadre entier ; les prises de vue peuvent présenter des angles différents.</p><div class="mu-detail-pair">{''.join(pair)}</div></section><nav class="mu-detail-related" aria-label="Autres réalisations"><a href="/realisations/#interventions-chantier">← Toutes les vues de chantier</a><a class="btn ghost" href="{esc(following['href'])}">{esc(following['title'])} →</a></nav></div></main>'''
+    html = document(title + ' — Avant / après | MénageUp', item['description'] + ' Photos avant / après.', path,
                     item['apres']['large'].lstrip('/'), item['apres']['large'].lstrip('/'), crumbs, body, quote)
-    html = html.replace("Photographie d'une réalisation MénageUp", esc(title + ' — visuel retouché'))
+    html = html.replace("Photographie d'une réalisation MénageUp", esc(title + ' — après'))
     return html.replace('</head>', COMPARISONS_CSS + '\n</head>', 1).replace('</body>', COMPARISONS_JS + '\n</body>', 1)
 
 
