@@ -153,7 +153,9 @@
           "href": "/realisations/debarras-exterieur-pontault-combault-77340/",
           "label": "Voir notre débarras extérieur à Pontault-Combault"
         }
-      ]
+      ],
+      "card_title": "Une habitation inhabitée depuis six ans.",
+      "card_summary": "Un logement très encrassé, remis en propreté par une équipe de 3 intervenants pendant 9 heures d’intervention."
     },
     {
       "slug": "debarras-exterieur-pontault-combault-77340",
@@ -234,7 +236,9 @@
             "text": "Deux vues du même passage : les objets et matériaux avant le débarras, puis l'accès au portail dégagé après leur enlèvement."
           }
         ]
-      }
+      },
+      "card_title": "Un passage extérieur dégagé.",
+      "card_summary": "Les encombrants retirés et le passage libéré."
     }
   ]
 }

@@ -1,0 +1,84 @@
+.mu-comparisons{margin-top:42px;padding-top:34px;border-top:1px solid #dce5ee;color:var(--navy,#14336e);scroll-margin-top:110px}
+.mu-comparisons-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}
+.mu-comparisons h2{font-family:'Fraunces',Georgia,serif;font-size:clamp(27px,3vw,36px);line-height:1.2;margin:7px 0 12px}
+.mu-comparisons-head p{font-size:16px;line-height:1.65;max-width:62ch;margin:0;color:#52647b}
+.mu-comparisons-head .btn{flex:none;white-space:nowrap}
+.mu-comparisons-notice{margin:-8px 0 20px;font-size:13px;color:#61748b;line-height:1.6}
+.mu-comparisons-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.mu-comparison{min-width:0;margin:0;position:relative;color:white;background:#14336e;border-radius:20px;overflow:hidden}
+.mu-comparison [hidden],[data-realisation-section][hidden]{display:none!important}
+.mu-comparison-stage{position:relative;aspect-ratio:4/3;overflow:hidden}
+.mu-comparison-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .55s ease}
+.mu-comparison-stage .mu-before{opacity:0}
+.mu-comparison[data-view=avant] .mu-before{opacity:1}
+.mu-comparison-open{position:absolute;inset:0;z-index:3;border-radius:20px}
+.mu-comparison-state{position:absolute;z-index:2;top:15px;left:15px;padding:7px 13px;background:rgba(255,255,255,.95);color:#14336e;font:700 11px/1.4 'Hanken Grotesk',sans-serif;text-transform:uppercase;letter-spacing:.05em;border-radius:999px;pointer-events:none}
+.mu-comparison-provenance{position:absolute;z-index:4;top:15px;right:15px;font-size:11px;color:#fff;background:#102d54a6;padding:5px 9px;border-radius:999px;pointer-events:none}
+.mu-comparison-overlay{position:absolute;inset:auto 0 0;z-index:2;display:flex;flex-direction:column;gap:7px;padding:85px 24px 22px;background:linear-gradient(180deg,rgba(14,36,80,0) 0%,rgba(14,36,80,.64) 35%,rgba(14,36,80,.94) 100%);pointer-events:none}
+.mu-comparison-location{font-size:12px;font-weight:700;line-height:1.4;letter-spacing:.055em;text-transform:uppercase;color:#d6eafb}
+.mu-comparison h3{font-family:'Fraunces',Georgia,serif;font-size:26px;font-weight:600;line-height:1.2;letter-spacing:-.02em;margin:0;color:#fff}
+.mu-comparison-overlay p{color:#e4edf7;font-size:15px;line-height:1.5;margin:0}
+.mu-comparison-hint,.mu-comparison-action{font-size:13px;line-height:1.4;font-weight:700;color:#d6eafb}
+.mu-comparison-action{display:none}
+.mu-comparison-open:focus-visible{outline:3px solid #43caff;outline-offset:-4px}
+.mu-comparison-controls{position:absolute;right:14px;top:50px;z-index:5;display:flex;gap:4px;padding:4px;border:1px solid #ffffff70;background:#113666d9;border-radius:999px;opacity:0;pointer-events:none}
+.mu-comparison:focus-within .mu-comparison-controls{opacity:1;pointer-events:auto}
+.mu-comparison-controls button{border:0;border-radius:999px;padding:8px 13px;background:transparent;color:#fff;font:700 12px 'Hanken Grotesk',sans-serif;cursor:pointer;min-height:36px}
+.mu-comparison-controls button[aria-pressed=true]{background:#fff;color:#14336e}
+.mu-comparison button:focus-visible,.mu-lightbox button:focus-visible,.mu-lightbox a:focus-visible{outline:3px solid #43caff;outline-offset:2px}
+.mu-gallery-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 25px}
+.mu-gallery-filters a{min-height:44px;display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid #d8e2ed;border-radius:999px;color:#14336e;background:white;text-decoration:none;font-size:14px;font-weight:700}
+.mu-gallery-filters a[aria-current=true]{background:#14336e;color:white;border-color:#14336e}
+.mu-gallery-filters a:focus-visible{outline:3px solid #43caff;outline-offset:3px}
+.mu-gallery-filters span{font-size:12px;opacity:.7}
+.mu-gallery-sectors{font-size:14px;color:#61748b;line-height:1.6;margin-bottom:30px}
+.mu-gallery .mu-comparisons{padding-top:30px;margin-top:30px}
+.mu-gallery .mu-comparisons:first-of-type{padding-top:0;border-top:0}
+.mu-project-section{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.mu-project-section .mu-comparisons-grid{display:block}
+.mu-project-section .mu-comparisons-head{margin:0;max-width:440px}
+.mu-case-comparison{max-width:580px}
+.mu-case-comparison .mu-comparison-action{display:inline}
+.mu-lightbox{border:1px solid #dce5ee;border-radius:18px;width:min(1100px,96vw);max-width:96vw;max-height:95dvh;padding:0;color:#123960;background:#fff;overflow:auto;box-shadow:0 24px 90px #00152c33}
+.mu-lightbox::backdrop{background:#071e36cc}
+.mu-lightbox-head{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:16px;border-bottom:1px solid #dce5ee}
+.mu-lightbox-head h2{font:700 20px 'Hanken Grotesk',sans-serif;margin:0}
+.mu-lightbox-close{border:1px solid #dce5ee;border-radius:9px;min-width:42px;min-height:42px;background:white;font-size:24px;color:#123960;cursor:pointer}
+.mu-lightbox-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px;background:#f1f5f8}
+.mu-lightbox figure{min-width:0;margin:0;text-align:center}
+.mu-lightbox img{display:block;width:100%;height:min(65dvh,650px);object-fit:contain}
+.mu-lightbox figcaption{font-weight:700;padding:8px 0;font-size:14px}
+.mu-lightbox p{padding:14px 20px;margin:0;font-size:13px;color:#52647b;line-height:1.5}
+@media(max-width:1000px){.mu-comparisons-head{align-items:start;flex-direction:column}.mu-comparison h3{font-size:23px}.mu-comparison-overlay{padding:65px 20px 18px}.mu-comparison-overlay p{font-size:14px}}
+@media(max-width:760px){.mu-comparisons-grid{grid-template-columns:1fr;gap:22px}.mu-comparisons{margin-top:30px;padding-top:28px}.mu-comparison-overlay{padding:65px 20px 18px}.mu-comparison h3{font-size:24px}.mu-lightbox-pair{gap:8px;padding:10px}.mu-lightbox img{height:auto;aspect-ratio:3/4}.mu-lightbox-head{padding:12px}.mu-gallery-filters{gap:8px}.mu-gallery-filters a{padding:9px 13px;font-size:13px}}
+@media(max-width:390px){.mu-comparison h3{font-size:21px}.mu-comparison-overlay{padding:55px 16px 15px;gap:5px}.mu-comparison-overlay p{font-size:13px}.mu-comparison-location{font-size:10px}.mu-comparison-hint{font-size:12px}}
+@media(hover:none){.mu-comparison-controls{opacity:1;pointer-events:auto}.mu-comparison-hint{display:none}.mu-comparison-action{display:inline}}
+@media(prefers-reduced-motion:reduce){.mu-comparison-stage img{transition:none}}
+@media(max-width:760px){.mu-project-section{grid-template-columns:1fr}}
+
+/* One compact row on the homepage. Native horizontal scrolling also works without JS. */
+.mu-realisation-carousel{min-width:0;position:relative}
+.mu-realisation-viewport{position:relative;display:flex;gap:24px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:3px 0 5px;scroll-behavior:auto}
+.mu-realisation-viewport::-webkit-scrollbar{display:none}
+.mu-realisation-viewport>.mu-comparison{flex:0 0 calc((100% - 24px)/2)}
+.mu-realisation-viewport,.mu-realisation-viewport .mu-comparison-open{cursor:grab;user-select:none;-webkit-user-select:none}
+.mu-realisation-viewport img{-webkit-user-drag:none}
+.mu-realisation-carousel.is-dragging .mu-realisation-viewport,.mu-realisation-carousel.is-dragging .mu-realisation-viewport *{cursor:grabbing!important}
+.real-proof:has([data-realisation-carousel]) .real-proof-foot{margin-top:12px}
+.mu-detail-hero{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center;padding:35px 0 50px}
+.mu-detail-hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(34px,4vw,52px);line-height:1.12;color:#14336e;margin:14px 0 20px}
+.mu-detail-hero .intro{font-size:19px;line-height:1.65;color:#52647b;margin:0 0 20px}
+.mu-detail-note{font-size:14px;line-height:1.7;color:#61748b;margin-bottom:24px}
+.mu-detail-photos{padding:40px 0;border-top:1px solid #dce5ee;scroll-margin-top:95px}
+.mu-detail-photos h2{font:600 32px/1.2 'Fraunces',Georgia,serif;color:#14336e;margin:0 0 12px}
+.mu-detail-photos>p{color:#52647b;line-height:1.6;margin:0 0 25px}
+.mu-detail-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.mu-detail-pair figure{margin:0;min-width:0;padding:16px;border-radius:18px;background:#f1f5fa;border:1px solid #dce5ee}
+.mu-detail-pair figcaption{display:flex;align-items:center;justify-content:space-between;color:#14336e;margin-bottom:14px;font-weight:700;gap:16px}
+.mu-detail-pair figcaption a{font-size:13px;font-weight:500;color:#245ea2;text-decoration:underline;text-underline-offset:3px}
+.mu-detail-pair img{display:block;width:100%;height:620px;object-fit:contain;border-radius:6px}
+.mu-detail-related{padding:32px 0 55px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mu-detail-related>a:first-child{color:#14336e;font-weight:700}
+@media(max-width:760px){.mu-realisation-viewport{gap:16px}.mu-realisation-viewport>.mu-comparison{flex-basis:92%}.mu-realisation-viewport .mu-comparison h3{font-size:22px}.mu-detail-hero{grid-template-columns:1fr;gap:24px;padding:20px 0 35px}.mu-detail-pair{grid-template-columns:1fr;gap:20px}.mu-detail-pair img{height:auto;max-height:640px;object-fit:contain}.mu-detail-hero h1{font-size:36px}.mu-detail-hero .intro{font-size:17px}.mu-detail-photos h2{font-size:28px}}
+@media(max-width:390px){.mu-realisation-viewport .mu-comparison h3{font-size:20px}.mu-realisation-viewport .mu-comparison-overlay p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){[data-carousel-copy]{display:none!important}}

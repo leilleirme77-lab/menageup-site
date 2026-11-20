@@ -31,8 +31,8 @@
     const tick = time => {
       if (!allowed()) { stop(); return; }
       if (previousTime) {
-        // One seven-review circuit takes about a minute, like the original template.
-        position = (position + Math.min(time - previousTime, 50) * period / 60000) % period;
+        // Keep a steady reading speed when more reviews are added to the loop.
+        position = (position + Math.min(time - previousTime, 50) * .048) % period;
         viewport.scrollLeft = position;
       }
       previousTime = time;

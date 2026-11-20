@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://menageup.fr/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -317,7 +317,7 @@
   </url>
   <url>
     <loc>https://menageup.fr/realisations/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/realisations/chatres-77610/sejour-apres.webp</image:loc>
     </image:image>
@@ -327,7 +327,7 @@
   </url>
   <url>
     <loc>https://menageup.fr/realisations/grand-nettoyage-chatres-77610/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/realisations/chatres-77610/sejour-avant.webp</image:loc>
     </image:image>
@@ -349,7 +349,7 @@
   </url>
   <url>
     <loc>https://menageup.fr/realisations/debarras-exterieur-pontault-combault-77340/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <image:image>
       <image:loc>https://menageup.fr/assets/realisations/debarras-exterieur/avant-chantier.jpg</image:loc>
     </image:image>
@@ -457,5 +457,85 @@
   <url>
     <loc>https://menageup.fr/reseaux/</loc>
     <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-couloir/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/01-couloir/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/01-couloir/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-sol-fenetres/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/02-sol-fenetres/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/02-sol-fenetres/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-angle-sol/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/03-angle-sol/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/03-angle-sol/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-escalier/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/04-escalier/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/04-escalier/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-echafaudage/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/05-echafaudage/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/05-echafaudage/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-exterieur/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/06-exterieur/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/06-exterieur/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-rez-de-chaussee/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/07-rez-de-chaussee/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/07-rez-de-chaussee/apres.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://menageup.fr/realisations/chantier-pied-escalier/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/08-pied-escalier/avant.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://menageup.fr/assets/comparaisons/08-pied-escalier/apres.webp</image:loc>
+    </image:image>
   </url>
 </urlset>

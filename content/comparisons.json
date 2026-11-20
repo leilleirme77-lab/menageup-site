@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "01-couloir",
+    "title": "Couloir",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/01-couloir/avant-480.webp",
+      "large": "/assets/comparaisons/01-couloir/avant.webp",
+      "smallWidth": 480,
+      "width": 1083,
+      "height": 1453
+    },
+    "apres": {
+      "small": "/assets/comparaisons/01-couloir/apres-480.webp",
+      "large": "/assets/comparaisons/01-couloir/apres.webp",
+      "smallWidth": 480,
+      "width": 616,
+      "height": 826
+    },
+    "description": "Le couloir et ses accès, avant et après la remise en état.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  },
+  {
+    "slug": "02-sol-fenetres",
+    "title": "Sol près des fenêtres",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/02-sol-fenetres/avant-480.webp",
+      "large": "/assets/comparaisons/02-sol-fenetres/avant.webp",
+      "smallWidth": 480,
+      "width": 1083,
+      "height": 1452
+    },
+    "apres": {
+      "small": "/assets/comparaisons/02-sol-fenetres/apres-480.webp",
+      "large": "/assets/comparaisons/02-sol-fenetres/apres.webp",
+      "smallWidth": 480,
+      "width": 613,
+      "height": 822
+    },
+    "description": "Les sols et les abords des ouvertures, sous deux états.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  },
+  {
+    "slug": "03-angle-sol",
+    "title": "Angle du sol",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/03-angle-sol/avant-480.webp",
+      "large": "/assets/comparaisons/03-angle-sol/avant.webp",
+      "smallWidth": 480,
+      "width": 616,
+      "height": 825
+    },
+    "apres": {
+      "small": "/assets/comparaisons/03-angle-sol/apres-480.webp",
+      "large": "/assets/comparaisons/03-angle-sol/apres.webp",
+      "smallWidth": 480,
+      "width": 1084,
+      "height": 1451
+    },
+    "description": "Une zone de sol avec ses résidus et son état après nettoyage.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  },
+  {
+    "slug": "04-escalier",
+    "title": "Escalier",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/04-escalier/avant-480.webp",
+      "large": "/assets/comparaisons/04-escalier/avant.webp",
+      "smallWidth": 480,
+      "width": 1083,
+      "height": 1453
+    },
+    "apres": {
+      "small": "/assets/comparaisons/04-escalier/apres-480.webp",
+      "large": "/assets/comparaisons/04-escalier/apres.webp",
+      "smallWidth": 480,
+      "width": 613,
+      "height": 823
+    },
+    "description": "Les marches et le palier, avant et après.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  },
+  {
+    "slug": "05-echafaudage",
+    "title": "Zone avec échafaudage",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/05-echafaudage/avant-480.webp",
+      "large": "/assets/comparaisons/05-echafaudage/avant.webp",
+      "smallWidth": 480,
+      "width": 612,
+      "height": 822
+    },
+    "apres": {
+      "small": "/assets/comparaisons/05-echafaudage/apres-480.webp",
+      "large": "/assets/comparaisons/05-echafaudage/apres.webp",
+      "smallWidth": 480,
+      "width": 616,
+      "height": 817
+    },
+    "description": "Les sols autour des installations de chantier.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  },
+  {
+    "slug": "06-exterieur",
+    "title": "Extérieur",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/06-exterieur/avant-480.webp",
+      "large": "/assets/comparaisons/06-exterieur/avant.webp",
+      "smallWidth": 480,
+      "width": 616,
+      "height": 820
+    },
+    "apres": {
+      "small": "/assets/comparaisons/06-exterieur/apres-480.webp",
+      "large": "/assets/comparaisons/06-exterieur/apres.webp",
+      "smallWidth": 480,
+      "width": 619,
+      "height": 823
+    },
+    "description": "Les abords extérieurs et les matériaux présents sur place.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  },
+  {
+    "slug": "07-rez-de-chaussee",
+    "title": "Rez-de-chaussée",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/07-rez-de-chaussee/avant-480.webp",
+      "large": "/assets/comparaisons/07-rez-de-chaussee/avant.webp",
+      "smallWidth": 480,
+      "width": 622,
+      "height": 829
+    },
+    "apres": {
+      "small": "/assets/comparaisons/07-rez-de-chaussee/apres-480.webp",
+      "large": "/assets/comparaisons/07-rez-de-chaussee/apres.webp",
+      "smallWidth": 480,
+      "width": 1088,
+      "height": 1445
+    },
+    "description": "La surface au rez-de-chaussée, avant et après.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  },
+  {
+    "slug": "08-pied-escalier",
+    "title": "Sol au pied de l’escalier",
+    "provenance": "Visuels reçus par email, avec retouches de contenu. Commune non confirmée.",
+    "avant": {
+      "small": "/assets/comparaisons/08-pied-escalier/avant-480.webp",
+      "large": "/assets/comparaisons/08-pied-escalier/avant.webp",
+      "smallWidth": 480,
+      "width": 1088,
+      "height": 1445
+    },
+    "apres": {
+      "small": "/assets/comparaisons/08-pied-escalier/apres-480.webp",
+      "large": "/assets/comparaisons/08-pied-escalier/apres.webp",
+      "smallWidth": 480,
+      "width": 619,
+      "height": 823
+    },
+    "description": "Une vue de la pièce et de l’accès à l’escalier.",
+    "category": "chantier",
+    "retouched": true,
+    "city": null,
+    "postal_code": null,
+    "position": "50% 22%"
+  }
+]

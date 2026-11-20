@@ -42,5 +42,6 @@
 /* Cartes de largeur adaptee au texte, defilement automatique sans boutons. */
 .reviews-carousel .rev{width:var(--rev-w,340px)}
 .reviews-carousel .rev blockquote{margin-bottom:18px}
+.reviews-carousel .rev blockquote p{white-space:pre-line}
 .reviews-toolbar{display:none!important}
 @media(max-width:700px){.reviews-carousel .review-group{align-items:flex-start}.reviews-carousel .rev{width:min(var(--rev-w,340px),calc(100vw - 52px))}}

@@ -9,6 +9,8 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import date
 from PIL import Image
+from build_comparisons import comparisons_section, comparison_card, comparison_items, case_comparison, CSS as COMPARISONS_CSS, JS as COMPARISONS_JS
+from harmonize_site import harmonize, home_networks
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = 'https://menageup.fr'
@@ -199,7 +201,28 @@ def case_page(case):
         related += f'<a href="/conseils/{guide[0]}/">{esc(guide[1])} ↗</a>'
     hero_img = image_tag(case['hero'], case['hero_alt'], '(max-width:700px) calc(100vw - 36px), (max-width:1224px) calc((100vw - 120px) / 2), 552px', eager=True)
     body = breadcrumbs(crumbs) + f'''<main id="contenu"><section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">{esc(case['category'])}</p><h1>{esc(case['h1'])}</h1><p class="intro">{esc(case['intro'])}</p>{project_stats(case)}<div class="case-meta"><span>{esc(case['city'])} · {esc(case['postal_code'])}</span><span>Photos de l'intervention</span></div><div class="hero-actions"><a class="btn" href="#photos">Voir les photos ↓</a><a class="btn ghost" href="{esc(quote)}">Parlons de votre besoin ↗</a></div></div><figure class="hero-figure"><div class="hero-image">{hero_img}<span class="photo-stage">{esc(case['hero_stage'])}</span></div><figcaption><span>{esc(case['city'])} — {esc(case['hero_stage'].lower())}.</span><a href="/{esc(case['hero'])}">Voir la photo complète ↗</a></figcaption></figure></div></section>{proof_note()}{project_context(case)}<div id="photos">{''.join(sections)}</div>{project_follow_up(case)}<section class="project-cta"><div class="wrap project-cta-grid"><div><h2>{esc(case['quote_title'])}</h2><p>{esc(case['quote_text'])}</p></div><a class="btn" href="{esc(quote)}">Demander un devis gratuit ↗</a></div></section><section class="related"><div class="wrap"><h2>Pour préparer la suite.</h2><div class="related-links">{related}<a href="/realisations/">Toutes nos réalisations ↗</a></div></div></section></main>'''
-    return document(case['title'], case['description'], path, case['og_image'], case['primary_image'], crumbs, body, quote)
+    hero_card = comparison_card(case_comparison(case), detail_link=False, suffix='-hero')
+    body = re.sub(r'<figure class="hero-figure">.*?</figure>', lambda _: '<div class="mu-case-comparison">' + hero_card + '</div>', body, count=1, flags=re.S)
+    html = document(case['title'], case['description'], path, case['og_image'], case['primary_image'], crumbs, body, quote)
+    return html.replace('</head>', COMPARISONS_CSS + '\n</head>', 1).replace('</body>', COMPARISONS_JS + '\n</body>', 1)
+
+
+def comparison_page(item, following):
+    path = item['href']
+    title = item['title']
+    quote = quote_link(path, service='grandnettoyage')
+    crumbs = [('Accueil', '/'), ('Réalisations', HUB_PATH), (title, path)]
+    pair = []
+    for side, label in [('avant', 'Avant'), ('apres', 'Après')]:
+        file = item[side]['large'].lstrip('/')
+        img = image_tag(file, title + ' — ' + label.lower() + ' (visuel retouché)', '(max-width:760px) 92vw, 550px')
+        pair.append(f'''<figure><figcaption><span>{label}</span><a href="/{esc(file)}">Ouvrir la photo ↗</a></figcaption>{img}</figure>''')
+    card = comparison_card(item, detail_link=False, suffix='detail')
+    body = breadcrumbs(crumbs) + f'''<main id="contenu"><div class="wrap"><section class="mu-detail-hero"><div><span class="eyebrow">Interventions de chantier · Avant / après</span><h1>{esc(title)}</h1><p class="intro">{esc(item['description'])}</p><p class="mu-detail-note">Comparaison de visuels retouchés. La commune de cette série n’est pas renseignée. Retrouvez les deux vues complètes ci-dessous.</p><a class="btn" href="#photos">Voir les deux photos ↓</a></div>{card}</section><section class="mu-detail-photos" id="photos"><h2>Les deux vues complètes.</h2><p>Avant à gauche, après à droite. Chaque photo conserve son cadre entier ; les prises de vue peuvent présenter des angles différents.</p><div class="mu-detail-pair">{''.join(pair)}</div></section><nav class="mu-detail-related" aria-label="Autres réalisations"><a href="/realisations/#interventions-chantier">← Toutes les vues de chantier</a><a class="btn ghost" href="{esc(following['href'])}">{esc(following['title'])} →</a></nav></div></main>'''
+    html = document(title + ' — Avant / après | MénageUp', item['description'] + ' Comparaison de visuels retouchés.', path,
+                    item['apres']['large'].lstrip('/'), item['apres']['large'].lstrip('/'), crumbs, body, quote)
+    html = html.replace("Photographie d'une réalisation MénageUp", esc(title + ' — visuel retouché'))
+    return html.replace('</head>', COMPARISONS_CSS + '\n</head>', 1).replace('</body>', COMPARISONS_JS + '\n</body>', 1)
 
 
 def hub_sections(hub):
@@ -224,15 +247,20 @@ def hub_sections(hub):
 
 def hub_page(data):
     hub = data['hub']
-    cards = []
+    labels = {'grandnettoyage': ('grand-nettoyage', 'Grand nettoyage.', 'Des logements remis en propreté.', 'Découvrez la remise en état d’une habitation à Châtres, restée inhabitée pendant six ans.'),
+              'debarras': ('debarras', 'Débarras.', 'Des espaces dégagés.', 'Un passage extérieur à Pontault-Combault, avant et après l’enlèvement des encombrants.')}
+    sections = []
     for case in data['cases']:
-        image = image_tag(case['hero'], case['hero_alt'], '(max-width:700px) calc(100vw - 36px), (max-width:1224px) calc((100vw - 90px) / 2), 567px')
-        cards.append(f'''<a class="project-card" href="{HUB_PATH}{esc(case['slug'])}/"><div class="project-card-image">{image}<span class="photo-stage">{esc(case['hero_stage'])}</span></div><div class="project-card-copy"><div class="case-meta"><span>{esc(case['city'])} · {esc(case['postal_code'])}</span></div><h2>{esc(case['category'])}</h2><p>{esc(case['card_text'])}</p><span class="card-link">Voir la réalisation ↗</span></div></a>''')
+        anchor, title, subtitle, intro = labels[case['service_code']]
+        card = comparison_card(case_comparison(case))
+        sections.append(f'''<section class="mu-comparisons mu-project-section" id="{anchor}" data-realisation-section="{case['service_code']}" aria-labelledby="{anchor}-title"><div class="mu-comparisons-head"><div><span class="eyebrow">{esc(subtitle)}</span><h2 id="{anchor}-title">{title}</h2><p>{esc(intro)}</p></div></div><div class="mu-comparisons-grid">{card}</div></section>''')
+    filters = '''<nav class="mu-gallery-filters" aria-label="Type d’intervention"><a href="#galerie" data-gallery-filter="all" aria-current="true">Tout voir</a><a href="#grand-nettoyage" data-gallery-filter="grandnettoyage" aria-current="false">Grand nettoyage</a><a href="#debarras" data-gallery-filter="debarras" aria-current="false">Débarras</a><a href="#interventions-chantier" data-gallery-filter="chantier" aria-current="false">Interventions de chantier</a></nav>'''
     quote = quote_link(HUB_PATH)
     crumbs = [('Accueil', '/'), ('Réalisations', HUB_PATH)]
-    body = breadcrumbs(crumbs) + f'''<main id="contenu"><div class="wrap"><section class="hub-hero"><p class="eyebrow">Réalisations MénageUp · Seine-et-Marne</p><h1>{esc(hub['h1'])}</h1><p class="intro">{esc(hub['intro'])}</p></section></div>{proof_note(hub=True)}<section class="wrap projects-grid" aria-label="Nos réalisations">{''.join(cards)}</section>{hub_sections(hub)}<section class="project-cta"><div class="wrap project-cta-grid"><div><h2>Parlons de vos espaces.</h2><p>Indiquez la commune, l'état des lieux et les tâches à prévoir. Nous préparons avec vous le périmètre de la prestation et votre devis.</p></div><a class="btn" href="{esc(quote)}">Demander un devis gratuit ↗</a></div></section></main>'''
+    body = breadcrumbs(crumbs) + f'''<main id="contenu"><div class="wrap mu-gallery" id="galerie"><section class="hub-hero"><p class="eyebrow">Les avant / après MénageUp</p><h1>Nos interventions, en images.</h1><p class="intro">Grand nettoyage, débarras, interventions de chantier : choisissez une catégorie. Les photos après sont affichées au repos ; survolez-les pour voir l’avant.</p></section>{filters}<p class="mu-gallery-sectors">Nos secteurs d’intervention : Seine-et-Marne (77), Seine-Saint-Denis (93) et Val-de-Marne (94). Les lieux des réalisations sont indiqués lorsqu’ils sont connus.</p>{''.join(sections)}{comparisons_section()}</div><section class="project-cta"><div class="wrap project-cta-grid"><div><h2>Parlons de vos espaces.</h2><p>Indiquez la commune, l’état des lieux et les tâches à prévoir. Nous préparons avec vous le périmètre de la prestation et votre devis.</p></div><a class="btn" href="{esc(quote)}">Demander un devis gratuit ↗</a></div></section></main>'''
     first = data['cases'][0]
-    return document(hub['title'], hub['description'], HUB_PATH, first['og_image'], first['primary_image'], crumbs, body, quote)
+    html = document(hub['title'], hub['description'], HUB_PATH, first['og_image'], first['primary_image'], crumbs, body, quote)
+    return html.replace('</head>', COMPARISONS_CSS + '\n</head>', 1).replace('</body>', COMPARISONS_JS + '\n</body>', 1)
 
 
 def sitemap_tree(data, changed):
@@ -250,6 +278,8 @@ def sitemap_tree(data, changed):
     for case in data['cases']:
         files = [item['file'] for section in case['sections'] for item in section['photos']]
         entries[DOMAIN + HUB_PATH + case['slug'] + '/'] = list(dict.fromkeys(files + [case['primary_image']]))
+    for item in comparison_items():
+        entries[DOMAIN + item['href']] = [item[side]['large'].lstrip('/') for side in ['avant', 'apres']]
     for url, images in entries.items():
         node = known.get(url)
         if node is None:
@@ -284,7 +314,12 @@ def main():
         if not re.search(r'\b' + re.escape(case['service_code']) + r"\s*:", service_script):
             raise ValueError('Unknown quote service')
         outputs[ROOT / 'realisations' / case['slug'] / 'index.html'] = case_page(case)
+    comparisons = comparison_items()
+    for index, item in enumerate(comparisons):
+        outputs[ROOT / item['href'].strip('/') / 'index.html'] = comparison_page(item, comparisons[(index + 1) % len(comparisons)])
     outputs = {file: with_sector_navigation(html, '/' + file.parent.relative_to(ROOT).as_posix() + '/') for file, html in outputs.items()}
+    networks = home_networks()
+    outputs = {file: harmonize(html, '/' + file.parent.relative_to(ROOT).as_posix() + '/', networks) for file, html in outputs.items()}
     changed = {DOMAIN + '/' + file.parent.relative_to(ROOT).as_posix() + '/'
                for file, html in outputs.items()
                if not file.exists() or file.read_text(encoding='utf-8') != html}
